@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#009688"
+    android:background="@color/background"
     tools:context=".ui.josue.ActJosueMain">
 
     <EditText
@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etInputedit"
         tools:text="Resultado"/>
@@ -37,38 +37,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvResultado">
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
             android:padding="30dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_weight="1"
             android:id="@+id/btnSum"
-            tools:text="+"
+            android:text="@string/plus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
             android:padding="30dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_weight="1"
-            tools:text="-"
+            android:text="@string/less"
             android:id="@+id/btnRest"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
             android:padding="30dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_weight="1"
-            tools:text="/"
+            android:text="@string/split"
             android:id="@+id/btnDiv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
             android:padding="30dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_weight="1"
-            tools:text="X"
+            android:text="@string/by"
             android:id="@+id/btnMult"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -84,38 +88,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lyOperator">
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
             android:padding="30dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_weight="1"
             android:id="@+id/btnSeven"
-            tools:text="7"
+            android:text="@string/seven_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
             android:padding="30dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_weight="1"
-            tools:text="8"
+            android:text="@string/eight_number"
             android:id="@+id/btnEight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
             android:padding="30dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_weight="1"
-            tools:text="9"
+            android:text="@string/nine_number"
             android:id="@+id/btnNine"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
             android:padding="30dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_weight="1"
-            tools:text="R"
+            android:text="@string/delete"
             android:id="@+id/btnRemove"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -131,38 +139,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lyOne">
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
             android:padding="30dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_weight="1"
             android:id="@+id/btnFour"
-            tools:text="4"
+            android:text="@string/four_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
             android:padding="30dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_weight="1"
-            tools:text="5"
+            android:text="@string/five_number"
             android:id="@+id/btnFive"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
             android:padding="30dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_weight="1"
-            tools:text="6"
+            android:text="@string/six_number"
             android:id="@+id/btnSix"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
             android:padding="30dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_weight="1"
-            tools:text="C"
+            android:text="@string/clear"
             android:id="@+id/btnClean"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -178,44 +190,48 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lyTwo">
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
             android:padding="30dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_weight="1"
             android:id="@+id/btnThree"
-            tools:text="3"
+            android:text="@string/three_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
             android:padding="30dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_weight="1"
-            tools:text="2"
+            android:text="@string/two_number"
             android:id="@+id/btnTwo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
             android:padding="30dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_weight="1"
-            tools:text="1"
+            android:text="@string/one_number"
             android:id="@+id/btnOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
             android:padding="30dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_weight="1"
-            tools:text="0"
+            android:text="@string/zero_number"
             android:id="@+id/btnZero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnResult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -223,6 +239,6 @@
         android:padding="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lyThree"
-        tools:text="="/>
+        android:text="@string/equals"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
