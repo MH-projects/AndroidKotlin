@@ -3,8 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/drawable/bg_circle.xml" value="0.1" />
+        <entry key="..\:/trabajo/BasicKotlin/AndroidKotlin/app/src/main/res/drawable/ic_arrow_delete.xml" value="0.2115" />
+        <entry key="..\:/trabajo/BasicKotlin/AndroidKotlin/app/src/main/res/layout/act_angel_main.xml" value="0.1" />
+        <entry key="..\:/trabajo/BasicKotlin/AndroidKotlin/app/src/main/res/layout/act_antonio_main.xml" value="0.17074275362318841" />
+        <entry key="..\:/trabajo/BasicKotlin/AndroidKotlin/app/src/main/res/layout/act_manuel_calculator.xml" value="0.1" />
+        <entry key="..\:/trabajo/BasicKotlin/AndroidKotlin/app/src/main/res/layout/act_manuel_main.xml" value="0.17074275362318841" />
+        <entry key="..\:/trabajo/BasicKotlin/AndroidKotlin/app/src/main/res/mipmap-anydpi-v26/ic_arrow_delete.xml" value="0.2115" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.33" />
+<<<<<<< HEAD
         <entry key="app/src/main/res/layout/act_angel_main.xml" value="0.22" />
         <entry key="app/src/main/res/layout/act_antonio_main.xml" value="0.16510416666666666" />
         <entry key="app/src/main/res/layout/act_josue_main.xml" value="0.18" />
@@ -13,6 +19,9 @@
         <entry key="app/src/main/res/layout/act_manuel_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/act_pablo_main.xml" value="0.16510416666666666" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1578125" />
+=======
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+>>>>>>> 348d2c2af45ff126cd3df2f29ef6cf7e5a19994c
       </map>
     </option>
   </component>
