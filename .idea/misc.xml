@@ -12,7 +12,14 @@
         <entry key="..\:/trabajo/BasicKotlin/AndroidKotlin/app/src/main/res/layout/act_manuel_main.xml" value="0.17074275362318841" />
 >>>>>>> 8146d191c3b10fe223228bc907e8189d1c599f4c
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.33" />
+<<<<<<< HEAD
+        <entry key="app/src/main/res/layout/act_angel_main.xml" value="0.17239583333333333" />
+        <entry key="app/src/main/res/layout/act_josue_main.xml" value="0.17239583333333333" />
+        <entry key="app/src/main/res/layout/act_manuel_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1578125" />
+=======
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+>>>>>>> 8146d191c3b10fe223228bc907e8189d1c599f4c
       </map>
     </option>
   </component>
