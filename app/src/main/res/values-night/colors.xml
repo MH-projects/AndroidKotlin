@@ -9,7 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="orange">#FF9800</color>
 
-    <color name="background">#9A9A9A</color>
-    <color name="background_button">@android:color/white</color>
-
+    <color name="background">#3E3838</color>
+    <color name="background_button">@android:color/black</color>
 </resources>

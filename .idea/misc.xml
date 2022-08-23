@@ -3,41 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-<<<<<<< HEAD
         <entry key="..\:/Users/Pablo Amaya/workSpace/AndroidKotlin/app/src/main/res/layout/act_angel_main.xml" value="0.264" />
+        <entry key="..\:/Users/Pablo Amaya/workSpace/AndroidKotlin/app/src/main/res/layout/act_manuel_calculator.xml" value="0.2128623188405797" />
         <entry key="..\:/Users/Pablo Amaya/workSpace/AndroidKotlin/app/src/main/res/layout/act_manuel_main.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Pablo Amaya/workSpace/AndroidKotlin/app/src/main/res/layout/act_pablo_main.xml" value="0.264" />
         <entry key="..\:/Users/Pablo Amaya/workSpace/AndroidKotlin/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/act_angel_main.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/act_josue_main.xml" value="0.2" />
-        <entry key="app/src/main/res/layout/act_juan_main.xml" value="0.17239583333333333" />
-        <entry key="app/src/main/res/layout/act_manuel_calculator.xml" value="0.17239583333333333" />
-        <entry key="app/src/main/res/layout/act_manuel_main.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1578125" />
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-        <entry key="..\:/Users/Pablo Amaya/workSpace/AndroidKotlin/app/src/main/res/layout/act_manuel_main.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/Pablo Amaya/workSpace/AndroidKotlin/app/src/main/res/layout/act_pablo_main.xml" value="0.264" />
-        <entry key="..\:/Users/Pablo Amaya/workSpace/AndroidKotlin/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
-=======
->>>>>>> 7f7630966ee93b9ec54b80127b2a4ab74b2728e7
-        <entry key="..\:/workspace/AndroidKotlin/app/src/main/res/layout/act_josue_main.xml" value="0.2046875" />
-        <entry key="..\:/workspace/AndroidKotlin/app/src/main/res/layout/act_juan_main.xml" value="0.264" />
-        <entry key="..\:/workspace/AndroidKotlin/app/src/main/res/layout/act_manuel_main.xml" value="0.21458333333333332" />
-        <entry key="..\:/workspace/AndroidKotlin/app/src/main/res/layout/activity_main.xml" value="0.21458333333333332" />
->>>>>>> 6d471f380cb7bd1794f6c52f0e6ff297f0882e03
-=======
-        <entry key="..\:/trabajo/BasicKotlin/AndroidKotlin/app/src/main/res/drawable/ic_arrow_delete.xml" value="0.2115" />
-        <entry key="..\:/trabajo/BasicKotlin/AndroidKotlin/app/src/main/res/layout/act_antonio_main.xml" value="0.17074275362318841" />
-        <entry key="..\:/trabajo/BasicKotlin/AndroidKotlin/app/src/main/res/layout/act_manuel_main.xml" value="0.17074275362318841" />
->>>>>>> cf74788075fdd4178ff4855731763617c35e6d16
->>>>>>> d448ea3f1174d1aba23ee2261e6d442ed11b81eb
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
       </map>
