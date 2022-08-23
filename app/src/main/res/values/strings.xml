@@ -1,0 +1,19 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">BasicKotlin</string>
+
+    <string name="name">Name:</string>
+
+    <!-- Name: Manuel Hidalgo - Age: 27-->
+    <!-- &lt; = < -->
+    <!-- &gt; = > -->
+    <string name="full_name">
+        &lt;b&gt;Name:&lt;/b&gt; <xliff:g name="name">%s</xliff:g> <xliff:g name="surname">%s</xliff:g>&lt;br&gt;
+        &lt;b&gt;Edad:&lt;/b&gt; <xliff:g name="age">%d</xliff:g>&lt;br&gt;
+        &lt;b&gt;School:&lt;/b&gt; <xliff:g name="school">%s</xliff:g>&lt;br&gt;
+        &lt;b&gt;State:&lt;/b&gt; <xliff:g name="state">%s</xliff:g>&lt;br&gt;
+        &lt;b&gt;Work:&lt;/b&gt; <xliff:g name="work">%s</xliff:g>
+    </string>
+
+    <string name="html">Hola <b>Manuel Hidalgo</b></string>
+
+</resources>
