@@ -23,39 +23,24 @@ class ActManuelMain : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.act_manuel_main)
+
         btnAngel = findViewById(R.id.btnAngel)
         btnManuel = findViewById(R.id.btnManuel)
         btnPablo = findViewById(R.id.btnPablo)
         btnAntonio = findViewById(R.id.btnAntonio)
         btnJuan = findViewById(R.id.btnJuan)
-
-        btnManuel.setOnClickListener {
-            println("Click Manuel")
-        }
-        btnPablo.setOnClickListener {
-            val intent = Intent(this, ActPabloMain::class.java)
-            startActivity(intent)
-        }
-        btnJuan.setOnClickListener {
-            val intent = Intent(this, ActJuanMain::class.java)
-            startActivity(intent)
-        }
         btnJosue = findViewById(R.id.btnJosue)
-        btnAngel.setOnClickListener {
-            val intent = Intent(this, ActAngelMain::class.java)
-            startActivity(intent)
-        }
 
-        btnAntonio.setOnClickListener {
-            println("Click Antonio")
-            val intent1 = Intent(this, ActAntonioMain::class.java)
-            startActivity(intent1)
-        }
-
-        btnJosue.setOnClickListener { goToActJosue() }
+        btnAngel.setOnClickListener(ActAngelMain::class.java)
+        btnPablo.setOnClickListener(ActPabloMain::class.java)
+        btnJuan.setOnClickListener(ActJuanMain::class.java)
+        btnJosue.setOnClickListener(ActJosueMain::class.java)
+        btnAntonio.setOnClickListener(ActAntonioMain::class.java)
     }
 
-    private fun goToActJosue() {
-        startActivity(Intent(this, ActJosueMain::class.java))
+    private fun <T> Button.setOnClickListener(_class: Class<T>) {
+        setOnClickListener {
+            startActivity(Intent(this@ActManuelMain, _class))
+        }
     }
 }
