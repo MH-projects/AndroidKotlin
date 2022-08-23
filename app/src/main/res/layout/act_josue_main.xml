@@ -4,6 +4,225 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#009688"
     tools:context=".ui.josue.ActJosueMain">
+
+    <EditText
+        android:padding="15dp"
+        android:id="@+id/etInputedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:padding="15dp"
+        android:id="@+id/tvResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etInputedit"
+        tools:text="Resultado"/>
+
+    <LinearLayout
+        android:layout_marginTop="35dp"
+        android:id="@+id/lyOperator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultado">
+
+        <Button
+            android:padding="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:id="@+id/btnSum"
+            tools:text="+"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:padding="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            tools:text="-"
+            android:id="@+id/btnRest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:padding="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            tools:text="/"
+            android:id="@+id/btnDiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:padding="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            tools:text="X"
+            android:id="@+id/btnMult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="6dp"
+        android:id="@+id/lyOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lyOperator">
+
+        <Button
+            android:padding="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:id="@+id/btnSeven"
+            tools:text="7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:padding="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            tools:text="8"
+            android:id="@+id/btnEight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:padding="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            tools:text="9"
+            android:id="@+id/btnNine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:padding="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            tools:text="R"
+            android:id="@+id/btnRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+<LinearLayout
+        android:layout_marginTop="6dp"
+        android:id="@+id/lyTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lyOne">
+
+        <Button
+            android:padding="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:id="@+id/btnFour"
+            tools:text="4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:padding="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            tools:text="5"
+            android:id="@+id/btnFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:padding="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            tools:text="6"
+            android:id="@+id/btnSix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:padding="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            tools:text="C"
+            android:id="@+id/btnClean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="6dp"
+        android:id="@+id/lyThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lyTwo">
+
+        <Button
+            android:padding="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:id="@+id/btnThree"
+            tools:text="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:padding="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            tools:text="2"
+            android:id="@+id/btnTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:padding="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            tools:text="1"
+            android:id="@+id/btnOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:padding="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            tools:text="0"
+            android:id="@+id/btnZero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lyThree"
+        tools:text="="/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

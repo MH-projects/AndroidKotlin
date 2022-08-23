@@ -31,6 +31,7 @@ class ActManuelMain : AppCompatActivity() {
         btnJuan = findViewById(R.id.btnJuan)
         btnJosue = findViewById(R.id.btnJosue)
 
+        btnManuel.setOnClickListener(ActManuelCalculator::class.java)
         btnAngel.setOnClickListener(ActAngelMain::class.java)
         btnPablo.setOnClickListener(ActPabloMain::class.java)
         btnJuan.setOnClickListener(ActJuanMain::class.java)
