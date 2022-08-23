@@ -16,4 +16,12 @@
 
     <string name="html">Hola <b>Manuel Hidalgo</b></string>
 
+    <!-- Names -->
+    <string name="name_manuel">Manuel</string>
+    <string name="name_josue">Josue</string>
+    <string name="name_juan">Juan</string>
+    <string name="name_antonio">Antonio</string>
+    <string name="name_angel">Angel</string>
+    <string name="name_pablo">Pablo</string>
+
 </resources>
