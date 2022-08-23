@@ -3,9 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/trabajo/BasicKotlin/AndroidKotlin/app/src/main/res/layout/act_antonio_main.xml" value="0.17074275362318841" />
+        <entry key="..\:/trabajo/BasicKotlin/AndroidKotlin/app/src/main/res/layout/act_manuel_main.xml" value="0.17074275362318841" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/act_manuel_main.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1578125" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
       </map>
     </option>
   </component>
