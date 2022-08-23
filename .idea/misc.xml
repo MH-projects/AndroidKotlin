@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
         <entry key="..\:/Users/Pablo Amaya/workSpace/AndroidKotlin/app/src/main/res/layout/act_angel_main.xml" value="0.264" />
         <entry key="..\:/Users/Pablo Amaya/workSpace/AndroidKotlin/app/src/main/res/layout/act_manuel_calculator.xml" value="0.2128623188405797" />
         <entry key="..\:/Users/Pablo Amaya/workSpace/AndroidKotlin/app/src/main/res/layout/act_manuel_main.xml" value="0.22826086956521738" />
@@ -10,6 +11,27 @@
         <entry key="..\:/Users/Pablo Amaya/workSpace/AndroidKotlin/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+=======
+        <entry key="..\:/trabajo/BasicKotlin/AndroidKotlin/app/src/main/res/drawable/ic_arrow_delete.xml" value="0.2115" />
+        <entry key="..\:/trabajo/BasicKotlin/AndroidKotlin/app/src/main/res/layout/act_angel_main.xml" value="0.1" />
+        <entry key="..\:/trabajo/BasicKotlin/AndroidKotlin/app/src/main/res/layout/act_antonio_main.xml" value="0.17074275362318841" />
+        <entry key="..\:/trabajo/BasicKotlin/AndroidKotlin/app/src/main/res/layout/act_manuel_calculator.xml" value="0.1" />
+        <entry key="..\:/trabajo/BasicKotlin/AndroidKotlin/app/src/main/res/layout/act_manuel_main.xml" value="0.17074275362318841" />
+        <entry key="..\:/trabajo/BasicKotlin/AndroidKotlin/app/src/main/res/mipmap-anydpi-v26/ic_arrow_delete.xml" value="0.2115" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.33" />
+<<<<<<< HEAD
+        <entry key="app/src/main/res/layout/act_angel_main.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/act_antonio_main.xml" value="0.16510416666666666" />
+        <entry key="app/src/main/res/layout/act_josue_main.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/act_juan_main.xml" value="0.17239583333333333" />
+        <entry key="app/src/main/res/layout/act_manuel_calculator.xml" value="0.17239583333333333" />
+        <entry key="app/src/main/res/layout/act_manuel_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/act_pablo_main.xml" value="0.16510416666666666" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1578125" />
+=======
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+>>>>>>> 348d2c2af45ff126cd3df2f29ef6cf7e5a19994c
+>>>>>>> 91a236623cf717874b7fb84103102d53245a844c
       </map>
     </option>
   </component>
