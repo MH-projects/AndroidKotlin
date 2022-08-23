@@ -14,7 +14,7 @@
         android:theme="@style/Theme.BasicKotlin"
         tools:targetApi="31">
         <activity
-            android:name=".ActManuelCalculator"
+            android:name=".ui.manuel.activity.ActManuelCalculator"
             android:exported="false" />
         <activity
             android:name=".ui.Antonio.ActAntonioMain"
@@ -27,6 +27,9 @@
             android:exported="false" />
         <activity
             android:name=".ui.josue.ActJosueMain"
+            android:exported="false" />
+        <activity
+            android:name=".ui.juan.activity.ActJuanMain"
             android:exported="false" />
         <activity
             android:name=".ui.manuel.activity.ActManuelMain"
