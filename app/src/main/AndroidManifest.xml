@@ -17,8 +17,16 @@
             android:name=".ui.Antonio.ActAntonioMain"
             android:exported="true" />
         <activity
+<<<<<<< HEAD
             android:name=".ui.pablo.activity.ActPabloMain"
             android:exported="true" />
+=======
+            android:name=".ui.angel.ActAngelMain"
+            android:exported="false" />
+        <activity
+            android:name=".ui.josue.ActJosueMain"
+            android:exported="false" />
+>>>>>>> 038e6a56ca65853be42b889905ed8f24c706bfa3
         <activity
             android:name=".ui.manuel.activity.ActManuelMain"
             android:exported="true" >
