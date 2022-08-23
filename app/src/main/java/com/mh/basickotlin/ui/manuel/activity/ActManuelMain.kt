@@ -1,5 +1,4 @@
 package com.mh.basickotlin.ui.manuel.activity
-
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -37,7 +36,6 @@ class ActManuelMain : AppCompatActivity() {
         btnJosue.setOnClickListener(ActJosueMain::class.java)
         btnAntonio.setOnClickListener(ActAntonioMain::class.java)
     }
-
     private fun <T> Button.setOnClickListener(_class: Class<T>) {
         setOnClickListener {
             startActivity(Intent(this@ActManuelMain, _class))
