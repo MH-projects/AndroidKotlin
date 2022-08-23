@@ -3,10 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
         <entry key="..\:/workspace/AndroidKotlin/app/src/main/res/layout/act_josue_main.xml" value="0.2046875" />
         <entry key="..\:/workspace/AndroidKotlin/app/src/main/res/layout/act_juan_main.xml" value="0.264" />
         <entry key="..\:/workspace/AndroidKotlin/app/src/main/res/layout/act_manuel_main.xml" value="0.21458333333333332" />
         <entry key="..\:/workspace/AndroidKotlin/app/src/main/res/layout/activity_main.xml" value="0.21458333333333332" />
+=======
+        <entry key="..\:/trabajo/BasicKotlin/AndroidKotlin/app/src/main/res/drawable/ic_arrow_delete.xml" value="0.2115" />
+        <entry key="..\:/trabajo/BasicKotlin/AndroidKotlin/app/src/main/res/layout/act_antonio_main.xml" value="0.17074275362318841" />
+        <entry key="..\:/trabajo/BasicKotlin/AndroidKotlin/app/src/main/res/layout/act_manuel_main.xml" value="0.17074275362318841" />
+>>>>>>> cf74788075fdd4178ff4855731763617c35e6d16
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
       </map>
