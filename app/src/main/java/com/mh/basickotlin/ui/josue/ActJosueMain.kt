@@ -25,6 +25,20 @@ class ActJosueMain : AppCompatActivity() {
 
         binding.etInputedit.addTextChangedListener(object : TextWatcher {
             override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
+                var numUno = Operation().convertStringToInt(oneNumber)
+                var numDos = Operation().convertStringToInt(twoNumber)
+                if (operator == '+') {
+                    binding.tvResultado.text = Operation().suma(numUno, numDos).toString()
+                }
+                if (operator == '-') {
+                    binding.tvResultado.text = Operation().resta(numUno, numDos).toString()
+                }
+                if (operator == '*') {
+                    binding.tvResultado.text = Operation().multi(numUno, numDos).toString()
+                }
+                if (operator == '/') {
+                    binding.tvResultado.text = Operation().div(numUno, numDos).toString()
+                }
             }
 
             override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {
@@ -43,7 +57,22 @@ class ActJosueMain : AppCompatActivity() {
         binding.btnMult.setOnClickListener() { validateDigit("*") }
         binding.btnDiv.setOnClickListener() { validateDigit("/") }
         binding.btnClean.setOnClickListener() { validateDigit("C") }
-        binding.btnResult.setOnClickListener() { validateDigit("=") }
+        binding.btnResult.setOnClickListener() {
+            var numUno = Operation().convertStringToInt(oneNumber)
+            var numDos = Operation().convertStringToInt(twoNumber)
+            if (operator == '+') {
+                binding.tvResultado.text = Operation().suma(numUno, numDos).toString()
+            }
+            if (operator == '-') {
+                binding.tvResultado.text = Operation().resta(numUno, numDos).toString()
+            }
+            if (operator == '*') {
+                binding.tvResultado.text = Operation().multi(numUno, numDos).toString()
+            }
+            if (operator == '/') {
+                binding.tvResultado.text = Operation().div(numUno, numDos).toString()
+            }
+        }
     }
 
     private fun validateDigit(digit: String) {
@@ -76,14 +105,6 @@ class ActJosueMain : AppCompatActivity() {
             }
             "=" -> {
                 isOperator = true
-                if (digit == "+") {
-                    resSuma = (oneNumber.toInt() + twoNumber.toInt()).toString()
-                    binding.tvResultado.text = resSuma
-                }
-                if (digit == "-") {
-                    resRest = (oneNumber.toInt() - twoNumber.toInt()).toString()
-                    binding.tvResultado.text = resRest
-                }
             }
             else -> {
                 if (isOperator) {
