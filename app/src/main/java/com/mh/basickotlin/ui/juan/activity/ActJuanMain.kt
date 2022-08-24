@@ -37,12 +37,6 @@ class ActJuanMain : AppCompatActivity() {
     }
 
     private fun validateCaracter(caracter: Char) {
-        if (aux.length < 3) {
-            cant1 = aux
-        } else {
-            cant2 = aux
-        }
-
         when (caracter) {
             '+' -> {
                 operation = '+'
@@ -60,65 +54,40 @@ class ActJuanMain : AppCompatActivity() {
                 operation = '/'
                 aux = ""
             }
-            '0' -> {
-                aux += caracter
-            }
-            '1' -> {
-                aux += caracter
-            }
-            '2' -> {
-                aux += caracter
-            }
-            '3' -> {
-                aux += caracter
-            }
-            '4' -> {
-                aux += caracter
-            }
-            '5' -> {
-                aux += caracter
-            }
-            '6' -> {
-                aux += caracter
-            }
-            '7' -> {
-                aux += caracter
-            }
-            '8' -> {
-                aux += caracter
-            }
-            '9' -> {
-                aux += caracter
-            }
-            'C' -> {
+            'c' -> {
                 cant1 = ""
                 cant2 = ""
+                aux = ""
             }
-            'r' -> {}
             '=' -> {
                 var auxc1 = cant1.toInt()
                 var auxc2 = cant2.toInt()
                 when (operation) {
                     '+' -> {
                         res = auxc1 + auxc2
-                        binding.tvResult.text = "$res"
                     }
                     '-' -> {
                         res = auxc1 - auxc2
-                        binding.tvResult.text = "$res"
                     }
                     'x' -> {
                         res = auxc1 * auxc2
-                        binding.tvResult.text = "$res"
                     }
                     '/' -> {
                         res = auxc1 / auxc2
-                        binding.tvResult.text = "$res"
                     }
-                    else -> {}
+                    // else -> {}
+                }
+                binding.tvResult.text = "$res"
+                println("************************************$res")
+            }
+            else -> {
+                aux += caracter
+                if (aux.length < 3) {
+                    cant1 = aux
+                } else {
+                    cant2 = aux
                 }
             }
-            else -> {}
         }
         binding.edInput.setText("$cant1 $operation $cant2")
     }
