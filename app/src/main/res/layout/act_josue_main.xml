@@ -8,12 +8,15 @@
     tools:context=".ui.josue.ActJosueMain">
 
     <EditText
+        android:focusable="false"
+        android:clickable="false"
+        android:cursorVisible="false"
         android:padding="15dp"
         android:id="@+id/etInputedit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
