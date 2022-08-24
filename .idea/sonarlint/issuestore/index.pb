@@ -1,6 +1,4 @@
 
-g
-7app/src/test/java/com/mh/basickotlin/ExampleUnitTest.kt,4/4/446ff45ddb3c0f54ef8db60be60c3ff911992d4c
 v
 Fapp/src/androidTest/java/com/mh/basickotlin/ExampleInstrumentedTest.kt,1/7/17a490eee0e20410db9d46aa82914b815142a8e6
 @

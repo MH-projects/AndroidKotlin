@@ -11,12 +11,14 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.mh.basickotlin.R
 import com.mh.basickotlin.databinding.ActPabloMainBinding
+import com.mh.basickotlin.ui.pablo.CalculatorPablo
 
 class ActPabloMain : AppCompatActivity() {
     private lateinit var binding: ActPabloMainBinding
     private var numberOne = ""
     private var numberTwo = ""
     private var specialCharacter = ""
+    private val calculator = CalculatorPablo()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActPabloMainBinding.inflate(layoutInflater)
@@ -28,18 +30,21 @@ class ActPabloMain : AppCompatActivity() {
         }
 
         binding.etInput.addTextChangedListener(object : TextWatcher {
-            override fun afterTextChanged(s: Editable) {
+            override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
                 if (binding.cbAutoResult.isChecked) {
-                    binding.tvResult.text = numberOne
+                    var x = calculator.convertStringToInt(numberOne)
+                    var y = calculator.convertStringToInt(numberTwo)
+                    binding.tvResult.text = "${calculator.plus(x, y)}"
+                    doOperation(x, y)
                 }
             }
 
-            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-                TODO("Not yet implemented")
+            override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {
+                // WIP
             }
 
-            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-                TODO("Not yet implemented")
+            override fun afterTextChanged(s: Editable) {
+                // WIP
             }
         })
         binding.btnNumber0.setOnClickListener(getString(R.string.zero_number))
@@ -58,7 +63,11 @@ class ActPabloMain : AppCompatActivity() {
         binding.btnDivision.setOnClickListener(getString(R.string.operation_division))
         binding.btnClear.setOnClickListener(getString(R.string.clear))
         binding.btnErase.setOnClickListener(getString(R.string.delete))
-        binding.btnEquals.setOnClickListener(getString(R.string.equals))
+        binding.btnEquals.setOnClickListener {
+            var x = calculator.convertStringToInt(numberOne)
+            var y = calculator.convertStringToInt(numberTwo)
+            doOperation(x, y)
+        }
     }
 
     @SuppressLint("SetTextI18n")
@@ -85,27 +94,6 @@ class ActPabloMain : AppCompatActivity() {
                 "D" -> {
                 }
                 "=" -> {
-                    if (numberOne.isNotEmpty() && specialCharacter.isNotEmpty() && numberTwo.isNotEmpty()) {
-                        var operation = 0
-                        when (specialCharacter) {
-                            "+" -> {
-                                operation = numberOne.toInt() + numberTwo.toInt()
-                                binding.tvResult.text = operation.toString()
-                            }
-                            "-" -> {
-                                operation = numberOne.toInt() - numberTwo.toInt()
-                                binding.tvResult.text = operation.toString()
-                            }
-                            "x" -> {
-                                operation = numberOne.toInt() * numberTwo.toInt()
-                                binding.tvResult.text = operation.toString()
-                            }
-                            "/" -> {
-                                operation = numberOne.toInt() / numberTwo.toInt()
-                                binding.tvResult.text = operation.toString()
-                            }
-                        }
-                    }
                 }
                 else -> {
                     if (specialCharacter.isEmpty()) {
@@ -128,5 +116,24 @@ class ActPabloMain : AppCompatActivity() {
             text,
             Toast.LENGTH_SHORT
         ).show()
+    }
+
+    private fun doOperation(x: Int, y: Int) {
+        if (numberOne.isNotEmpty() && specialCharacter.isNotEmpty() && numberTwo.isNotEmpty()) {
+            when (specialCharacter) {
+                "+" -> {
+                    binding.tvResult.text = "${calculator.plus(x, y)}"
+                }
+                "-" -> {
+                    binding.tvResult.text = "${calculator.minus(x, y)}"
+                }
+                "x" -> {
+                    binding.tvResult.text = "${calculator.times(x, y)}"
+                }
+                "/" -> {
+                    binding.tvResult.text = "${calculator.div(x, y)}"
+                }
+            }
+        }
     }
 }
