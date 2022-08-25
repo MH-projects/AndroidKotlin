@@ -61,6 +61,8 @@
     <string name="delete">D</string>
     <string name="clear">C</string>
 
+    <string name="auto_result">Auto-Result</string>
+
     <!--Basic math operations-->
     <string name="operation_addition">+</string>
     <string name="operation_subtraction">-</string>
