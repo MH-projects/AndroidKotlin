@@ -12,6 +12,6 @@ class Calculator {
         return val1 * val2
     }
     fun div(val1: Int, val2: Int): Int {
-        return val1 / val2
+        return val1.div(val2)
     }
 }

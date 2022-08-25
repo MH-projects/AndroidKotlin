@@ -54,6 +54,36 @@ class ActJuanMain : AppCompatActivity() {
             }
             binding.tvResult.text = "$res"
         }
+        /*
+        binding.edInput.addTextChangedListener(object : TextWatcher {
+            override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
+                var auxc1 = cant1.toInt()
+                var auxc2 = cant2.toInt()
+                when (operation) {
+                    '+' -> {
+                        res = calculator.suma(auxc1, auxc2)
+                    }
+                    '-' -> {
+                        res = calculator.resta(auxc1, auxc2)
+                    }
+                    'x' -> {
+                        res = calculator.mult(auxc1, auxc2)
+                    }
+                    '/' -> {
+                        res = calculator.div(auxc1, auxc2)
+                    }
+                }
+                binding.tvResult.text = "$res"
+            }
+
+            override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {
+                // WIP
+            }
+
+            override fun afterTextChanged(s: Editable) {
+                // WIP
+            }
+        })*/
     }
 
     private fun validateCaracter(caracter: Char) {
@@ -78,17 +108,17 @@ class ActJuanMain : AppCompatActivity() {
                 cant1 = ""
                 cant2 = ""
                 aux = ""
+                binding.edInput.setText("")
             }
-
             else -> {
                 if (operation != ' ') {
                     if (cant1.length < 3) {
                         cant1 += caracter
                         binding.edInput.setText("$cant1")
                     } else {
-                        binding.edInput.setText("$cant1 $operation ")
                     }
                 } else {
+                    binding.edInput.setText("$cant1 $operation ")
                     if (cant2.length < 3) {
                         cant2 += caracter
                         binding.edInput.setText("$cant1 $operation $cant2")
