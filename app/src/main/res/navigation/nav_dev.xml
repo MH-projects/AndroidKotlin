@@ -13,10 +13,27 @@
         <action
             android:id="@+id/toFrgManuelCalculator"
             app:destination="@id/frgManuelCalculator" />
+        <action
+            android:id="@+id/toFrgAntonioContent"
+            app:destination="@id/frgAntonioContent" />
     </fragment>
 
     <fragment
         android:id="@+id/frgManuelCalculator"
         android:name="com.mh.basickotlin.ui.manuel.fragment.FrgManuelCalculator"
         android:label="FrgManuelCalculator" />
+    <fragment
+        android:id="@+id/frgAntonioContent"
+        android:name="com.mh.basickotlin.ui.Antonio.fragment.FrgAntonioContent"
+        android:label="frg_antonio_content"
+        tools:layout="@layout/frg_antonio_content" >
+        <action
+            android:id="@+id/actionToFrgAntonioCalculadora"
+            app:destination="@id/frgAntonioCalculator" />
+    </fragment>
+    <fragment
+        android:id="@+id/frgAntonioCalculator"
+        android:name="com.mh.basickotlin.ui.Antonio.fragment.FrgAntonioCalculator"
+        android:label="frg_antonio_calculator"
+        tools:layout="@layout/frg_antonio_calculator" />
 </navigation>
