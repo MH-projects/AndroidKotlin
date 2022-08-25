@@ -5,15 +5,22 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.mh.basickotlin.R
+import com.mh.basickotlin.databinding.FrgManuelCalculatorBinding
 
 class FrgManuelCalculator : Fragment() {
+
+    private lateinit var binding: FrgManuelCalculatorBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.frg_manuel_calculator, container, false)
+    ): View {
+        binding = FrgManuelCalculatorBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
     }
 }
