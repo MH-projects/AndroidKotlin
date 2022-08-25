@@ -11,7 +11,7 @@ class ActJuanMain : AppCompatActivity() {
     private var operation = ' '
     private var aux = ""
     private var res = 0
-
+    private var calculator = Calculator()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActJuanMainBinding.inflate(layoutInflater)
@@ -33,7 +33,27 @@ class ActJuanMain : AppCompatActivity() {
         binding.btndiv.setOnClickListener() { validateCaracter('/') }
         binding.btnclear.setOnClickListener() { validateCaracter('c') }
         binding.btndelete.setOnClickListener() { validateCaracter('r') }
-        binding.btnres.setOnClickListener() { validateCaracter('s') }
+        binding.btnres.setOnClickListener() { validateCaracter('=') }
+
+        binding.btnres.setOnClickListener() {
+            var auxc1 = cant1.toInt()
+            var auxc2 = cant2.toInt()
+            when (operation) {
+                '+' -> {
+                    res = calculator.suma(auxc1, auxc2)
+                }
+                '-' -> {
+                    res = calculator.resta(auxc1, auxc2)
+                }
+                'x' -> {
+                    res = calculator.mult(auxc1, auxc2)
+                }
+                '/' -> {
+                    res = calculator.div(auxc1, auxc2)
+                }
+            }
+            binding.tvResult.text = "$res"
+        }
     }
 
     private fun validateCaracter(caracter: Char) {
@@ -59,36 +79,23 @@ class ActJuanMain : AppCompatActivity() {
                 cant2 = ""
                 aux = ""
             }
-            '=' -> {
-                var auxc1 = cant1.toInt()
-                var auxc2 = cant2.toInt()
-                when (operation) {
-                    '+' -> {
-                        res = auxc1 + auxc2
-                    }
-                    '-' -> {
-                        res = auxc1 - auxc2
-                    }
-                    'x' -> {
-                        res = auxc1 * auxc2
-                    }
-                    '/' -> {
-                        res = auxc1 / auxc2
-                    }
-                    // else -> {}
-                }
-                binding.tvResult.text = "$res"
-                println("************************************$res")
-            }
+
             else -> {
-                aux += caracter
-                if (aux.length < 3) {
-                    cant1 = aux
+                if (operation != ' ') {
+                    if (cant1.length < 3) {
+                        cant1 += caracter
+                        binding.edInput.setText("$cant1")
+                    } else {
+                        binding.edInput.setText("$cant1 $operation ")
+                    }
                 } else {
-                    cant2 = aux
+                    if (cant2.length < 3) {
+                        cant2 += caracter
+                        binding.edInput.setText("$cant1 $operation $cant2")
+                    } else {
+                    }
                 }
             }
         }
-        binding.edInput.setText("$cant1 $operation $cant2")
     }
 }
