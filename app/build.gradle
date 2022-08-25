@@ -1,7 +1,12 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+<<<<<<< HEAD
 
+=======
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+>>>>>>> 239e0021b06427cde7fc6837896b1263fab9c68d
 }
 
 android {
@@ -30,9 +35,14 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+<<<<<<< HEAD
 
     buildFeatures {
         viewBinding = true
+=======
+    buildFeatures{
+        viewBinding=true
+>>>>>>> 239e0021b06427cde7fc6837896b1263fab9c68d
     }
 }
 

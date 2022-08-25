@@ -7,13 +7,26 @@
     android:background="@color/background"
     tools:context=".ui.pablo.activity.ActPabloMain">
 
+    <CheckBox
+        android:id="@+id/cbAutoResult"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/auto_result"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
     <EditText
         android:id="@+id/etInput"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
         android:importantForAutofill="no"
         android:inputType="text"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbAutoResult"
         tools:ignore="LabelFor" />
 
     <TextView
@@ -102,7 +115,8 @@
                 android:id="@+id/btnErase"
                 style="@style/Theme_BackgroundButton"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/delete" />
         </LinearLayout>
 
         <LinearLayout
@@ -178,9 +192,10 @@
         </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:textSize="34sp"
+            android:id="@+id/btnEquals"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/equals" />
+            android:text="@string/equals"
+            android:textSize="34sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
