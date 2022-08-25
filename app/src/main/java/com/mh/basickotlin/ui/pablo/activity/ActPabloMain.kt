@@ -32,8 +32,8 @@ class ActPabloMain : AppCompatActivity() {
         binding.etInput.addTextChangedListener(object : TextWatcher {
             override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
                 if (binding.cbAutoResult.isChecked) {
-                    var x = calculator.convertStringToInt(numberOne)
-                    var y = calculator.convertStringToInt(numberTwo)
+                    val x = calculator.convertStringToInt(numberOne)
+                    val y = calculator.convertStringToInt(numberTwo)
                     binding.tvResult.text = "${calculator.plus(x, y)}"
                     doOperation(x, y)
                 }
@@ -64,8 +64,8 @@ class ActPabloMain : AppCompatActivity() {
         binding.btnClear.setOnClickListener(getString(R.string.clear))
         binding.btnErase.setOnClickListener(getString(R.string.delete))
         binding.btnEquals.setOnClickListener {
-            var x = calculator.convertStringToInt(numberOne)
-            var y = calculator.convertStringToInt(numberTwo)
+            val x = calculator.convertStringToInt(numberOne)
+            val y = calculator.convertStringToInt(numberTwo)
             doOperation(x, y)
         }
     }
@@ -75,11 +75,10 @@ class ActPabloMain : AppCompatActivity() {
         setOnClickListener {
             when (number) {
                 "+", "/", "-", "x" -> {
-                    if (numberOne.isEmpty()) Toast.makeText(
-                        context,
+                    if (numberOne.isEmpty()) showToast(
                         "No se pueden ingresar operaciones al principio",
-                        Toast.LENGTH_SHORT
-                    ).show()
+                        context
+                    )
                     else {
                         specialCharacter = number
                         binding.etInput.setText(numberOne + specialCharacter)
@@ -90,10 +89,10 @@ class ActPabloMain : AppCompatActivity() {
                     numberTwo = ""
                     specialCharacter = ""
                     binding.etInput.setText("")
+                    binding.tvResult.text = ""
                 }
                 "D" -> {
-                }
-                "=" -> {
+                    deleteCharacter()
                 }
                 else -> {
                     if (specialCharacter.isEmpty()) {
@@ -118,6 +117,18 @@ class ActPabloMain : AppCompatActivity() {
         ).show()
     }
 
+    @SuppressLint("SetTextI18n")
+    private fun deleteCharacter() {
+        if (numberOne.isNotEmpty() && specialCharacter.isEmpty() && numberTwo.isEmpty()) {
+            numberOne = removeLastChars(numberOne, 1)
+        } else if (numberOne.isNotEmpty() && specialCharacter.isNotEmpty() && numberTwo.isEmpty()) {
+            specialCharacter = removeLastChars(specialCharacter, 1)
+        } else if (numberOne.isNotEmpty() && specialCharacter.isNotEmpty() && numberTwo.isNotEmpty()) {
+            numberTwo = removeLastChars(numberTwo, 1)
+        }
+        binding.etInput.setText(numberOne + specialCharacter + numberTwo)
+    }
+
     private fun doOperation(x: Int, y: Int) {
         if (numberOne.isNotEmpty() && specialCharacter.isNotEmpty() && numberTwo.isNotEmpty()) {
             when (specialCharacter) {
@@ -131,9 +142,16 @@ class ActPabloMain : AppCompatActivity() {
                     binding.tvResult.text = "${calculator.times(x, y)}"
                 }
                 "/" -> {
-                    binding.tvResult.text = "${calculator.div(x, y)}"
+                    binding.tvResult.text =
+                        if (calculator.div(x, y) == -1) "Error" else "${calculator.div(x, y)}"
                 }
             }
         }
+    }
+
+    private fun removeLastChars(str: String, n: Int): String {
+        return if (str.length < n || str.isEmpty()) {
+            str
+        } else str.substring(0, str.length - n)
     }
 }
