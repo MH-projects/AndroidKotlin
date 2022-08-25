@@ -9,5 +9,5 @@ class CalculatorPablo {
     fun plus(x: Int, y: Int): Int = x.plus(y)
     fun minus(x: Int, y: Int): Int = x.minus(y)
     fun times(x: Int, y: Int): Int = x.times(y)
-    fun div(x: Int, y: Int): Int = x.div(y)
+    fun div(x: Int, y: Int): Int = if (y == 0) -1 else x.div(y)
 }
