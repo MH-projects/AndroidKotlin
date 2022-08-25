@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_dev"
+    app:startDestination="@id/frgDevs">
+
+    <fragment
+        android:id="@+id/frgDevs"
+        android:name="com.mh.basickotlin.ui.manuel.fragment.FrgDevs"
+        android:label="FrgDevs"
+        tools:layout="@layout/frg_devs">
+        <action
+            android:id="@+id/toFrgManuelCalculator"
+            app:destination="@id/frgManuelCalculator" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/frgManuelCalculator"
+        android:name="com.mh.basickotlin.ui.manuel.fragment.FrgManuelCalculator"
+        android:label="FrgManuelCalculator" />
+</navigation>

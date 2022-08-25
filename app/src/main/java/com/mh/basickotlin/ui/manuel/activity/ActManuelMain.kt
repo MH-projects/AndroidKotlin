@@ -23,19 +23,19 @@ class ActManuelMain : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.act_manuel_main)
 
-        btnAngel = findViewById(R.id.btnAngel)
+        /*btnAngel = findViewById(R.id.btnAngel)
         btnManuel = findViewById(R.id.btnManuel)
         btnPablo = findViewById(R.id.btnPablo)
         btnAntonio = findViewById(R.id.btnAntonio)
         btnJuan = findViewById(R.id.btnJuan)
         btnJosue = findViewById(R.id.btnJosue)
 
-        btnManuel.setOnClickListener(ActManuelCalculator::class.java)
+        btnManuel.setOnClickListener(ActManuelContent::class.java)
         btnAngel.setOnClickListener(ActAngelMain::class.java)
         btnPablo.setOnClickListener(ActPabloMain::class.java)
         btnJuan.setOnClickListener(ActJuanMain::class.java)
         btnJosue.setOnClickListener(ActJosueMain::class.java)
-        btnAntonio.setOnClickListener(ActAntonioMain::class.java)
+        btnAntonio.setOnClickListener(ActAntonioMain::class.java) */
     }
     private fun <T> Button.setOnClickListener(_class: Class<T>) {
         setOnClickListener {

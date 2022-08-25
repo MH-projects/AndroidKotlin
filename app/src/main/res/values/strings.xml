@@ -1,6 +1,9 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">BasicKotlin</string>
 
+    <!-- MH's strings-->
+    <string name="mh_calculator">Calculator</string>
+
     <string name="name">Name:</string>
     <!-- Number -->
     <string name="uno">1</string>
@@ -81,6 +84,8 @@
     <string name="number_eight">8</string>
     <string name="number_nine">9</string>
     <string name="number_ten">10</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
