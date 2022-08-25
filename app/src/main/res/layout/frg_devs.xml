@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="14dp"
+    tools:context=".ui.manuel.activity.ActManuelMain">
+
+    <Button
+        android:id="@+id/btnManuel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name_manuel" />
+
+
+    <Button
+        android:id="@+id/btnJosue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name_josue" />
+
+    <Button
+        android:id="@+id/btnJuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name_juan" />
+
+    <Button
+        android:id="@+id/btnAngel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name_angel" />
+
+    <Button
+        android:id="@+id/btnAntonio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name_antonio" />
+
+    <Button
+        android:id="@+id/btnPablo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name_pablo" />
+
+</LinearLayout>

@@ -1,12 +1,6 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-<<<<<<< HEAD
-
-=======
-    id 'kotlin-android-extensions'
-    id 'kotlin-kapt'
->>>>>>> 239e0021b06427cde7fc6837896b1263fab9c68d
 }
 
 android {
@@ -35,14 +29,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-<<<<<<< HEAD
 
     buildFeatures {
         viewBinding = true
-=======
-    buildFeatures{
-        viewBinding=true
->>>>>>> 239e0021b06427cde7fc6837896b1263fab9c68d
     }
 }
 
@@ -55,4 +44,8 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    //Navigation
+    implementation "androidx.navigation:navigation-ui-ktx:2.5.1"
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.1'
 }
