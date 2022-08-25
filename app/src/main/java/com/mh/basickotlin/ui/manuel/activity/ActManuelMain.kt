@@ -4,11 +4,6 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.mh.basickotlin.R
-import com.mh.basickotlin.ui.Antonio.ActAntonioMain
-import com.mh.basickotlin.ui.angel.ActAngelMain
-import com.mh.basickotlin.ui.josue.ActJosueMain
-import com.mh.basickotlin.ui.juan.activity.ActJuanMain
-import com.mh.basickotlin.ui.pablo.activity.ActPabloMain
 
 class ActManuelMain : AppCompatActivity() {
 
