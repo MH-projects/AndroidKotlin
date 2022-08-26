@@ -28,5 +28,8 @@ class FrgDevs : Fragment() {
         binding.btnManuel.setOnClickListener {
             findNavController().navigate(R.id.toFrgManuelCalculator)
         }
+        view.findViewById<Button>(R.id.btnAngel).setOnClickListener {
+            findNavController().navigate(R.id.frgAngelMain)
+        }
     }
 }

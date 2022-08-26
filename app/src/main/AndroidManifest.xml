@@ -35,6 +35,9 @@
             android:name=".ui.juan.activity.ActJuanMain"
             android:exported="false" />
         <activity
+            android:name=".ui.angel.frgAngelCalculator"
+            android:exported="false" />
+        <activity
             android:name=".ui.manuel.activity.ActManuelMain"
             android:exported="true">
             <intent-filter>
