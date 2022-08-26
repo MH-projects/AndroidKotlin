@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Antonio.fragment.FrgAntonioContent">
+    tools:context=".ui.antonio.fragment.FrgAntonioContent">
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnFrgAntonioCalculator"
