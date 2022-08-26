@@ -10,45 +10,95 @@
         android:name="com.mh.basickotlin.ui.manuel.fragment.FrgDevs"
         android:label="FrgDevs"
         tools:layout="@layout/frg_devs">
+
         <action
             android:id="@+id/toFrgManuelCalculator"
             app:destination="@id/frgManuelCalculator" />
+
         <action
-            android:id="@+id/tofrgAngelMain"
+            android:id="@+id/toFrgAngelMain"
             app:destination="@id/frgAngelMain" />
+
         <action
             android:id="@+id/toFrgPabloContent"
             app:destination="@id/frgPabloContent" />
+
+        <action
+            android:id="@+id/toFrgAntonioContent"
+            app:destination="@id/frgAntonioContent" />
+
+        <action
+            android:id="@+id/toFrgJosueContent"
+            app:destination="@id/frgJosueContent" />
     </fragment>
+
+    <!-- Content -->
+    <fragment
+        android:id="@+id/frgAngelMain"
+        android:name="com.mh.basickotlin.ui.angel.frgAngelMain"
+        android:label="frg_angel_main"
+        tools:layout="@layout/frg_angel_main">
+        <action
+            android:id="@+id/toFrgAngelCalculator"
+            app:destination="@id/frgAngelCalculator" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/frgPabloContent"
+        android:name="com.mh.basickotlin.ui.pablo.fragment.FrgPabloContent"
+        android:label="frg_pablo_content"
+        tools:layout="@layout/frg_pablo_content">
+        <action
+            android:id="@+id/toFrgPabloCalculator"
+            app:destination="@id/frgPabloCalculator" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/frgAntonioContent"
+        android:name="com.mh.basickotlin.ui.Antonio.fragment.FrgAntonioContent"
+        android:label="frg_antonio_content"
+        tools:layout="@layout/frg_antonio_content">
+        <action
+            android:id="@+id/toFrgAntonioCalculadora"
+            app:destination="@id/frgAntonioCalculator" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/frgJosueContent"
+        android:name="com.mh.basickotlin.ui.josue.FrgJosueContent"
+        android:label="frg_josue_content"
+        tools:layout="@layout/frg_josue_content">
+        <action
+            android:id="@+id/tofrgJosueCalculator"
+            app:destination="@id/frgJosueCalculator" />
+    </fragment>
+
+    <!-- Calculators -->
 
     <fragment
         android:id="@+id/frgManuelCalculator"
         android:name="com.mh.basickotlin.ui.manuel.fragment.FrgManuelCalculator"
         android:label="FrgManuelCalculator" />
+
     <fragment
-        android:id="@+id/frgAngelMain"
-        android:name="com.mh.basickotlin.ui.angel.frgAngelMain"
-        android:label="frg_angel_main"
-        tools:layout="@layout/frg_angel_main" >
-        <action
-            android:id="@+id/action_frgAngelMain_to_frgAngelCalculator2"
-            app:destination="@id/frgAngelCalculator" />
-    </fragment>
-    <activity
         android:id="@+id/frgAngelCalculator"
-        android:name="com.mh.basickotlin.ui.angel.frgAngelCalculator"
+        android:name="com.mh.basickotlin.ui.angel.FrgAngelCalculator"
         android:label="frgAngelCalculator" />
-    <fragment
-        android:id="@+id/frgPabloContent"
-        android:name="com.mh.basickotlin.ui.pablo.fragment.FrgPabloContent"
-        android:label="frg_pablo_content"
-        tools:layout="@layout/frg_pablo_content" >
-        <action
-            android:id="@+id/toFrgPabloCalculator"
-            app:destination="@id/frgPabloCalculator" />
-    </fragment>
+
     <fragment
         android:id="@+id/frgPabloCalculator"
         android:name="com.mh.basickotlin.ui.pablo.fragment.FrgPabloCalculator"
         android:label="FrgPabloCalculator" />
+
+    <fragment
+        android:id="@+id/frgAntonioCalculator"
+        android:name="com.mh.basickotlin.ui.Antonio.fragment.FrgAntonioCalculator"
+        android:label="frg_antonio_calculator"
+        tools:layout="@layout/frg_antonio_calculator" />
+
+    <fragment
+        android:id="@+id/frgJosueCalculator"
+        android:name="com.mh.basickotlin.ui.josue.FrgJosueCalculator"
+        android:label="frg_josue_calculator"
+        tools:layout="@layout/frg_josue_calculator" />
 </navigation>
