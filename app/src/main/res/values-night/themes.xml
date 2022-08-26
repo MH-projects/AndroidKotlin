@@ -16,10 +16,11 @@
 
     <style name="Theme_BackgroundButton" parent="Theme_BackgroundButtonBase">
         <item name="android:textColor">@android:color/white</item>
-    </style>:X
+    </style>
+    :X
 
     <style name="Theme_Backgroundfrg">
-        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@android:color/black</item>
     </style>
 
     <style name="Theme_colorText">

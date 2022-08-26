@@ -1,6 +1,5 @@
-package com.mh.basickotlin.ui.Antonio.clasesAntonio
+package com.mh.basickotlin.ui.antonio.clasesAntonio
 
-import com.mh.basickotlin.ui.manuel.Calculator
 import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Test

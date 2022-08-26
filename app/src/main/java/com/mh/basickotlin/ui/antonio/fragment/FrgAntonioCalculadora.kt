@@ -1,4 +1,4 @@
-package com.mh.basickotlin.ui.Antonio.fragment
+package com.mh.basickotlin.ui.antonio.fragment
 
 import android.os.Bundle
 import android.text.Editable
@@ -8,10 +8,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.mh.basickotlin.R
+import android.widget.Toast
 import com.mh.basickotlin.databinding.FrgAntonioCalculadoraBinding
-import com.mh.basickotlin.databinding.FrgDevsBinding
-import com.mh.basickotlin.ui.Antonio.clasesAntonio.Calculadora
+import com.mh.basickotlin.ui.antonio.clasesAntonio.Calculadora
 
 class FrgAntonioCalculadora : Fragment() {
 
@@ -22,7 +21,7 @@ class FrgAntonioCalculadora : Fragment() {
     private var operador = ""
 
     private var isOperador = false
-    private var calculadora= Calculadora()
+    private var calculadora = Calculadora()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -45,13 +44,14 @@ class FrgAntonioCalculadora : Fragment() {
         binding.etInsertNum.addTextChangedListener(object : TextWatcher {
             override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
                 // WIP
-                if(binding.etInsertNum.text.equals("")){
+                if (binding.etInsertNum.text.equals("")) {
                     binding.etInsertNum.setText("")
+                    binding.tvResult.text = ""
 
                 }
-                if (binding.cbAutoResult.isChecked){
+                if (binding.cbAutoResult.isChecked) {
                     operacion()
-                }else{
+                } else {
 
                 }
             }
@@ -66,10 +66,10 @@ class FrgAntonioCalculadora : Fragment() {
         })
 
         binding.cbAutoResult.setOnClickListener {
-            if (binding.cbAutoResult.isChecked){
-                binding.btnIgual.visibility= View.GONE
-            }else{
-                binding.btnIgual.visibility=View.VISIBLE
+            if (binding.cbAutoResult.isChecked) {
+                binding.btnIgual.visibility = View.GONE
+            } else {
+                binding.btnIgual.visibility = View.VISIBLE
             }
         }
         binding.btnUno.setOnClickListener { checkValidDigit("1") }
@@ -91,7 +91,10 @@ class FrgAntonioCalculadora : Fragment() {
         binding.btnBorrar.setOnClickListener { checkValidDigit("R") }
 
         binding.btnIgual.setOnClickListener {
-            operacion()
+            if (secondNumber.isEmpty()) {
+                Toast.makeText(getContext(), "Necesitas un segundo digito", Toast.LENGTH_SHORT)
+                    .show()
+            }
 
 //            binding.tvResult.text = calculator.add(x, y).toString()
 //            binding.tvResult.text = "" + calculator.add(x, y)
@@ -132,17 +135,18 @@ class FrgAntonioCalculadora : Fragment() {
                     firstNumber = removeLastNchars(firstNumber, 1)
                     binding.tvResult.setText("")
 
-                }else if (firstNumber.isNotEmpty() && operador.isNotEmpty() && secondNumber.isEmpty()){
-                    operador=removeLastNchars(operador,1)
+                } else if (firstNumber.isNotEmpty() && operador.isNotEmpty() && secondNumber.isEmpty()) {
+                    operador = removeLastNchars(operador, 1)
                     binding.tvResult.setText("")
 
-                }else if(firstNumber.isNotEmpty() && operador.isNotEmpty() && secondNumber.isNotEmpty()){
-                    secondNumber=removeLastNchars(secondNumber,1)
+                } else if (firstNumber.isNotEmpty() && operador.isNotEmpty() && secondNumber.isNotEmpty()) {
+                    secondNumber = removeLastNchars(secondNumber, 1)
                     binding.tvResult.setText("")
 
-                }else if(firstNumber.isEmpty() && operador.isEmpty() && secondNumber.isEmpty()){
+                } else if (firstNumber.isEmpty() && operador.isEmpty() && secondNumber.isEmpty()) {
+                    binding.tvResult.setText("")
                 }
-                binding.etInsertNum.setText(firstNumber+operador+secondNumber)
+                binding.etInsertNum.setText(firstNumber + operador + secondNumber)
                 // Main
             }
             "=" -> {
@@ -174,33 +178,38 @@ class FrgAntonioCalculadora : Fragment() {
     }
 
     private fun removeLastNchars(str: String, n: Int): String {
-        return if(str.length < n || str.isEmpty()){
+        return if (str.length < n || str.isEmpty()) {
             str
-        }else{
+        } else {
             str.substring(0, str.length - n)
         }
 
     }
 
-    private fun operacion(){
-        if(operador=="+"){
+    private fun operacion() {
+        if (operador == "+") {
             var x = calculadora.convertirStringAInt(firstNumber)
             var y = calculadora.convertirStringAInt(secondNumber)
             binding.tvResult.text = "${calculadora.suma(x, y)}"
-        }else if(operador=="-"){
+        } else if (operador == "-") {
             var x = calculadora.convertirStringAInt(firstNumber)
             var y = calculadora.convertirStringAInt(secondNumber)
             binding.tvResult.text = "${calculadora.resta(x, y)}"
 
-        }else if (operador=="*"){
+        } else if (operador == "*") {
             var x = calculadora.convertirStringAInt(firstNumber)
             var y = calculadora.convertirStringAInt(secondNumber)
             binding.tvResult.text = "${calculadora.multi(x, y)}"
 
-        }else if (operador=="/"){
+        } else if (operador == "/") {
             var x = calculadora.convertirStringAInt(firstNumber)
             var y = calculadora.convertirStringAInt(secondNumber)
-            binding.tvResult.text = "${calculadora.div(x, y)}"
+            if (calculadora.div(x, y) == 0) {
+                Toast.makeText(getContext(), "Necesitas un segundo digito", Toast.LENGTH_SHORT)
+                    .show()
+            } else {
+                binding.tvResult.text = "${calculadora.div(x, y)}"
+            }
 
 
         }

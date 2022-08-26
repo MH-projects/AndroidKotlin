@@ -20,7 +20,7 @@
             android:name=".ui.manuel.activity.ActManuelCalculator"
             android:exported="false" />
         <activity
-            android:name=".ui.Antonio.ActAntonioMain"
+            android:name=".ui.antonio.ActAntonioMain"
             android:exported="true" />
         <activity
             android:name=".ui.pablo.activity.ActPabloMain"
