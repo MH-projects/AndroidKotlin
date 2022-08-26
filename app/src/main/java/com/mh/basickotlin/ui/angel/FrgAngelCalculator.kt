@@ -3,24 +3,35 @@ package com.mh.basickotlin.ui.angel
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.view.LayoutInflater
 import android.view.View
+import android.view.View.inflate
+import android.view.ViewGroup
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
-import com.mh.basickotlin.databinding.ActAngelMainBinding
+import androidx.fragment.app.Fragment
+import com.mh.basickotlin.databinding.FrgAngelCalculatorBinding
 
-class frgAngelCalculator : AppCompatActivity() {
-    private lateinit var binding: ActAngelMainBinding
+class FrgAngelCalculator : Fragment() {
+
+    private lateinit var binding: FrgAngelCalculatorBinding
     private var quanty1 = ""
     private var quanty2 = ""
     private var operator = ""
     private var isOperator = false
     private var operationComplete = String
-    private var Operators = com.mh.basickotlin.ui.angel.Operators()
+    private var Operators = Operators()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        binding = ActAngelMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        binding = FrgAngelCalculatorBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
         // Enlaces
         binding.btnNumCero.setOnClickListener() { validateDigit("0") }
@@ -54,19 +65,27 @@ class frgAngelCalculator : AppCompatActivity() {
                     val a = Operators.conString(quanty1)
                     val b = Operators.conString(quanty2)
                     if (operator == "+") {
-                        binding.tvResultNumber.text = "${Operators.plus(a, b)}"
+                        binding.tvResultNumber.text =
+                            "${Operators.plus(a, b)}"
                     }
                     if (operator == "-") {
-                        binding.tvResultNumber.text = "${Operators.less(a, b)}"
+                        binding.tvResultNumber.text =
+                            "${Operators.less(a, b)}"
                     }
                     if (operator == "*") {
-                        binding.tvResultNumber.text = "${Operators.by(a, b)}"
+                        binding.tvResultNumber.text =
+                            "${Operators.by(a, b)}"
                     }
                     if (operator == "/") {
                         if (quanty1.toInt() == 0 || quanty2.toInt() == 0 || quanty1.isEmpty() || quanty2.isEmpty()) {
-                            Toast.makeText(this@frgAngelCalculator, "No puedes ocupar ceros en la division", Toast.LENGTH_LONG).show()
+                            Toast.makeText(
+                                requireContext(),
+                                "No puedes ocupar ceros en la division",
+                                Toast.LENGTH_LONG
+                            ).show()
                         } else {
-                            binding.tvResultNumber.text = "${Operators.split(a, b)}"
+                            binding.tvResultNumber.text =
+                                "${Operators.split(a, b)}"
                         }
                     }
                 }
@@ -95,7 +114,11 @@ class frgAngelCalculator : AppCompatActivity() {
             }
             if (operator == "/") {
                 if (quanty1.toInt() == 0 || quanty2.toInt() == 0 || quanty1.isEmpty() || quanty2.isEmpty()) {
-                    Toast.makeText(this@frgAngelCalculator, "No puedes ocupar ceros en la division", Toast.LENGTH_LONG).show()
+                    Toast.makeText(
+                        requireContext(),
+                        "No puedes ocupar ceros en la division",
+                        Toast.LENGTH_LONG
+                    ).show()
                 } else {
                     binding.tvResultNumber.text = "${Operators.split(a, b)}"
                 }

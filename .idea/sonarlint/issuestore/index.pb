@@ -10,8 +10,6 @@ j
 @
 app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 ~
-Napp/src/main/java/com/mh/basickotlin/ui/manuel/fragment/FrgManuelCalculator.kt,d\b\db641d9d7343c6087a255da71a18f3b5bc895888
-~
 Napp/src/main/java/com/mh/basickotlin/ui/manuel/activity/ActManuelCalculator.kt,e\f\ef859be3c321d0f5d82ceb432a09d0fa3789da5f
 {
 Kapp/src/main/java/com/mh/basickotlin/ui/manuel/activity/ActManuelContent.kt,a\1\a1bf9f5de98512ea3001a9f966b250e00115eea2
