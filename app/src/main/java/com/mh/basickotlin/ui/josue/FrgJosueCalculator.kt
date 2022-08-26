@@ -3,24 +3,31 @@ package com.mh.basickotlin.ui.josue
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.view.LayoutInflater
 import android.view.View
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.widget.addTextChangedListener
-import com.mh.basickotlin.databinding.ActJosueMainBinding
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import com.mh.basickotlin.databinding.FrgJosueCalculatorBinding
 
-class ActJosueMain : AppCompatActivity() {
+class FrgJosueCalculator : Fragment() {
 
-    private lateinit var binding: ActJosueMainBinding
+    private lateinit var binding: FrgJosueCalculatorBinding
     private var oneNumber = ""
     private var twoNumber = ""
     private var operator = ""
     private var isOperator = false
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        binding = ActJosueMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        binding = FrgJosueCalculatorBinding.inflate(inflater, container, false)
+        return binding.root
+    }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         binding.swAutoResult.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 binding.btnResult.visibility = View.INVISIBLE
@@ -171,3 +178,4 @@ class ActJosueMain : AppCompatActivity() {
         binding.etInputedit.setText(oneNumber + operator + twoNumber)
     }
 }
+

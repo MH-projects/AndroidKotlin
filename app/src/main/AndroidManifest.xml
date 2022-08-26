@@ -14,7 +14,7 @@
         android:theme="@style/Theme.BasicKotlin"
         tools:targetApi="31">
         <activity
-            android:name=".ActManuelContent"
+            android:name=".ui.manuel.activity.ActManuelContent"
             android:exported="false" />
         <activity
             android:name=".ui.manuel.activity.ActManuelCalculator"
@@ -35,7 +35,7 @@
             android:name=".ui.juan.activity.ActJuanMain"
             android:exported="false" />
         <activity
-            android:name=".ui.angel.frgAngelCalculator"
+            android:name=".ui.angel.FrgAngelCalculator"
             android:exported="false" />
         <activity
             android:name=".ui.manuel.activity.ActManuelMain"

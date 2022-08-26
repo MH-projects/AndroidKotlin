@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.pablo.activity.ActPabloMain">
+
+    <CheckBox
+        android:id="@+id/cbAutoResult"
+        style="@style/Theme_colorText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/auto_result"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etInput"
+        style="@style/Theme_colorText"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:fontFamily="sans-serif-medium"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbAutoResult"
+        tools:ignore="LabelFor"
+        tools:text="@string/name_pablo" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        style="@style/Theme_colorText"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:fontFamily="monospace"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etInput"
+        tools:text="@string/name_pablo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResult">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAddition"
+                style="@style/Theme_BackgroundButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/operation_addition" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSubtraction"
+                style="@style/Theme_BackgroundButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/operation_subtraction" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnMultiplication"
+                style="@style/Theme_BackgroundButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/operation_multiplication" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnDivision"
+                style="@style/Theme_BackgroundButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/operation_division" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyNumber1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNumber7"
+                style="@style/Theme_BackgroundButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/number_seven" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNumber8"
+                style="@style/Theme_BackgroundButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/number_eight" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNumber9"
+                style="@style/Theme_BackgroundButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/number_nine" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnErase"
+                style="@style/Theme_BackgroundButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyNumber2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNumber4"
+                style="@style/Theme_BackgroundButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/number_four" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNumber5"
+                style="@style/Theme_BackgroundButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/number_five" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNumber6"
+                style="@style/Theme_BackgroundButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/number_six" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnClear"
+                style="@style/Theme_BackgroundButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/clear" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyNumber3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNumber1"
+                style="@style/Theme_BackgroundButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/number_one" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNumber2"
+                style="@style/Theme_BackgroundButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/number_two" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNumber3"
+                style="@style/Theme_BackgroundButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/number_three" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNumber0"
+                style="@style/Theme_BackgroundButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/number_zero" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnEquals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_500"
+            android:text="@string/equals"
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

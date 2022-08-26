@@ -3,7 +3,8 @@
 
     <!-- MH's strings-->
     <string name="mh_calculator">Calculator</string>
-
+    <!-- MH's strings-->
+    <string name="pa_calculator">Calculator</string>
     <string name="name">Name:</string>
     <!-- Number -->
     <string name="uno">1</string>
@@ -87,5 +88,11 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <!--AB's Strigns-->
+    <string name="FrgCalculator">Calculadora</string>
+
+    <!--JOSUE´s STRINGS-->
+    <string name="jc_firstproyect">Calculadora</string>
+    <string name="jc_secondproyect">Segundo Proyecto</string>
 
 </resources>

@@ -26,4 +26,12 @@
         <item name="android:textColor">@android:color/black</item>
     </style>
 
+    <style name="Theme_Backgroundfrg" >
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Theme_colorText">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
 </resources>
