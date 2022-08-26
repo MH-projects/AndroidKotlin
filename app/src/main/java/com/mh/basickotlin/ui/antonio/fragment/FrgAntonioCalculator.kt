@@ -1,42 +1,48 @@
-package com.mh.basickotlin.ui.Antonio
+package com.mh.basickotlin.ui.antonio.fragment
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
+import android.view.LayoutInflater
 import android.view.View
-import com.mh.basickotlin.databinding.ActAntonioMainBinding
-import com.mh.basickotlin.ui.Antonio.clasesAntonio.Calculadora
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import com.mh.basickotlin.databinding.FrgAntonioCalculatorBinding
+import com.mh.basickotlin.ui.antonio.clasesAntonio.Calculadora
 
-class ActAntonioMain : AppCompatActivity() {
-    //bindind tomara el nombre del layout de la actividad con formato camel case
-    private lateinit var binding: ActAntonioMainBinding
+class FrgAntonioCalculator : Fragment() {
+
+    private lateinit var binding: FrgAntonioCalculatorBinding
+
     // ### OPERADOR ####
     private var firstNumber = ""
     private var secondNumber = ""
     private var operador = ""
 
     private var isOperador = false
-    private var calculadora=Calculadora()
+    private var calculadora = Calculadora()
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        binding = FrgAntonioCalculatorBinding.inflate(inflater, container, false)
+        return binding.root
+    }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        //sustituimos el setcontentview de la siguiente forma
-        binding = ActAntonioMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        //accedemos a los componentes de la vista de la siguiente forma
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
         binding.etInsertNum.addTextChangedListener(object : TextWatcher {
             override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
                 // WIP
-                if(binding.etInsertNum.text.equals("")){
+                if (binding.etInsertNum.text.equals("")) {
                     binding.etInsertNum.setText("")
                 }
-                if (binding.cbAutoResult.isChecked){
+                if (binding.cbAutoResult.isChecked) {
                     operacion()
-                }else{
-
+                } else {
                 }
             }
 
@@ -50,10 +56,10 @@ class ActAntonioMain : AppCompatActivity() {
         })
 
         binding.cbAutoResult.setOnClickListener {
-            if (binding.cbAutoResult.isChecked){
-                binding.btnIgual.visibility= View.GONE
-            }else{
-                binding.btnIgual.visibility=View.VISIBLE
+            if (binding.cbAutoResult.isChecked) {
+                binding.btnIgual.visibility = View.GONE
+            } else {
+                binding.btnIgual.visibility = View.VISIBLE
             }
         }
         binding.btnUno.setOnClickListener { checkValidDigit("1") }
@@ -75,7 +81,7 @@ class ActAntonioMain : AppCompatActivity() {
         binding.btnBorrar.setOnClickListener { checkValidDigit("R") }
 
         binding.btnIgual.setOnClickListener {
-         operacion()
+            operacion()
 
 //            binding.tvResult.text = calculator.add(x, y).toString()
 //            binding.tvResult.text = "" + calculator.add(x, y)
@@ -114,14 +120,14 @@ class ActAntonioMain : AppCompatActivity() {
                 // TODO Contemplar el caso para poner bandera en false
                 if (firstNumber.isNotEmpty() && operador.isEmpty() && secondNumber.isEmpty()) {
                     firstNumber = removeLastNchars(firstNumber, 1)
-                }else if (firstNumber.isNotEmpty() && operador.isNotEmpty() && secondNumber.isEmpty()){
-                    operador=removeLastNchars(operador,1)
-            }else if(firstNumber.isNotEmpty() && operador.isNotEmpty() && secondNumber.isNotEmpty()){
-                    secondNumber=removeLastNchars(secondNumber,1)
-                }else if(firstNumber.isEmpty() && operador.isEmpty() && secondNumber.isEmpty()){
+                } else if (firstNumber.isNotEmpty() && operador.isNotEmpty() && secondNumber.isEmpty()) {
+                    operador = removeLastNchars(operador, 1)
+                } else if (firstNumber.isNotEmpty() && operador.isNotEmpty() && secondNumber.isNotEmpty()) {
+                    secondNumber = removeLastNchars(secondNumber, 1)
+                } else if (firstNumber.isEmpty() && operador.isEmpty() && secondNumber.isEmpty()) {
                 }
-                binding.etInsertNum.setText(firstNumber+operador+secondNumber)
-            // Main
+                binding.etInsertNum.setText(firstNumber + operador + secondNumber)
+                // Main
             }
             "=" -> {
             }
@@ -152,36 +158,30 @@ class ActAntonioMain : AppCompatActivity() {
     }
 
     private fun removeLastNchars(str: String, n: Int): String {
-        return if(str.length < n || str.isEmpty()){
+        return if (str.length < n || str.isEmpty()) {
             str
-        }else{
+        } else {
             str.substring(0, str.length - n)
         }
-
     }
 
-    private fun operacion(){
-        if(operador=="+"){
+    private fun operacion() {
+        if (operador == "+") {
             var x = calculadora.convertirStringAInt(firstNumber)
             var y = calculadora.convertirStringAInt(secondNumber)
             binding.tvResult.text = "${calculadora.suma(x, y)}"
-        }else if(operador=="-"){
+        } else if (operador == "-") {
             var x = calculadora.convertirStringAInt(firstNumber)
             var y = calculadora.convertirStringAInt(secondNumber)
             binding.tvResult.text = "${calculadora.resta(x, y)}"
-
-        }else if (operador=="*"){
+        } else if (operador == "*") {
             var x = calculadora.convertirStringAInt(firstNumber)
             var y = calculadora.convertirStringAInt(secondNumber)
             binding.tvResult.text = "${calculadora.multi(x, y)}"
-
-        }else if (operador=="/"){
-                var x = calculadora.convertirStringAInt(firstNumber)
-                var y = calculadora.convertirStringAInt(secondNumber)
-                binding.tvResult.text = "${calculadora.div(x, y)}"
-
-
-            }
-
+        } else if (operador == "/") {
+            var x = calculadora.convertirStringAInt(firstNumber)
+            var y = calculadora.convertirStringAInt(secondNumber)
+            binding.tvResult.text = "${calculadora.div(x, y)}"
         }
     }
+}

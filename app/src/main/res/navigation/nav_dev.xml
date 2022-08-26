@@ -55,7 +55,7 @@
 
     <fragment
         android:id="@+id/frgAntonioContent"
-        android:name="com.mh.basickotlin.ui.Antonio.fragment.FrgAntonioContent"
+        android:name="com.mh.basickotlin.ui.antonio.fragment.FrgAntonioContent"
         android:label="frg_antonio_content"
         tools:layout="@layout/frg_antonio_content">
         <action
@@ -92,7 +92,7 @@
 
     <fragment
         android:id="@+id/frgAntonioCalculator"
-        android:name="com.mh.basickotlin.ui.Antonio.fragment.FrgAntonioCalculator"
+        android:name="com.mh.basickotlin.ui.antonio.fragment.FrgAntonioCalculator"
         android:label="frg_antonio_calculator"
         tools:layout="@layout/frg_antonio_calculator" />
 
