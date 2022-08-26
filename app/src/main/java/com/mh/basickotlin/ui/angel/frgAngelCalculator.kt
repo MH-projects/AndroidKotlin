@@ -8,7 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.mh.basickotlin.databinding.ActAngelMainBinding
 
-class ActAngelMain : AppCompatActivity() {
+class frgAngelCalculator : AppCompatActivity() {
     private lateinit var binding: ActAngelMainBinding
     private var quanty1 = ""
     private var quanty2 = ""
@@ -64,7 +64,7 @@ class ActAngelMain : AppCompatActivity() {
                     }
                     if (operator == "/") {
                         if (quanty1.toInt() == 0 || quanty2.toInt() == 0 || quanty1.isEmpty() || quanty2.isEmpty()) {
-                            Toast.makeText(this@ActAngelMain, "No puedes ocupar ceros en la division", Toast.LENGTH_LONG).show()
+                            Toast.makeText(this@frgAngelCalculator, "No puedes ocupar ceros en la division", Toast.LENGTH_LONG).show()
                         } else {
                             binding.tvResultNumber.text = "${Operators.split(a, b)}"
                         }
@@ -95,7 +95,7 @@ class ActAngelMain : AppCompatActivity() {
             }
             if (operator == "/") {
                 if (quanty1.toInt() == 0 || quanty2.toInt() == 0 || quanty1.isEmpty() || quanty2.isEmpty()) {
-                    Toast.makeText(this@ActAngelMain, "No puedes ocupar ceros en la division", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@frgAngelCalculator, "No puedes ocupar ceros en la division", Toast.LENGTH_LONG).show()
                 } else {
                     binding.tvResultNumber.text = "${Operators.split(a, b)}"
                 }

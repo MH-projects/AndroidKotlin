@@ -5,7 +5,6 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.widget.addTextChangedListener
 import com.mh.basickotlin.databinding.ActManuelCalculatorBinding
 import com.mh.basickotlin.ui.manuel.Calculator
 
