@@ -16,6 +16,9 @@
         <action
             android:id="@+id/toFrgAntonioContent"
             app:destination="@id/frgAntonioContent" />
+        <action
+            android:id="@+id/tofrgAngelMain"
+            app:destination="@id/frgAngelCalculator" />
     </fragment>
 
     <fragment
@@ -36,4 +39,13 @@
         android:name="com.mh.basickotlin.ui.Antonio.fragment.FrgAntonioCalculator"
         android:label="frg_antonio_calculator"
         tools:layout="@layout/frg_antonio_calculator" />
+    <activity
+        android:id="@+id/frgAngelCalculator"
+        android:name="com.mh.basickotlin.ui.angel.frgAngelCalculator"
+        android:label="frgAngelCalculator" />
+    <fragment
+        android:id="@+id/frgAntonioCalculadora"
+        android:name="com.mh.basickotlin.ui.Antonio.fragment.FrgAntonioCalculadora"
+        android:label="frg_antonio_calculadora"
+        tools:layout="@layout/frg_antonio_calculadora" />
 </navigation>

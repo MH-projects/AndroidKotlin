@@ -8,42 +8,46 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.TextView
-import androidx.navigation.fragment.findNavController
 import com.mh.basickotlin.R
-import com.mh.basickotlin.databinding.FrgAntonioCalculatorBinding
+import com.mh.basickotlin.databinding.FrgAntonioCalculadoraBinding
+import com.mh.basickotlin.databinding.FrgDevsBinding
 import com.mh.basickotlin.ui.Antonio.clasesAntonio.Calculadora
 
-class FrgAntonioCalculator : Fragment() {
-    private lateinit var binding: FrgAntonioCalculatorBinding
-    // ### OPERADOR ####
+class FrgAntonioCalculadora : Fragment() {
+
+    private lateinit var binding: FrgAntonioCalculadoraBinding
+
     private var firstNumber = ""
     private var secondNumber = ""
     private var operador = ""
 
     private var isOperador = false
     private var calculadora= Calculadora()
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        arguments?.let {
+        }
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding=FrgAntonioCalculatorBinding.inflate(inflater,container,false)
+        binding = FrgAntonioCalculadoraBinding.inflate(inflater, container, false)
         return binding.root
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //view.findViewById<Button>(R.id.btnAntonio).setOnClickListener {
-          //  findNavController().navigate(R.id.toFrgAntonioContent)
-        //}
 
         binding.etInsertNum.addTextChangedListener(object : TextWatcher {
             override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
                 // WIP
                 if(binding.etInsertNum.text.equals("")){
                     binding.etInsertNum.setText("")
+
                 }
                 if (binding.cbAutoResult.isChecked){
                     operacion()
@@ -93,9 +97,7 @@ class FrgAntonioCalculator : Fragment() {
 //            binding.tvResult.text = "" + calculator.add(x, y)
 //            binding.tvResult.setText(calculator.add(x, y))
         }
-
     }
-
 
     private fun checkValidDigit(digit: String) {
         when (digit) {
@@ -128,10 +130,16 @@ class FrgAntonioCalculator : Fragment() {
                 // TODO Contemplar el caso para poner bandera en false
                 if (firstNumber.isNotEmpty() && operador.isEmpty() && secondNumber.isEmpty()) {
                     firstNumber = removeLastNchars(firstNumber, 1)
+                    binding.tvResult.setText("")
+
                 }else if (firstNumber.isNotEmpty() && operador.isNotEmpty() && secondNumber.isEmpty()){
                     operador=removeLastNchars(operador,1)
+                    binding.tvResult.setText("")
+
                 }else if(firstNumber.isNotEmpty() && operador.isNotEmpty() && secondNumber.isNotEmpty()){
                     secondNumber=removeLastNchars(secondNumber,1)
+                    binding.tvResult.setText("")
+
                 }else if(firstNumber.isEmpty() && operador.isEmpty() && secondNumber.isEmpty()){
                 }
                 binding.etInsertNum.setText(firstNumber+operador+secondNumber)
@@ -198,4 +206,6 @@ class FrgAntonioCalculator : Fragment() {
         }
 
     }
+
+
 }

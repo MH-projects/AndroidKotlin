@@ -28,5 +28,8 @@ class FrgDevs : Fragment() {
         view.findViewById<Button>(R.id.btnAntonio).setOnClickListener {
             findNavController().navigate(R.id.toFrgAntonioContent)
         }
+        view.findViewById<Button>(R.id.btnAngel).setOnClickListener {
+            findNavController().navigate(R.id.tofrgAngelMain)
+        }
     }
 }
