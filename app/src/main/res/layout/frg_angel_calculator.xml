@@ -6,7 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.angel.ActAngelMain"
-    android:layout_margin="10dp">
+    android:layout_margin="10dp"
+    style="@style/Theme_Backgroundfrg"
+    >
 
     <CheckBox
         android:id="@+id/cbAuResult"
@@ -15,7 +17,8 @@
         android:text="Auto result"
         app:layout_constraintBottom_toTopOf="@+id/etOperation"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        style="@style/Theme_colorText"/>
 
     <EditText
         android:id="@+id/etOperation"
@@ -29,7 +32,8 @@
         android:textSize="40dp"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp"
-        tools:text="2819x293" />
+        tools:text="2819x293"
+        style="@style/Theme_colorText"/>
 
     <TextView
         android:id="@+id/tvResultNumber"
@@ -39,7 +43,8 @@
         app:layout_constraintTop_toBottomOf="@+id/etOperation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="34x12"/>
+        tools:text="34x12"
+        style="@style/Theme_colorText"/>
     <LinearLayout
         android:id="@+id/lyFirstLine"
         app:layout_constraintTop_toBottomOf="@+id/tvResultNumber"
@@ -248,7 +253,8 @@
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="="/>
+            tools:text="="
+            style="@style/Theme_BackgroundButton"/>
 
     </LinearLayout>
 
