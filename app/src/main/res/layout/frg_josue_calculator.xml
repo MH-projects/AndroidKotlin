@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.josue.FrgJosueCalculator">
+
+    <EditText
+        android:textAlignment="textEnd"
+        tools:text="123"
+        android:textSize="25dp"
+        android:focusable="false"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:padding="15dp"
+        android:id="@+id/etInputedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:id="@+id/tvResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etInputedit"
+        tools:text="Resultado"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/lyOperator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultado">
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
+            android:padding="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:id="@+id/btnSum"
+            android:text="@string/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
+            android:padding="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:text="@string/less"
+            android:id="@+id/btnRest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
+            android:padding="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:text="@string/split"
+            android:id="@+id/btnDiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
+            android:padding="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:text="@string/by"
+            android:id="@+id/btnMult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="6dp"
+        android:id="@+id/lyOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lyOperator">
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
+            android:padding="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:id="@+id/btnSeven"
+            android:text="@string/seven_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
+            android:padding="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:text="@string/eight_number"
+            android:id="@+id/btnEight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
+            android:padding="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:text="@string/nine_number"
+            android:id="@+id/btnNine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
+            android:padding="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:text="@string/delete"
+            android:id="@+id/btnRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="6dp"
+        android:id="@+id/lyTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lyOne">
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
+            android:padding="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:id="@+id/btnFour"
+            android:text="@string/four_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
+            android:padding="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:text="@string/five_number"
+            android:id="@+id/btnFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
+            android:padding="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:text="@string/six_number"
+            android:id="@+id/btnSix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
+            android:padding="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:text="@string/clear"
+            android:id="@+id/btnClean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="6dp"
+        android:id="@+id/lyThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lyTwo">
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
+            android:padding="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:id="@+id/btnThree"
+            android:text="@string/three_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
+            android:padding="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:text="@string/two_number"
+            android:id="@+id/btnTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
+            android:padding="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:text="@string/one_number"
+            android:id="@+id/btnOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme_BackgroundButton"
+            android:padding="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:text="@string/zero_number"
+            android:id="@+id/btnZero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lyThree"
+        android:text="@string/equals"/>
+
+    <Switch
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="16dp"
+        android:id="@+id/swAutoResult"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/auto_result"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etInputedit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

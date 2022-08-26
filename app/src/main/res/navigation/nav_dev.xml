@@ -26,6 +26,10 @@
         <action
             android:id="@+id/toFrgAntonioContent"
             app:destination="@id/frgAntonioContent" />
+
+        <action
+            android:id="@+id/toFrgJosueContent"
+            app:destination="@id/frgJosueContent" />
     </fragment>
 
     <!-- Content -->
@@ -59,6 +63,16 @@
             app:destination="@id/frgAntonioCalculator" />
     </fragment>
 
+    <fragment
+        android:id="@+id/frgJosueContent"
+        android:name="com.mh.basickotlin.ui.josue.FrgJosueContent"
+        android:label="frg_josue_content"
+        tools:layout="@layout/frg_josue_content">
+        <action
+            android:id="@+id/tofrgJosueCalculator"
+            app:destination="@id/frgJosueCalculator" />
+    </fragment>
+
     <!-- Calculators -->
 
     <fragment
@@ -81,4 +95,10 @@
         android:name="com.mh.basickotlin.ui.Antonio.fragment.FrgAntonioCalculator"
         android:label="frg_antonio_calculator"
         tools:layout="@layout/frg_antonio_calculator" />
+
+    <fragment
+        android:id="@+id/frgJosueCalculator"
+        android:name="com.mh.basickotlin.ui.josue.FrgJosueCalculator"
+        android:label="frg_josue_calculator"
+        tools:layout="@layout/frg_josue_calculator" />
 </navigation>

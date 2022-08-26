@@ -91,4 +91,8 @@
     <!--AB's Strigns-->
     <string name="FrgCalculator">Calculadora</string>
 
+    <!--JOSUE´s STRINGS-->
+    <string name="jc_firstproyect">Calculadora</string>
+    <string name="jc_secondproyect">Segundo Proyecto</string>
+
 </resources>
