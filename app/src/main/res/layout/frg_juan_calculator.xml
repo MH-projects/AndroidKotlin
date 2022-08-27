@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edInput"
+        android:layout_width="370dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        style="@style/Theme_BackgroundButtonJuan"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="numberDecimal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textAlignment="textEnd"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/teal_200"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edInput" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResult">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnmas"
+                style="@style/Theme_BackgroundButtonJuan"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="+"
+                tools:layout_editor_absoluteX="127dp"
+                tools:layout_editor_absoluteY="329dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
+                android:id="@+id/btnmenos"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="--"
+                tools:layout_editor_absoluteX="127dp"
+                tools:layout_editor_absoluteY="329dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
+                android:id="@+id/btnpor"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="x"
+                tools:layout_editor_absoluteX="127dp"
+                tools:layout_editor_absoluteY="329dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
+                android:id="@+id/btndiv"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="/"
+                tools:layout_editor_absoluteX="127dp"
+                tools:layout_editor_absoluteY="329dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
+                android:id="@+id/btn7"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="7"
+                tools:layout_editor_absoluteX="127dp"
+                tools:layout_editor_absoluteY="329dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
+                android:id="@+id/btn8"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="8"
+                tools:layout_editor_absoluteX="127dp"
+                tools:layout_editor_absoluteY="329dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
+                android:id="@+id/btn9"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="7"
+                tools:layout_editor_absoluteX="127dp"
+                tools:layout_editor_absoluteY="329dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
+                android:id="@+id/btndelete"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="R"
+                tools:layout_editor_absoluteX="127dp"
+                tools:layout_editor_absoluteY="329dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
+                android:id="@+id/btn4"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="4"
+                tools:layout_editor_absoluteX="127dp"
+                tools:layout_editor_absoluteY="329dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
+                android:id="@+id/btn5"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="5"
+                tools:layout_editor_absoluteX="127dp"
+                tools:layout_editor_absoluteY="329dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
+                android:id="@+id/btn6"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="6"
+                tools:layout_editor_absoluteX="127dp"
+                tools:layout_editor_absoluteY="329dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
+                android:id="@+id/btnclear"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="C"
+                tools:layout_editor_absoluteX="127dp"
+                tools:layout_editor_absoluteY="329dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="1"
+                tools:layout_editor_absoluteX="127dp"
+                tools:layout_editor_absoluteY="329dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="2"
+                tools:layout_editor_absoluteX="127dp"
+                tools:layout_editor_absoluteY="329dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
+                android:id="@+id/btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="3"
+                tools:layout_editor_absoluteX="127dp"
+                tools:layout_editor_absoluteY="329dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
+                android:id="@+id/btn0"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="0"
+                tools:layout_editor_absoluteX="127dp"
+                tools:layout_editor_absoluteY="329dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
+                android:id="@+id/btnres"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="="
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="127dp"
+                tools:layout_editor_absoluteY="329dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Auto calcular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edInput" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
