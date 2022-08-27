@@ -34,7 +34,6 @@
         android:background="#CED2D5"
         android:paddingRight="10dp"
         android:paddingTop="5dp"
-        android:textAlignment="textEnd"
         android:textColorLink="#000000"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
