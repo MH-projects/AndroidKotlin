@@ -142,6 +142,7 @@ class FrgAngelCalculator : Fragment() {
             quanty1 = removeLast(quanty1, 1)
         } else if (quanty1.isNotEmpty() && operator.isNotEmpty() && quanty2.isEmpty()) {
             operator = removeLast(operator, 1)
+            isOperator = false
         } else if (quanty1.isNotEmpty() && operator.isNotEmpty() && quanty2.isNotEmpty()) {
             quanty2 = removeLast(quanty2, 1)
         }
