@@ -91,7 +91,6 @@ class FrgPabloCalculator : Fragment() {
                     )
                     else {
                         specialCharacter = number
-                        binding.etInput.setText(numberOne + specialCharacter)
                     }
                 }
                 "C" -> {
@@ -108,14 +107,13 @@ class FrgPabloCalculator : Fragment() {
                     if (specialCharacter.isEmpty()) {
                         if (numberOne.length < 3) {
                             numberOne += number
-                            binding.etInput.setText(numberOne)
                         } else showToast("No se pueden ingresar mas de 3 numeros", context)
                     } else if (numberTwo.length < 3) {
                         numberTwo += number
-                        binding.etInput.setText(numberOne + specialCharacter + numberTwo)
                     } else showToast("No se pueden ingresar mas de 3 numeros", context)
                 }
             }
+            binding.etInput.setText(numberOne + specialCharacter + numberTwo)
         }
     }
 
