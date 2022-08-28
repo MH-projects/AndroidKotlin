@@ -9,9 +9,8 @@
         android:id="@+id/edInput"
         android:layout_width="370dp"
         android:layout_height="70dp"
-        android:layout_marginTop="40dp"
-        android:background="#03A9F4"
-        android:backgroundTint="#CCCCCC"
+        android:layout_marginTop="10dp"
+        style="@style/Theme_BackgroundButtonJuan"
         android:clickable="false"
         android:cursorVisible="false"
         android:ems="10"
@@ -31,10 +30,9 @@
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="40dp"
-        android:background="#CED2D5"
         android:paddingRight="10dp"
         android:paddingTop="5dp"
-        android:textColorLink="#000000"
+        android:textColor="@color/teal_200"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edInput" />
@@ -54,24 +52,26 @@
             android:orientation="horizontal"
             android:weightSum="4">
 
-            <Button
-
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnmas"
+                style="@style/Theme_BackgroundButtonJuan"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:text="+"
                 tools:layout_editor_absoluteX="127dp"
                 tools:layout_editor_absoluteY="329dp" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btnmenos"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
-                android:text="-"
+                android:text="--"
                 tools:layout_editor_absoluteX="127dp"
                 tools:layout_editor_absoluteY="329dp" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btnpor"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
@@ -79,7 +79,8 @@
                 tools:layout_editor_absoluteX="127dp"
                 tools:layout_editor_absoluteY="329dp" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btndiv"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
@@ -93,7 +94,8 @@
             android:orientation="horizontal"
             android:weightSum="4">
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btn7"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
@@ -101,7 +103,8 @@
                 tools:layout_editor_absoluteX="127dp"
                 tools:layout_editor_absoluteY="329dp" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btn8"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
@@ -109,7 +112,8 @@
                 tools:layout_editor_absoluteX="127dp"
                 tools:layout_editor_absoluteY="329dp" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btn9"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
@@ -117,11 +121,12 @@
                 tools:layout_editor_absoluteX="127dp"
                 tools:layout_editor_absoluteY="329dp" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btndelete"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
-                android:text="df"
+                android:text="R"
                 tools:layout_editor_absoluteX="127dp"
                 tools:layout_editor_absoluteY="329dp" />
 
@@ -132,7 +137,8 @@
             android:orientation="horizontal"
             android:weightSum="4">
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btn4"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
@@ -140,7 +146,8 @@
                 tools:layout_editor_absoluteX="127dp"
                 tools:layout_editor_absoluteY="329dp" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btn5"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
@@ -148,7 +155,8 @@
                 tools:layout_editor_absoluteX="127dp"
                 tools:layout_editor_absoluteY="329dp" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btn6"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
@@ -156,7 +164,8 @@
                 tools:layout_editor_absoluteX="127dp"
                 tools:layout_editor_absoluteY="329dp" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btnclear"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
@@ -171,7 +180,8 @@
             android:orientation="horizontal"
             android:weightSum="4">
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btn1"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
@@ -179,7 +189,8 @@
                 tools:layout_editor_absoluteX="127dp"
                 tools:layout_editor_absoluteY="329dp" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btn2"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
@@ -187,7 +198,8 @@
                 tools:layout_editor_absoluteX="127dp"
                 tools:layout_editor_absoluteY="329dp" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btn3"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
@@ -195,7 +207,8 @@
                 tools:layout_editor_absoluteX="127dp"
                 tools:layout_editor_absoluteY="329dp" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btn0"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
@@ -209,8 +222,10 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:weightSum="4">
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btnres"
+                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:text="="

@@ -30,6 +30,9 @@
         <action
             android:id="@+id/toFrgJosueContent"
             app:destination="@id/frgJosueContent" />
+        <action
+            android:id="@+id/toFrgJuanContent"
+            app:destination="@id/frgJuanContent" />
     </fragment>
 
     <!-- Content -->
@@ -101,4 +104,17 @@
         android:name="com.mh.basickotlin.ui.josue.FrgJosueCalculator"
         android:label="frg_josue_calculator"
         tools:layout="@layout/frg_josue_calculator" />
+    <fragment
+        android:id="@+id/frgJuanContent"
+        android:name="com.mh.basickotlin.ui.juan.activity.fragment.FrgJuanContent"
+        android:label="frg_juan_content"
+        tools:layout="@layout/frg_juan_content" >
+        <action
+            android:id="@+id/toFrgJuanCalculator"
+            app:destination="@id/frgJuanCalculator" />
+    </fragment>
+    <fragment
+        android:id="@+id/frgJuanCalculator"
+        android:name="com.mh.basickotlin.ui.juan.activity.fragment.FrgJuanCalculator"
+        android:label="FrgJuanCalculator" />
 </navigation>
