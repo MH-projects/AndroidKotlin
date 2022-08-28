@@ -14,10 +14,10 @@
         android:theme="@style/Theme.BasicKotlin"
         tools:targetApi="31">
         <activity
-            android:name=".ui.manuel.activity.ActManuelContent"
+            android:name="com.mh.basickotlin.ui.manuel.view.activity.ActManuelContent"
             android:exported="false" />
         <activity
-            android:name=".ui.manuel.activity.ActManuelCalculator"
+            android:name="com.mh.basickotlin.ui.manuel.view.activity.ActManuelCalculator"
             android:exported="false" />
         <activity
             android:name=".ui.antonio.ActAntonioMain"
@@ -38,7 +38,7 @@
             android:name=".ui.angel.FrgAngelCalculator"
             android:exported="false" />
         <activity
-            android:name=".ui.manuel.activity.ActManuelMain"
+            android:name="com.mh.basickotlin.ui.manuel.view.activity.ActManuelMain"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -4,33 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="@color/mh_primary"
     android:padding="14dp"
-    tools:context=".ui.manuel.activity.ActManuelCalculator">
+    tools:context=".ui.manuel.view.activity.ActManuelCalculator">
 
-    <EditText
-        android:id="@+id/etInput"
+    <TextView
+        android:id="@+id/tvOperation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:clickable="false"
-        android:cursorVisible="false"
-        android:focusable="false"
+        android:background="@drawable/bg_mh_corner"
         android:importantForAutofill="no"
+        android:padding="14dp"
         android:textAlignment="textEnd"
-        android:textColor="@color/white"
-        android:textSize="34sp"
+        android:textColor="@color/mh_primary"
+        android:textSize="42sp"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="123+321" />
+        tools:text="5x5" />
+
+    <CheckBox
+        android:id="@+id/cbAutoResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/auto_result"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvResult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvResult" />
 
     <TextView
         android:id="@+id/tvResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="14dp"
-        android:textColor="@color/white"
-        android:textSize="34sp"
+        android:textColor="@color/mh_secondary"
+        android:textSize="56sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etInput"
+        app:layout_constraintTop_toBottomOf="@+id/tvOperation"
         tools:text="50" />
 
     <LinearLayout
@@ -38,138 +48,171 @@
         android:layout_height="0dp"
         android:layout_marginTop="14dp"
         android:layout_marginBottom="14dp"
-        android:gravity="center"
         android:orientation="vertical"
+        android:weightSum="5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvResult">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:orientation="horizontal"
             android:weightSum="4">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnOne"
-                style="@style/Theme_BackgroundButton"
+                android:id="@+id/btn7"
+                style="@style/Theme_BackgroundButtonManuel"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="@string/number_one" />
+                android:layout_height="match_parent"
+                android:text="@string/number_seven"
+                tools:ignore="NestedWeights" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnTwo"
-                style="@style/Theme_BackgroundButton"
+                android:id="@+id/btn8"
+                style="@style/Theme_BackgroundButtonManuel"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/number_eight" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn9"
+                style="@style/Theme_BackgroundButtonManuel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/number_nine" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnMul"
+                style="@style/Theme_BackgroundButtonOperatorManuel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/multiplicacion" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn4"
+                style="@style/Theme_BackgroundButtonManuel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/number_four"
+                tools:ignore="NestedWeights" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn5"
+                style="@style/Theme_BackgroundButtonManuel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/number_five" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn6"
+                style="@style/Theme_BackgroundButtonManuel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/number_six" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnDiv"
+                style="@style/Theme_BackgroundButtonOperatorManuel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/operation_division" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn1"
+                style="@style/Theme_BackgroundButtonManuel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/number_one"
+                tools:ignore="NestedWeights" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn2"
+                style="@style/Theme_BackgroundButtonManuel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:text="@string/number_two" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnThree"
-                style="@style/Theme_BackgroundButton"
+                android:id="@+id/btn3"
+                style="@style/Theme_BackgroundButtonManuel"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:text="@string/number_three" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnAdd"
-                style="@style/Theme_BackgroundButton"
+                style="@style/Theme_BackgroundButtonOperatorManuel"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="+" />
+                android:layout_height="match_parent"
+                android:text="@string/operation_addition" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:orientation="horizontal"
             android:weightSum="4">
-
-            <androidx.appcompat.widget.AppCompatButton
-                style="@style/Theme_BackgroundButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                style="@style/Theme_BackgroundButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                style="@style/Theme_BackgroundButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                style="@style/Theme_BackgroundButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="4">
-
-            <androidx.appcompat.widget.AppCompatButton
-                style="@style/Theme_BackgroundButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                style="@style/Theme_BackgroundButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                style="@style/Theme_BackgroundButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                style="@style/Theme_BackgroundButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="4">
-
-            <androidx.appcompat.widget.AppCompatButton
-                style="@style/Theme_BackgroundButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                style="@style/Theme_BackgroundButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                style="@style/Theme_BackgroundButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnClear"
-                style="@style/Theme_BackgroundButton"
+                style="@style/Theme_BackgroundButtonManuel"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="C" />
+                android:layout_height="match_parent"
+                android:text="@string/clear"
+                tools:ignore="NestedWeights" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn0"
+                style="@style/Theme_BackgroundButtonManuel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/number_zero" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnDel"
+                style="@style/Theme_BackgroundButtonManuel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/delete" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnRes"
+                style="@style/Theme_BackgroundButtonOperatorManuel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/operation_subtraction" />
 
         </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnResult"
+            android:id="@+id/btnEquals"
+            style="@style/Theme_BackgroundButtonManuel"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="=" />
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/equals"
+            tools:ignore="NestedWeights" />
 
     </LinearLayout>
 

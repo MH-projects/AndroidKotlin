@@ -9,6 +9,12 @@
     <color name="white">#FFFFFFFF</color>
     <color name="orange">#FF9800</color>
 
+    <color name="mh_primary">#EAEAEA</color>
+    <color name="mh_secondary">#00356A</color>
+    <color name="mh_secondary_alpha">#8000356A</color>
+    <color name="mh_accent">#FF9800</color>
+    <color name="mh_accent_alpha">#80FF9800</color>
+
     <color name="background">#9A9A9A</color>
     <color name="background_button">@android:color/white</color>
 

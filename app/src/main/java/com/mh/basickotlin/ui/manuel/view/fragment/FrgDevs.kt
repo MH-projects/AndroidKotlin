@@ -1,4 +1,4 @@
-package com.mh.basickotlin.ui.manuel.fragment
+package com.mh.basickotlin.ui.manuel.view.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
