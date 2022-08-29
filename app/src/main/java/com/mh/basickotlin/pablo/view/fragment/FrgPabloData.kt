@@ -13,7 +13,7 @@ class FrgPabloData : Fragment() {
     private lateinit var binding: FrgPabloDataBinding
     private val name = "Pablo"
     private val surname = "Amaya"
-    private var age = 27
+    private var age = 25
     private val school = "UAMI"
     private var state = "CDMX"
     private var work = "Grupo Salinas"
