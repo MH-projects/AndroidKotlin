@@ -1,4 +1,4 @@
-package com.mh.basickotlin.ui.antonio.fragment
+package com.mh.basickotlin.antonio.view.view.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -26,6 +26,9 @@ class FrgAntonioContent : Fragment() {
 
         view.findViewById<Button>(R.id.btnFrgAntonioCalculator).setOnClickListener {
             findNavController().navigate(R.id.toFrgAntonioCalculadora)
+        }
+        view.findViewById<Button>(R.id.btnFrgAntonioPresenter).setOnClickListener {
+            findNavController().navigate(R.id.toFrgAntonioPresenter)
         }
     }
 }
