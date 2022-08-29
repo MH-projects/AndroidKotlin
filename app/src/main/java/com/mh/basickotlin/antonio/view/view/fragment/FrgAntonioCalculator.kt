@@ -14,9 +14,6 @@ import com.mh.basickotlin.antonio.model.Digitos
 import com.mh.basickotlin.antonio.model.Operadores
 import com.mh.basickotlin.antonio.presenter.AntonioCalculadorContract
 import com.mh.basickotlin.antonio.presenter.AntonioCalculadoraPresenter
-import com.mh.basickotlin.antonio.presenter.suma
-import com.mh.basickotlin.ui.manuel.presenter.ManuelCalculatorPresenter
-import com.mh.basickotlin.ui.manuel.presenter.contract.ManuelCalculatorContract
 
 class FrgAntonioCalculator : Fragment(),AntonioCalculadorContract.view {
 
@@ -24,6 +21,7 @@ class FrgAntonioCalculator : Fragment(),AntonioCalculadorContract.view {
 
     private lateinit var presenter: AntonioCalculadorContract.presenter
 
+    
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

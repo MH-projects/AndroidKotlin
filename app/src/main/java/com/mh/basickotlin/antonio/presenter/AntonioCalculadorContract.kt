@@ -2,7 +2,6 @@ package com.mh.basickotlin.antonio.presenter
 
 import com.mh.basickotlin.antonio.model.Digitos
 import com.mh.basickotlin.antonio.model.Operadores
-import com.mh.basickotlin.ui.manuel.model.Operator
 
 interface AntonioCalculadorContract {
 
