@@ -1,24 +1,33 @@
-package com.mh.basickotlin.ui.juan.activity
+package com.mh.basickotlin.ui.juan.activity.fragment
 
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
-import androidx.appcompat.app.AppCompatActivity
-import com.mh.basickotlin.databinding.ActJuanMainBinding
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import com.mh.basickotlin.databinding.FrgJuanCalculatorBinding
+import com.mh.basickotlin.ui.juan.activity.Calculator
 
-class ActJuanMain : AppCompatActivity() {
-    private lateinit var binding: ActJuanMainBinding
+class FrgJuanCalculator : Fragment() {
+    private lateinit var binding: FrgJuanCalculatorBinding
     private var cant1 = ""
     private var cant2 = ""
     private var operation = ' '
-    private var aux = ""
     private var res = 0
     private var calculator = Calculator()
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        binding = ActJuanMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        binding = FrgJuanCalculatorBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
         binding.btn0.setOnClickListener() { validateCaracter('0') }
         binding.btn1.setOnClickListener() { validateCaracter('1') }
@@ -34,13 +43,30 @@ class ActJuanMain : AppCompatActivity() {
         binding.btnmenos.setOnClickListener() { validateCaracter('-') }
         binding.btnpor.setOnClickListener() { validateCaracter('x') }
         binding.btndiv.setOnClickListener() { validateCaracter('/') }
-        binding.btnclear.setOnClickListener() { validateCaracter('c') }
-        binding.btndelete.setOnClickListener() { validateCaracter('r') }
         binding.btnres.setOnClickListener() { validateCaracter('=') }
 
-        binding.btnres.setOnClickListener() {
-            var auxv1 = cant1.toInt()
-            var auxv2 = cant2.toInt()
+        binding.btndelete.setOnClickListener() {
+            var aux = binding.edInput.text.dropLast(1)
+            binding.edInput.setText(" ")
+            binding.edInput.setText(aux)
+
+            if (cant2.isEmpty()) {
+                operation = ' '
+                res = 0
+                if (!cant1.isEmpty()) {
+                    var canaux1 = cant1.dropLast(1)
+                }
+            } else {
+                var canaux2 = cant2.dropLast(1)
+                cant2 = canaux2
+            }
+            if (aux.isEmpty()) {
+                res = 0
+                cant1 = ""
+                binding.edInput.setText(" ")
+            }
+            var auxv1 = if (cant1.isEmpty()) 0 else cant1.toInt()
+            var auxv2 = if (cant2.isEmpty()) 0 else cant2.toInt()
             when (operation) {
                 '+' -> {
                     res = calculator.suma(auxv1, auxv2)
@@ -57,16 +83,43 @@ class ActJuanMain : AppCompatActivity() {
             }
             binding.tvResult.text = "$res"
         }
-        /*binding.checkBox.setOnClickListener {
+        binding.btnclear.setOnClickListener() {
+            cant1 = ""
+            cant2 = ""
+            operation = ' '
+            binding.edInput.setText("")
+            binding.tvResult.setText("0")
+            res = 0
+        }
+        binding.checkBox.setOnClickListener {
             if (binding.checkBox.isChecked) {
-                println("activo **************************")
+                binding.btnres.visibility = View.GONE
+            } else binding.btnres.visibility = View.VISIBLE
+        }
+        binding.btnres.setOnClickListener() {
+            var auxv1 = if (cant1.isEmpty()) 0 else cant1.toInt()
+            var auxv2 = if (cant2.isEmpty()) 0 else cant2.toInt()
+            when (operation) {
+                '+' -> {
+                    res = calculator.suma(auxv1, auxv2)
+                }
+                '-' -> {
+                    res = calculator.resta(auxv1, auxv2)
+                }
+                'x' -> {
+                    res = calculator.mult(auxv1, auxv2)
+                }
+                '/' -> {
+                    res = calculator.div(auxv1, auxv2)
+                }
             }
-        }*/
+            binding.tvResult.text = "$res"
+        }
 
         binding.edInput.addTextChangedListener(object : TextWatcher {
             override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
                 var auxv1 = if (cant1.isEmpty()) 0 else cant1.toInt()
-                var auxv2 = if (cant1.isEmpty()) 0 else cant1.toInt()
+                var auxv2 = if (cant2.isEmpty()) 0 else cant2.toInt()
                 when (operation) {
                     '+' -> {
                         res = calculator.suma(auxv1, auxv2)
@@ -81,7 +134,7 @@ class ActJuanMain : AppCompatActivity() {
                         res = calculator.div(auxv1, auxv2)
                     }
                 }
-                binding.tvResult.text = "$res"
+                if (binding.checkBox.isChecked) { binding.tvResult.text = "$res" }
             }
 
             override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {
@@ -108,13 +161,7 @@ class ActJuanMain : AppCompatActivity() {
             '/' -> {
                 operation = '/'
             }
-            'c' -> {
-                cant1 = ""
-                cant2 = ""
-                operation = ' '
-                binding.edInput.setText("")
-                binding.tvResult.setText("")
-            }
+
             else -> {
                 // binding.edInput.setText("$cant1 $operation $cant2")
                 if (operation == ' ') {
@@ -135,7 +182,7 @@ class ActJuanMain : AppCompatActivity() {
 
         operation?.let { operadorLambda ->
             Log.i("CALCULADORA", "Operation: $cant1 $operadorLambda $cant2")
-            binding.edInput.setText("$cant1 $operadorLambda $cant2")
+            binding.edInput.setText("$cant1$operadorLambda$cant2")
         }
     }
 }

@@ -1,4 +1,4 @@
-package com.mh.basickotlin.ui.manuel.fragment
+package com.mh.basickotlin.ui.manuel.view.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -48,6 +48,9 @@ class FrgDevs : Fragment() {
 
         view.findViewById<Button>(R.id.btnJosue).setOnClickListener {
             findNavController().navigate(R.id.frgJosueContent)
+        }
+        view.findViewById<Button>(R.id.btnJuan).setOnClickListener {
+            findNavController().navigate(R.id.toFrgJuanContent)
         }
     }
 }

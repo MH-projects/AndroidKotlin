@@ -1,4 +1,4 @@
-package com.mh.basickotlin.ui.Antonio.fragment
+package com.mh.basickotlin.ui.antonio.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater

@@ -12,15 +12,6 @@ import androidx.fragment.app.Fragment
 import com.mh.basickotlin.databinding.FrgAngelCalculatorBinding
 
 class FrgAngelCalculator : Fragment() {
-
-    private lateinit var binding: FrgAngelCalculatorBinding
-    private var quanty1 = ""
-    private var quanty2 = ""
-    private var operator = ""
-    private var isOperator = false
-    private var operationComplete = String
-    private var Operators = Operators()
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -29,6 +20,14 @@ class FrgAngelCalculator : Fragment() {
         binding = FrgAngelCalculatorBinding.inflate(inflater, container, false)
         return binding.root
     }
+
+    private lateinit var binding: FrgAngelCalculatorBinding
+    private var quanty1 = ""
+    private var quanty2 = ""
+    private var operator = ""
+    private var isOperator = false
+    private var operationComplete = String
+    private var Operators = Operators()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -48,11 +47,13 @@ class FrgAngelCalculator : Fragment() {
         binding.btnLess.setOnClickListener() { validateDigit("-") }
         binding.btnBy.setOnClickListener() { validateDigit("*") }
         binding.btnBetween.setOnClickListener() { validateDigit("/") }
-        binding.btnClean.setOnClickListener() { validateDigit("C") }
-        binding.btnDelete.setOnClickListener() {
+        binding.btnClean.setOnClickListener() {
+            validateDigit("C")
             binding.tvResultNumber.text = null
             binding.etOperation.setText("")
         }
+        binding.btnDelete.setOnClickListener() { deleteLast() }
+
         binding.btnResultado.setOnClickListener() { validateDigit("=") }
         binding.cbAuResult.setOnClickListener {
             if (binding.cbAuResult.isChecked) binding.btnResultado.visibility = View.GONE
@@ -61,36 +62,14 @@ class FrgAngelCalculator : Fragment() {
         // TextListener
         binding.etOperation.addTextChangedListener(object : TextWatcher {
             override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
-                if (binding.cbAuResult.isChecked) {
-                    val a = Operators.conString(quanty1)
-                    val b = Operators.conString(quanty2)
-                    if (operator == "+") {
-                        binding.tvResultNumber.text =
-                            "${Operators.plus(a, b)}"
-                    }
-                    if (operator == "-") {
-                        binding.tvResultNumber.text =
-                            "${Operators.less(a, b)}"
-                    }
-                    if (operator == "*") {
-                        binding.tvResultNumber.text =
-                            "${Operators.by(a, b)}"
-                    }
-                    if (operator == "/") {
-                        if (quanty1.toInt() == 0 || quanty2.toInt() == 0 || quanty1.isEmpty() || quanty2.isEmpty()) {
-                            Toast.makeText(
-                                requireContext(),
-                                "No puedes ocupar ceros en la division",
-                                Toast.LENGTH_LONG
-                            ).show()
-                        } else {
-                            binding.tvResultNumber.text =
-                                "${Operators.split(a, b)}"
-                        }
+                if (binding.etOperation.text.equals("")) {
+                    binding.etOperation.setText("")
+                } else {
+                    if (binding.cbAuResult.isChecked) {
+                        operaciones()
                     }
                 }
             }
-
             override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {
             }
 
@@ -98,31 +77,8 @@ class FrgAngelCalculator : Fragment() {
             }
         })
         // END
-
         binding.btnResultado.setOnClickListener {
-            var a = Operators.conString(quanty1)
-            var b = Operators.conString(quanty2)
-
-            if (operator == "+") {
-                binding.tvResultNumber.text = "${Operators.plus(a, b)}"
-            }
-            if (operator == "-") {
-                binding.tvResultNumber.text = "${Operators.less(a, b)}"
-            }
-            if (operator == "*") {
-                binding.tvResultNumber.text = "${Operators.by(a, b)}"
-            }
-            if (operator == "/") {
-                if (quanty1.toInt() == 0 || quanty2.toInt() == 0 || quanty1.isEmpty() || quanty2.isEmpty()) {
-                    Toast.makeText(
-                        requireContext(),
-                        "No puedes ocupar ceros en la division",
-                        Toast.LENGTH_LONG
-                    ).show()
-                } else {
-                    binding.tvResultNumber.text = "${Operators.split(a, b)}"
-                }
-            }
+            operaciones()
         }
         // END
     }
@@ -152,6 +108,7 @@ class FrgAngelCalculator : Fragment() {
                 quanty2 = ""
                 binding.tvResultNumber.text = null
                 binding.etOperation.setText("")
+                operator = ""
             }
             "R" -> {
                 deleteLast()
@@ -180,21 +137,54 @@ class FrgAngelCalculator : Fragment() {
             operationComplete.equals("$quanty1,$lambda,$quanty2").toString()
         }
     }
-
     private fun deleteLast() {
-        if (quanty1.isNotEmpty() && operator.isNullOrEmpty() && quanty2.isEmpty()) {
+        if (quanty1.isNotEmpty() && operator.isEmpty() && quanty2.isEmpty()) {
             quanty1 = removeLast(quanty1, 1)
         } else if (quanty1.isNotEmpty() && operator.isNotEmpty() && quanty2.isEmpty()) {
             operator = removeLast(operator, 1)
+            isOperator = false
         } else if (quanty1.isNotEmpty() && operator.isNotEmpty() && quanty2.isNotEmpty()) {
             quanty2 = removeLast(quanty2, 1)
         }
         binding.etOperation.setText(quanty1 + operator + quanty2)
     }
-
     private fun removeLast(str: String, n: Int): String {
         return if (str.length < n || str.isEmpty()) {
             str
         } else str.substring(0, str.length - n)
+    }
+    private fun operaciones() {
+        val a = Operators.conString(quanty1)
+        val b = Operators.conString(quanty2)
+        if (operator == "+") {
+            binding.tvResultNumber.text = "${Operators.plus(a, b)}"
+        }
+        if (operator == "-") {
+            binding.tvResultNumber.text = "${Operators.less(a, b)}"
+        }
+        if (operator == "*") {
+            binding.tvResultNumber.text = "${Operators.by(a, b)}"
+        }
+        if (operator == "/") {
+            try {
+                if (quanty1.toInt() == 0 || quanty2.toInt() == 0 || quanty1.isEmpty() || quanty2.isEmpty()) {
+                    Toast.makeText(context, "No puedes ocupar ceros en la division", Toast.LENGTH_LONG).show()
+                } else {
+                    binding.tvResultNumber.text = "${Operators.split(a, b)}"
+                }
+            } catch (ex: Exception) {
+            }
+        }
+        if (operator == "C") {
+            isOperator = false
+            quanty1 = ""
+            quanty2 = ""
+            binding.tvResultNumber.text = null
+            binding.etOperation.setText("")
+            operator = ""
+        }
+        if (operator == "R") {
+            deleteLast()
+        }
     }
 }

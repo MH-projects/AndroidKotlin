@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/frgDevs"
-        android:name="com.mh.basickotlin.ui.manuel.fragment.FrgDevs"
+        android:name="com.mh.basickotlin.ui.manuel.view.fragment.FrgDevs"
         android:label="FrgDevs"
         tools:layout="@layout/frg_devs">
 
@@ -30,6 +30,9 @@
         <action
             android:id="@+id/toFrgJosueContent"
             app:destination="@id/frgJosueContent" />
+        <action
+            android:id="@+id/toFrgJuanContent"
+            app:destination="@id/frgJuanContent" />
     </fragment>
 
     <!-- Content -->
@@ -55,7 +58,7 @@
 
     <fragment
         android:id="@+id/frgAntonioContent"
-        android:name="com.mh.basickotlin.ui.Antonio.fragment.FrgAntonioContent"
+        android:name="com.mh.basickotlin.ui.antonio.fragment.FrgAntonioContent"
         android:label="frg_antonio_content"
         tools:layout="@layout/frg_antonio_content">
         <action
@@ -77,8 +80,9 @@
 
     <fragment
         android:id="@+id/frgManuelCalculator"
-        android:name="com.mh.basickotlin.ui.manuel.fragment.FrgManuelCalculator"
-        android:label="FrgManuelCalculator" />
+        android:name="com.mh.basickotlin.ui.manuel.view.fragment.FrgManuelCalculator"
+        android:label="FrgManuelCalculator"
+        tools:layout="@layout/frg_manuel_calculator" />
 
     <fragment
         android:id="@+id/frgAngelCalculator"
@@ -92,7 +96,7 @@
 
     <fragment
         android:id="@+id/frgAntonioCalculator"
-        android:name="com.mh.basickotlin.ui.Antonio.fragment.FrgAntonioCalculator"
+        android:name="com.mh.basickotlin.ui.antonio.fragment.FrgAntonioCalculator"
         android:label="frg_antonio_calculator"
         tools:layout="@layout/frg_antonio_calculator" />
 
@@ -101,4 +105,17 @@
         android:name="com.mh.basickotlin.ui.josue.FrgJosueCalculator"
         android:label="frg_josue_calculator"
         tools:layout="@layout/frg_josue_calculator" />
+    <fragment
+        android:id="@+id/frgJuanContent"
+        android:name="com.mh.basickotlin.ui.juan.activity.fragment.FrgJuanContent"
+        android:label="frg_juan_content"
+        tools:layout="@layout/frg_juan_content">
+        <action
+            android:id="@+id/toFrgJuanCalculator"
+            app:destination="@id/frgJuanCalculator" />
+    </fragment>
+    <fragment
+        android:id="@+id/frgJuanCalculator"
+        android:name="com.mh.basickotlin.ui.juan.activity.fragment.FrgJuanCalculator"
+        android:label="FrgJuanCalculator" />
 </navigation>

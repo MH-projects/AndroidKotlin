@@ -1,4 +1,4 @@
-package com.mh.basickotlin.ui.Antonio.clasesAntonio
+package com.mh.basickotlin.ui.antonio.clasesAntonio
 
 class Calculadora {
 
@@ -19,6 +19,10 @@ class Calculadora {
     }
 
     fun div(x: Int, y: Int): Int {
-        return x.div(y)
+        if (y == 0){
+            return 0
+        }else {
+            return x.div(y)
+        }
     }
 }
