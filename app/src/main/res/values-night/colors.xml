@@ -13,6 +13,9 @@
     <color name="mh_secondary">#EAEAEA</color>
     <color name="mh_secondary_alpha">#80EAEAEA</color>
 
+    <color name="pg_secondary">#FF000000</color>
+    <color name="pg_secondary_alpha">#80000000</color>
+
     <color name="background">#3E3838</color>
     <color name="background_button">@android:color/black</color>
 </resources>

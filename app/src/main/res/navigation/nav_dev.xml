@@ -59,12 +59,15 @@
 
     <fragment
         android:id="@+id/frgPabloContent"
-        android:name="com.mh.basickotlin.ui.pablo.fragment.FrgPabloContent"
+        android:name="com.mh.basickotlin.pablo.view.fragment.FrgPabloContent"
         android:label="frg_pablo_content"
         tools:layout="@layout/frg_pablo_content">
         <action
             android:id="@+id/toFrgPabloCalculator"
             app:destination="@id/frgPabloCalculator" />
+        <action
+            android:id="@+id/toFrgPabloData"
+            app:destination="@id/frgPabloData" />
     </fragment>
 
     <fragment
@@ -105,7 +108,7 @@
 
     <fragment
         android:id="@+id/frgPabloCalculator"
-        android:name="com.mh.basickotlin.ui.pablo.fragment.FrgPabloCalculator"
+        android:name="com.mh.basickotlin.pablo.view.fragment.FrgPabloCalculator"
         android:label="FrgPabloCalculator" />
 
     <fragment
@@ -136,4 +139,9 @@
         android:id="@+id/frgAntonioPresenter"
         android:name="com.mh.basickotlin.antonio.view.view.fragment.FrgAntonioPresenter"
         android:label="FrgAntonioPresenter" />
+    <fragment
+        android:id="@+id/frgPabloData"
+        android:name="com.mh.basickotlin.pablo.view.fragment.FrgPabloData"
+        android:label="frg_pablo_data"
+        tools:layout="@layout/frg_pablo_data" />
 </navigation>
