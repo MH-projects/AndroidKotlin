@@ -1,4 +1,4 @@
-package com.mh.basickotlin.ui.manuel.view.activity
+package com.mh.basickotlin.manuel.view.activity
 
 import android.os.Bundle
 import android.text.Editable
@@ -6,7 +6,7 @@ import android.text.TextWatcher
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.mh.basickotlin.databinding.ActManuelCalculatorBinding
-import com.mh.basickotlin.ui.manuel.Calculator
+import com.mh.basickotlin.manuel.Calculator
 
 class ActManuelCalculator : AppCompatActivity() {
 

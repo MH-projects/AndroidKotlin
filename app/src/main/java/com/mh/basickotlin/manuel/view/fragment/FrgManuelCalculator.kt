@@ -1,4 +1,4 @@
-package com.mh.basickotlin.ui.manuel.view.fragment
+package com.mh.basickotlin.manuel.view.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,10 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.mh.basickotlin.databinding.FrgManuelCalculatorBinding
-import com.mh.basickotlin.ui.manuel.model.Digit
-import com.mh.basickotlin.ui.manuel.model.Operator
-import com.mh.basickotlin.ui.manuel.presenter.ManuelCalculatorPresenter
-import com.mh.basickotlin.ui.manuel.presenter.contract.ManuelCalculatorContract
+import com.mh.basickotlin.manuel.model.Digit
+import com.mh.basickotlin.manuel.model.Operator
+import com.mh.basickotlin.manuel.presenter.ManuelCalculatorPresenter
+import com.mh.basickotlin.manuel.presenter.contract.ManuelCalculatorContract
 
 class FrgManuelCalculator : Fragment(), ManuelCalculatorContract.View {
 

@@ -47,6 +47,13 @@
         <item name="android:layout_weight">1</item>
     </style>
 
+    <style name="Theme_BackgroundButtonContentManuel">
+        <item name="android:background">@drawable/bg_mh_button</item>
+        <item name="android:textColor">@color/mh_primary</item>
+        <item name="android:textSize">26sp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
     <style name="Theme_BackgroundButtonOperatorManuel" parent="Theme_BackgroundButtonManuel">
         <item name="android:background">@drawable/bg_mh_button_operator</item>
         <item name="android:textColor">@color/mh_secondary</item>

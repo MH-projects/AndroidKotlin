@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.manuel.view.activity.ActManuelContent">
+    tools:context="com.mh.basickotlin.manuel.view.activity.ActManuelContent">
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnCalculator"

@@ -1,7 +1,7 @@
-package com.mh.basickotlin.ui.manuel.presenter
+package com.mh.basickotlin.manuel.presenter
 
-import com.mh.basickotlin.ui.manuel.presenter.contract.ManuelCalculatorContract
-import com.mh.basickotlin.ui.manuel.view.fragment.FrgManuelCalculator
+import com.mh.basickotlin.manuel.presenter.contract.ManuelCalculatorContract
+import com.mh.basickotlin.manuel.view.fragment.FrgManuelCalculator
 import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test

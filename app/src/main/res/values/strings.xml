@@ -2,7 +2,9 @@
     <string name="app_name">BasicKotlin</string>
 
     <!-- MH's strings-->
+    <string name="mh_presentation">Presentation</string>
     <string name="mh_calculator">Calculator</string>
+
     <!-- MH's strings-->
     <string name="pa_calculator">Calculator</string>
     <string name="name">Name:</string>

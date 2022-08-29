@@ -1,8 +1,8 @@
-package com.mh.basickotlin.ui.manuel.presenter
+package com.mh.basickotlin.manuel.presenter
 
-import com.mh.basickotlin.ui.manuel.model.Digit
-import com.mh.basickotlin.ui.manuel.model.Operator
-import com.mh.basickotlin.ui.manuel.presenter.contract.ManuelCalculatorContract
+import com.mh.basickotlin.manuel.model.Digit
+import com.mh.basickotlin.manuel.model.Operator
+import com.mh.basickotlin.manuel.presenter.contract.ManuelCalculatorContract
 
 class ManuelCalculatorPresenter(
     private val callBackView: ManuelCalculatorContract.View

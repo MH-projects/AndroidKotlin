@@ -1,4 +1,4 @@
-package com.mh.basickotlin.ui.manuel
+package com.mh.basickotlin.manuel
 
 class Calculator {
 

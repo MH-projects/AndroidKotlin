@@ -1,4 +1,4 @@
-package com.mh.basickotlin.ui.manuel
+package com.mh.basickotlin.manuel
 
 import org.junit.Assert.assertEquals
 import org.junit.Before

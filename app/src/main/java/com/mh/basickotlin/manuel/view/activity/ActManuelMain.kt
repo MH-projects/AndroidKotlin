@@ -1,4 +1,4 @@
-package com.mh.basickotlin.ui.manuel.view.activity
+package com.mh.basickotlin.manuel.view.activity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button

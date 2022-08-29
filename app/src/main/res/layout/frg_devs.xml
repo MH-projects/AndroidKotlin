@@ -6,7 +6,7 @@
     android:background="@android:color/white"
     android:orientation="vertical"
     android:padding="14dp"
-    tools:context=".ui.manuel.view.activity.ActManuelMain">
+    tools:context="com.mh.basickotlin.manuel.view.activity.ActManuelMain">
 
     <Button
         android:id="@+id/btnManuel"

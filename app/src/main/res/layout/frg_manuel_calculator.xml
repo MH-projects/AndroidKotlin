@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/mh_primary"
     android:padding="14dp"
-    tools:context=".ui.manuel.view.activity.ActManuelCalculator">
+    tools:context="com.mh.basickotlin.manuel.view.activity.ActManuelCalculator">
 
     <TextView
         android:id="@+id/tvOperation"
