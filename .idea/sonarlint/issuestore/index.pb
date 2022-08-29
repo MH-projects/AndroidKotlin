@@ -21,7 +21,5 @@ m
 =app/src/main/java/com/mh/basickotlin/ui/angel/frgAngelMain.kt,e/3/e35a70a4cde087821bf7cb3e040da84be78ada41
 s
 Capp/src/main/java/com/mh/basickotlin/ui/angel/FrgAngelCalculator.kt,1/5/1541450ef2bb6f399d8dd0fcea1f5288aa2863a6
-@
-app/build.gradle,f/4/f4a01d6a4fcb971362ec00a83903fd3902f52164
 m
 =app/src/main/java/com/mh/basickotlin/ui/josue/ActJosueMain.kt,7/5/75420b4697ba6632480e1ea43c14f187b660bb13
