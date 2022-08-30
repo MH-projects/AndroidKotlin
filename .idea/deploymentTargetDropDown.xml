@@ -7,19 +7,11 @@
         <deviceKey>
           <Key>
             <type value="VIRTUAL_DEVICE_PATH" />
-<<<<<<< HEAD
-            <value value="C:\Users\Pablo Amaya\.android\avd\Pixel_2_API_30.avd" />
-=======
             <value value="C:\Users\The_l\.android\avd\Nexus_5X_5.2_pul.avd" />
->>>>>>> 3bed193 (feature auto result juan)
           </Key>
         </deviceKey>
       </Target>
     </targetSelectedWithDropDown>
-<<<<<<< HEAD
-    <timeTargetWasSelectedWithDropDown value="2022-08-26T16:46:27.785183800Z" />
-=======
-    <timeTargetWasSelectedWithDropDown value="2022-08-25T15:32:51.898838200Z" />
->>>>>>> 3bed193 (feature auto result juan)
+    <timeTargetWasSelectedWithDropDown value="2022-08-29T20:42:13.224670800Z" />
   </component>
 </project>

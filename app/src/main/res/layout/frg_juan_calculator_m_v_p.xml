@@ -7,10 +7,10 @@
 
     <EditText
         android:id="@+id/edInput"
+        style="@style/Theme_BackgroundButtonJuan"
         android:layout_width="370dp"
         android:layout_height="70dp"
         android:layout_marginTop="10dp"
-        style="@style/Theme_BackgroundButtonJuan"
         android:clickable="false"
         android:cursorVisible="false"
         android:ems="10"
@@ -30,8 +30,8 @@
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="40dp"
-        android:paddingRight="10dp"
         android:paddingTop="5dp"
+        android:paddingRight="10dp"
         android:textColor="@color/teal_200"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,6 +46,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvResult">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -62,8 +63,8 @@
                 tools:layout_editor_absoluteY="329dp" />
 
             <androidx.appcompat.widget.AppCompatButton
-                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btnmenos"
+                style="@style/Theme_BackgroundButtonJuan"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:text="--"
@@ -71,8 +72,8 @@
                 tools:layout_editor_absoluteY="329dp" />
 
             <androidx.appcompat.widget.AppCompatButton
-                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btnpor"
+                style="@style/Theme_BackgroundButtonJuan"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:text="x"
@@ -80,14 +81,15 @@
                 tools:layout_editor_absoluteY="329dp" />
 
             <androidx.appcompat.widget.AppCompatButton
-                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btndiv"
+                style="@style/Theme_BackgroundButtonJuan"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:text="/"
                 tools:layout_editor_absoluteX="127dp"
                 tools:layout_editor_absoluteY="329dp" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -95,8 +97,8 @@
             android:weightSum="4">
 
             <androidx.appcompat.widget.AppCompatButton
-                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btn7"
+                style="@style/Theme_BackgroundButtonJuan"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:text="7"
@@ -104,8 +106,8 @@
                 tools:layout_editor_absoluteY="329dp" />
 
             <androidx.appcompat.widget.AppCompatButton
-                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btn8"
+                style="@style/Theme_BackgroundButtonJuan"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:text="8"
@@ -113,8 +115,8 @@
                 tools:layout_editor_absoluteY="329dp" />
 
             <androidx.appcompat.widget.AppCompatButton
-                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btn9"
+                style="@style/Theme_BackgroundButtonJuan"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:text="9"
@@ -122,8 +124,8 @@
                 tools:layout_editor_absoluteY="329dp" />
 
             <androidx.appcompat.widget.AppCompatButton
-                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btndelete"
+                style="@style/Theme_BackgroundButtonJuan"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:text="R"
@@ -131,6 +133,7 @@
                 tools:layout_editor_absoluteY="329dp" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -138,8 +141,8 @@
             android:weightSum="4">
 
             <androidx.appcompat.widget.AppCompatButton
-                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btn4"
+                style="@style/Theme_BackgroundButtonJuan"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:text="4"
@@ -147,8 +150,8 @@
                 tools:layout_editor_absoluteY="329dp" />
 
             <androidx.appcompat.widget.AppCompatButton
-                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btn5"
+                style="@style/Theme_BackgroundButtonJuan"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:text="5"
@@ -156,8 +159,8 @@
                 tools:layout_editor_absoluteY="329dp" />
 
             <androidx.appcompat.widget.AppCompatButton
-                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btn6"
+                style="@style/Theme_BackgroundButtonJuan"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:text="6"
@@ -165,8 +168,8 @@
                 tools:layout_editor_absoluteY="329dp" />
 
             <androidx.appcompat.widget.AppCompatButton
-                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btnclear"
+                style="@style/Theme_BackgroundButtonJuan"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:text="C"
@@ -174,6 +177,7 @@
                 tools:layout_editor_absoluteY="329dp" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -181,8 +185,8 @@
             android:weightSum="4">
 
             <androidx.appcompat.widget.AppCompatButton
-                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btn1"
+                style="@style/Theme_BackgroundButtonJuan"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:text="1"
@@ -190,8 +194,8 @@
                 tools:layout_editor_absoluteY="329dp" />
 
             <androidx.appcompat.widget.AppCompatButton
-                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btn2"
+                style="@style/Theme_BackgroundButtonJuan"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:text="2"
@@ -199,8 +203,8 @@
                 tools:layout_editor_absoluteY="329dp" />
 
             <androidx.appcompat.widget.AppCompatButton
-                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btn3"
+                style="@style/Theme_BackgroundButtonJuan"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:text="3"
@@ -208,8 +212,8 @@
                 tools:layout_editor_absoluteY="329dp" />
 
             <androidx.appcompat.widget.AppCompatButton
-                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btn0"
+                style="@style/Theme_BackgroundButtonJuan"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:text="0"
@@ -217,17 +221,19 @@
                 tools:layout_editor_absoluteY="329dp" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:weightSum="4">
+
             <androidx.appcompat.widget.AppCompatButton
-                style="@style/Theme_BackgroundButtonJuan"
                 android:id="@+id/btnres"
-                android:layout_marginTop="20dp"
+                style="@style/Theme_BackgroundButtonJuan"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
+                android:layout_marginTop="20dp"
                 android:text="="
                 android:textSize="24sp"
                 tools:layout_editor_absoluteX="127dp"
