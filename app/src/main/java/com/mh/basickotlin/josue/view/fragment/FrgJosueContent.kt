@@ -1,4 +1,4 @@
-package com.mh.basickotlin.ui.josue
+package com.mh.basickotlin.josue.view.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -24,6 +24,9 @@ class FrgJosueContent : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         view.findViewById<Button>(R.id.btnFrgJosueCalculator).setOnClickListener {
             findNavController().navigate(R.id.frgJosueCalculator)
+        }
+        view.findViewById<Button>(R.id.btnFrgJosueWelcome).setOnClickListener {
+            findNavController().navigate(R.id.frgJosueWelcome)
         }
     }
 }

@@ -29,7 +29,7 @@
             android:name=".ui.angel.ActAngelMain"
             android:exported="false" />
         <activity
-            android:name=".ui.josue.ActJosueMain"
+            android:name=".josue.view.activity.ActJosueMain"
             android:exported="false" />
         <activity
             android:name=".ui.juan.activity.ActJuanMain"

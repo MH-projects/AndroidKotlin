@@ -1,4 +1,4 @@
-package com.mh.basickotlin.ui.josue
+package com.mh.basickotlin.josue
 
 class Operation {
 

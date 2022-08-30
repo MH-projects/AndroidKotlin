@@ -1,12 +1,12 @@
-package com.mh.basickotlin.ui.josue
+package com.mh.basickotlin.josue.view.activity
 
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.widget.addTextChangedListener
 import com.mh.basickotlin.databinding.ActJosueMainBinding
+import com.mh.basickotlin.josue.Operation
 
 class ActJosueMain : AppCompatActivity() {
 
