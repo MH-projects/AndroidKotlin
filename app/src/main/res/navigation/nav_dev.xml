@@ -7,13 +7,13 @@
 
     <fragment
         android:id="@+id/frgDevs"
-        android:name="com.mh.basickotlin.ui.manuel.view.fragment.FrgDevs"
+        android:name="com.mh.basickotlin.manuel.view.fragment.FrgDevs"
         android:label="FrgDevs"
         tools:layout="@layout/frg_devs">
 
         <action
-            android:id="@+id/toFrgManuelCalculator"
-            app:destination="@id/frgManuelCalculator" />
+            android:id="@+id/toFrgManuelContent"
+            app:destination="@id/frgManuelContent" />
 
         <action
             android:id="@+id/toFrgAngelMain"
@@ -30,6 +30,7 @@
         <action
             android:id="@+id/toFrgJosueContent"
             app:destination="@id/frgJosueContent" />
+
         <action
             android:id="@+id/toFrgJuanContent"
             app:destination="@id/frgJuanContent" />
@@ -37,33 +38,52 @@
 
     <!-- Content -->
     <fragment
+        android:id="@+id/frgManuelContent"
+        android:name="com.mh.basickotlin.manuel.view.fragment.FrgManuelContent"
+        android:label="frg_manuel_content"
+        tools:layout="@layout/frg_manuel_content">
+        <action
+            android:id="@+id/toFrgManuelCalculator"
+            app:destination="@id/frgManuelCalculator" />
+    </fragment>
+
+    <fragment
         android:id="@+id/frgAngelMain"
         android:name="com.mh.basickotlin.ui.angel.frgAngelMain"
         android:label="frg_angel_main"
         tools:layout="@layout/frg_angel_main">
         <action
-            android:id="@+id/toFrgAngelCalculator"
+            android:id="@+id/action_frgAngelMain_to_frgAngelCalculator"
             app:destination="@id/frgAngelCalculator" />
+        <action
+            android:id="@+id/action_frgAngelMain_to_frgAngelInformation"
+            app:destination="@id/frgAngelInformation" />
     </fragment>
 
     <fragment
         android:id="@+id/frgPabloContent"
-        android:name="com.mh.basickotlin.ui.pablo.fragment.FrgPabloContent"
+        android:name="com.mh.basickotlin.pablo.view.fragment.FrgPabloContent"
         android:label="frg_pablo_content"
         tools:layout="@layout/frg_pablo_content">
         <action
             android:id="@+id/toFrgPabloCalculator"
             app:destination="@id/frgPabloCalculator" />
+        <action
+            android:id="@+id/toFrgPabloData"
+            app:destination="@id/frgPabloData" />
     </fragment>
 
     <fragment
         android:id="@+id/frgAntonioContent"
-        android:name="com.mh.basickotlin.ui.antonio.fragment.FrgAntonioContent"
+        android:name="com.mh.basickotlin.antonio.view.view.fragment.FrgAntonioContent"
         android:label="frg_antonio_content"
         tools:layout="@layout/frg_antonio_content">
         <action
             android:id="@+id/toFrgAntonioCalculadora"
             app:destination="@id/frgAntonioCalculator" />
+        <action
+            android:id="@+id/toFrgAntonioPresenter"
+            app:destination="@id/frgAntonioPresenter" />
     </fragment>
 
     <fragment
@@ -80,23 +100,18 @@
 
     <fragment
         android:id="@+id/frgManuelCalculator"
-        android:name="com.mh.basickotlin.ui.manuel.view.fragment.FrgManuelCalculator"
+        android:name="com.mh.basickotlin.manuel.view.fragment.FrgManuelCalculator"
         android:label="FrgManuelCalculator"
         tools:layout="@layout/frg_manuel_calculator" />
 
     <fragment
-        android:id="@+id/frgAngelCalculator"
-        android:name="com.mh.basickotlin.ui.angel.FrgAngelCalculator"
-        android:label="frgAngelCalculator" />
-
-    <fragment
         android:id="@+id/frgPabloCalculator"
-        android:name="com.mh.basickotlin.ui.pablo.fragment.FrgPabloCalculator"
+        android:name="com.mh.basickotlin.pablo.view.fragment.FrgPabloCalculator"
         android:label="FrgPabloCalculator" />
 
     <fragment
         android:id="@+id/frgAntonioCalculator"
-        android:name="com.mh.basickotlin.ui.antonio.fragment.FrgAntonioCalculator"
+        android:name="com.mh.basickotlin.antonio.view.view.fragment.FrgAntonioCalculator"
         android:label="frg_antonio_calculator"
         tools:layout="@layout/frg_antonio_calculator" />
 
@@ -118,4 +133,23 @@
         android:id="@+id/frgJuanCalculator"
         android:name="com.mh.basickotlin.ui.juan.activity.fragment.FrgJuanCalculator"
         android:label="FrgJuanCalculator" />
+    <fragment
+
+        android:id="@+id/frgAntonioPresenter"
+        android:name="com.mh.basickotlin.antonio.view.view.fragment.FrgAntonioPresenter"
+        android:label="FrgAntonioPresenter" />
+    <fragment
+        android:id="@+id/frgPabloData"
+        android:name="com.mh.basickotlin.pablo.view.fragment.FrgPabloData"
+        android:label="frg_pablo_data"
+        tools:layout="@layout/frg_pablo_data" />
+    <fragment
+        android:id="@+id/frgAngelCalculator"
+        android:name="com.mh.basickotlin.ui.angel.view.FrgAngelCalculator"
+        android:label="FrgAngelCalculator" />
+    <fragment
+        android:id="@+id/frgAngelInformation"
+        android:name="com.mh.basickotlin.ui.angel.frgAngelInformation"
+        android:label="frg_angel_information"
+        tools:layout="@layout/frg_angel_information" />
 </navigation>

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     style="@style/Theme_Backgroundfrg"
-    tools:context=".ui.antonio.ActAntonioMain">
+    tools:context="com.mh.basickotlin.antonio.view.view.activy.ActAntonioMain">
 
     <androidx.appcompat.widget.AppCompatCheckBox
         android:id="@+id/cbAutoResult"
@@ -17,12 +17,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
+    <TextView
         android:id="@+id/etInsertNum"
         android:layout_width="match_parent"
         android:layout_height="90dp"
         android:clickable="false"
-        android:cursorVisible="false"
         android:focusable="false"
         android:importantForAutofill="no"
         app:layout_constraintBottom_toBottomOf="parent"

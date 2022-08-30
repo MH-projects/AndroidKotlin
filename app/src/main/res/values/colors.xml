@@ -18,4 +18,8 @@
     <color name="background">#9A9A9A</color>
     <color name="background_button">@android:color/white</color>
 
+    <color name="pg_secondary_alpha">#80FFFFFF</color>
+    <color name="pg_secondary">#FFFFFF</color>
+
+
 </resources>

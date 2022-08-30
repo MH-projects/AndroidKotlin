@@ -2,9 +2,12 @@
     <string name="app_name">BasicKotlin</string>
 
     <!-- MH's strings-->
+    <string name="mh_presentation">Presentation</string>
     <string name="mh_calculator">Calculator</string>
+
     <!-- MH's strings-->
     <string name="pa_calculator">Calculator</string>
+    <string name="pa_data">Data</string>
     <string name="name">Name:</string>
     <!-- Number -->
     <string name="uno">1</string>
@@ -94,5 +97,9 @@
     <!--JOSUE´s STRINGS-->
     <string name="jc_firstproyect">Calculadora</string>
     <string name="jc_secondproyect">Segundo Proyecto</string>
+
+    <!-- messages frgPabloCalculator-->
+    <string name="frgPabloCalculatorNumber">No se pueden ingresar mas de 3 numeros</string>
+
 
 </resources>

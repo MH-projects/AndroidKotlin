@@ -25,5 +25,8 @@ class frgAngelMain : Fragment() {
         view.findViewById<Button>(R.id.btnToCalculatorAng).setOnClickListener {
             findNavController().navigate(R.id.frgAngelCalculator)
         }
+        view.findViewById<Button>(R.id.btnAngelInformation).setOnClickListener {
+            findNavController().navigate(R.id.frgAngelInformation)
+        }
     }
 }
