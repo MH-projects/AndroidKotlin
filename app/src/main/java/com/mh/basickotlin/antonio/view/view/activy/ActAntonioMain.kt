@@ -1,4 +1,4 @@
-package com.mh.basickotlin.ui.antonio
+package com.mh.basickotlin.antonio.view.view.activy
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,8 +6,8 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
 import android.view.View
+import com.mh.basickotlin.antonio.clasesAntonio.Calculadora
 import com.mh.basickotlin.databinding.ActAntonioMainBinding
-import com.mh.basickotlin.ui.antonio.clasesAntonio.Calculadora
 
 class ActAntonioMain : AppCompatActivity() {
     //bindind tomara el nombre del layout de la actividad con formato camel case

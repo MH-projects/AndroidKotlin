@@ -69,12 +69,15 @@
 
     <fragment
         android:id="@+id/frgAntonioContent"
-        android:name="com.mh.basickotlin.ui.antonio.fragment.FrgAntonioContent"
+        android:name="com.mh.basickotlin.antonio.view.view.fragment.FrgAntonioContent"
         android:label="frg_antonio_content"
         tools:layout="@layout/frg_antonio_content">
         <action
             android:id="@+id/toFrgAntonioCalculadora"
             app:destination="@id/frgAntonioCalculator" />
+        <action
+            android:id="@+id/toFrgAntonioPresenter"
+            app:destination="@id/frgAntonioPresenter" />
     </fragment>
 
     <fragment
@@ -107,7 +110,7 @@
 
     <fragment
         android:id="@+id/frgAntonioCalculator"
-        android:name="com.mh.basickotlin.ui.antonio.fragment.FrgAntonioCalculator"
+        android:name="com.mh.basickotlin.antonio.view.view.fragment.FrgAntonioCalculator"
         android:label="frg_antonio_calculator"
         tools:layout="@layout/frg_antonio_calculator" />
 
@@ -129,4 +132,8 @@
         android:id="@+id/frgJuanCalculator"
         android:name="com.mh.basickotlin.ui.juan.activity.fragment.FrgJuanCalculator"
         android:label="FrgJuanCalculator" />
+    <fragment
+        android:id="@+id/frgAntonioPresenter"
+        android:name="com.mh.basickotlin.antonio.view.view.fragment.FrgAntonioPresenter"
+        android:label="FrgAntonioPresenter" />
 </navigation>

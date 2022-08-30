@@ -1,4 +1,4 @@
-package com.mh.basickotlin.ui.antonio.clasesAntonio
+package com.mh.basickotlin.antonio.clasesAntonio
 
 import org.junit.Assert.*
 import org.junit.Before

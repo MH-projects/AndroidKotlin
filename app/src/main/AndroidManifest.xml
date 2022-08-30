@@ -20,7 +20,7 @@
             android:name="com.mh.basickotlin.manuel.view.activity.ActManuelCalculator"
             android:exported="false" />
         <activity
-            android:name=".ui.antonio.ActAntonioMain"
+            android:name="com.mh.basickotlin.antonio.view.view.activy.ActAntonioMain"
             android:exported="true" />
         <activity
             android:name=".ui.pablo.activity.ActPabloMain"
