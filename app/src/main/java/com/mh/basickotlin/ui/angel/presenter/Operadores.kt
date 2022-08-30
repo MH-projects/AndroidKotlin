@@ -1,6 +1,6 @@
-package com.mh.basickotlin.ui.angel
+package com.mh.basickotlin.ui.angel.presenter
 
-class Operators {
+class Operadores {
 
     fun conString(number: String): Int {
         return if (number.isEmpty()) 0 else number.toInt()

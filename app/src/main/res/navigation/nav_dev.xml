@@ -53,8 +53,11 @@
         android:label="frg_angel_main"
         tools:layout="@layout/frg_angel_main">
         <action
-            android:id="@+id/toFrgAngelCalculator"
+            android:id="@+id/action_frgAngelMain_to_frgAngelCalculator"
             app:destination="@id/frgAngelCalculator" />
+        <action
+            android:id="@+id/action_frgAngelMain_to_frgAngelInformation"
+            app:destination="@id/frgAngelInformation" />
     </fragment>
 
     <fragment
@@ -102,11 +105,6 @@
         tools:layout="@layout/frg_manuel_calculator" />
 
     <fragment
-        android:id="@+id/frgAngelCalculator"
-        android:name="com.mh.basickotlin.ui.angel.FrgAngelCalculator"
-        android:label="frgAngelCalculator" />
-
-    <fragment
         android:id="@+id/frgPabloCalculator"
         android:name="com.mh.basickotlin.pablo.view.fragment.FrgPabloCalculator"
         android:label="FrgPabloCalculator" />
@@ -136,6 +134,7 @@
         android:name="com.mh.basickotlin.ui.juan.activity.fragment.FrgJuanCalculator"
         android:label="FrgJuanCalculator" />
     <fragment
+
         android:id="@+id/frgAntonioPresenter"
         android:name="com.mh.basickotlin.antonio.view.view.fragment.FrgAntonioPresenter"
         android:label="FrgAntonioPresenter" />
@@ -144,4 +143,13 @@
         android:name="com.mh.basickotlin.pablo.view.fragment.FrgPabloData"
         android:label="frg_pablo_data"
         tools:layout="@layout/frg_pablo_data" />
+    <fragment
+        android:id="@+id/frgAngelCalculator"
+        android:name="com.mh.basickotlin.ui.angel.view.FrgAngelCalculator"
+        android:label="FrgAngelCalculator" />
+    <fragment
+        android:id="@+id/frgAngelInformation"
+        android:name="com.mh.basickotlin.ui.angel.frgAngelInformation"
+        android:label="frg_angel_information"
+        tools:layout="@layout/frg_angel_information" />
 </navigation>

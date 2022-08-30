@@ -35,7 +35,7 @@
             android:name=".ui.juan.activity.ActJuanMain"
             android:exported="false" />
         <activity
-            android:name=".ui.angel.FrgAngelCalculator"
+            android:name=".ui.angel.frgAngelnformation"
             android:exported="false" />
         <activity
             android:name="com.mh.basickotlin.manuel.view.activity.ActManuelMain"

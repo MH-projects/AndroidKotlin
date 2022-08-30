@@ -46,7 +46,6 @@ class ManuelCalculatorPresenter(
         digit1 = ""
         digit2 = ""
         operator = ""
-
         setOperation()
         callBackView.setResult("")
     }
