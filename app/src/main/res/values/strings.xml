@@ -95,8 +95,9 @@
     <string name="FrgCalculator">Calculadora</string>
 
     <!--JOSUE´s STRINGS-->
-    <string name="jc_firstproyect">Calculadora</string>
-    <string name="jc_secondproyect">Segundo Proyecto</string>
+    <string name="jc_firstproyect">Proyecto Inicial</string>
+    <string name="jc_secondproyect">Calculadora</string>
+    <string name="jc_name">Name:</string>
 
     <!-- messages frgPabloCalculator-->
     <string name="frgPabloCalculatorNumber">No se pueden ingresar mas de 3 numeros</string>

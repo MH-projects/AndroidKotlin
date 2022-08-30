@@ -88,12 +88,15 @@
 
     <fragment
         android:id="@+id/frgJosueContent"
-        android:name="com.mh.basickotlin.ui.josue.FrgJosueContent"
+        android:name="com.mh.basickotlin.josue.view.fragment.FrgJosueContent"
         android:label="frg_josue_content"
         tools:layout="@layout/frg_josue_content">
         <action
             android:id="@+id/tofrgJosueCalculator"
             app:destination="@id/frgJosueCalculator" />
+        <action
+            android:id="@+id/action_frgJosueContent_to_frgJosueWelcome"
+            app:destination="@id/frgJosueWelcome" />
     </fragment>
 
     <!-- Calculators -->
@@ -117,7 +120,7 @@
 
     <fragment
         android:id="@+id/frgJosueCalculator"
-        android:name="com.mh.basickotlin.ui.josue.FrgJosueCalculator"
+        android:name="com.mh.basickotlin.josue.view.fragment.FrgJosueCalculator"
         android:label="frg_josue_calculator"
         tools:layout="@layout/frg_josue_calculator" />
     <fragment
@@ -133,6 +136,7 @@
         android:id="@+id/frgJuanCalculator"
         android:name="com.mh.basickotlin.ui.juan.activity.fragment.FrgJuanCalculator"
         android:label="FrgJuanCalculator" />
+
     <fragment
 
         android:id="@+id/frgAntonioPresenter"
@@ -152,4 +156,11 @@
         android:name="com.mh.basickotlin.ui.angel.frgAngelInformation"
         android:label="frg_angel_information"
         tools:layout="@layout/frg_angel_information" />
+
+    <!--First Proyect-->
+    <fragment
+        android:id="@+id/frgJosueWelcome"
+        android:name="com.mh.basickotlin.josue.view.fragment.FrgJosueWelcome"
+        android:label="frg_josue_welcome"
+        tools:layout="@layout/frg_josue_welcome" />
 </navigation>
