@@ -3,8 +3,6 @@
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 t
 Dapp/src/main/java/com/mh/basickotlin/ui/juan/activity/ActJuanMain.kt,3\a\3a12ceed75dc1f4d6067030aaa8ddbb0c5f19b8e
-|
-Lapp/src/main/java/com/mh/basickotlin/ui/pablo/fragment/FrgPabloCalculator.kt,1\5\15ab4a6e98f9975eb69c799658d9971c7a147d19
 s
 Capp/src/main/java/com/mh/basickotlin/ui/juan/activity/Calculator.kt,6\9\696214135f3d4b470aaaad3c6d8071f29db53600
 €
@@ -22,4 +20,20 @@ m
 s
 Capp/src/main/java/com/mh/basickotlin/ui/angel/FrgAngelCalculator.kt,1/5/1541450ef2bb6f399d8dd0fcea1f5288aa2863a6
 m
-=app/src/main/java/com/mh/basickotlin/ui/josue/ActJosueMain.kt,7/5/75420b4697ba6632480e1ea43c14f187b660bb13
+=app/src/main/java/com/mh/basickotlin/ui/josue/ActJosueMain.kt,7\5\75420b4697ba6632480e1ea43c14f187b660bb13
+b
+2app/src/main/java/com/mh/basickotlin/UtilKotlin.kt,8\0\802137b7656b2880efb6e92f414ede581ca39c8b
+s
+Capp/src/main/java/com/mh/basickotlin/pablo/model/BasicOperations.kt,b\0\b0a7c472dcbc4712c899b974072cf840ce6e865d
+j
+:app/src/main/java/com/mh/basickotlin/pablo/model/Number.kt,d\0\d02f9120bfce899d196dc1e25f0ab4258383e787
+l
+<app/src/main/java/com/mh/basickotlin/pablo/model/Messages.kt,0\e\0e45c9c7d452c0231426e4456a090ddefa3add15
+€
+Papp/src/main/java/com/mh/basickotlin/pablo/presenter/PabloCalculatorPresenter.kt,0\1\01f501932f031dd5ceb18c7c0d5d9b638da7a297
+b
+2app/src/main/java/com/mh/basickotlin/MainJava.java,5\a\5a1a989c1e5ac7283c879dda02fd214d1bd1e369
+{
+Kapp/src/main/java/com/mh/basickotlin/pablo/view/fragment/FrgPabloContent.kt,d\c\dc44332358360ef49da363ccbeb6d4a17ed24e48
+~
+Napp/src/main/java/com/mh/basickotlin/pablo/view/fragment/FrgPabloCalculator.kt,1\a\1a0494f151fa611d0d69de88bc33f6534650ba6b

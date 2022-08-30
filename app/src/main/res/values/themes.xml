@@ -23,6 +23,7 @@
     </style>
 
     <style name="Theme_BackgroundButton" parent="Theme_BackgroundButtonBase">
+        <item name="android:background">@drawable/bg_pa_button</item>
         <item name="android:textColor">@android:color/black</item>
     </style>
 
@@ -57,6 +58,11 @@
     <style name="Theme_BackgroundButtonOperatorManuel" parent="Theme_BackgroundButtonManuel">
         <item name="android:background">@drawable/bg_mh_button_operator</item>
         <item name="android:textColor">@color/mh_secondary</item>
+    </style>
+
+    <style name="Theme_BackgroundButtonPablo">
+        <item name="android:background">@drawable/bg_mh_button</item>
+        <item name="android:layout_margin">4dp</item>
     </style>
 
 </resources>

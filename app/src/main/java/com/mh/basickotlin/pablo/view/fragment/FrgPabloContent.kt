@@ -1,9 +1,10 @@
-package com.mh.basickotlin.ui.pablo.fragment
+package com.mh.basickotlin.pablo.view.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.mh.basickotlin.R
@@ -22,8 +23,13 @@ class FrgPabloContent : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.btPabloCalculator.setOnClickListener {
-            findNavController().navigate(R.id.toFrgPabloCalculator)
+        binding.btPabloCalculator.setOnClickListener(R.id.toFrgPabloCalculator)
+        binding.btPabloData.setOnClickListener(R.id.toFrgPabloData)
+    }
+
+    private fun Button.setOnClickListener(fragment: Int) {
+        setOnClickListener {
+            findNavController().navigate(fragment)
         }
     }
 }
