@@ -1,33 +1,33 @@
-/*
- * AngelCalculatorPresenter.kt
- * Android Kotlin App
- * Created by Angel Morales on 31/08/2022, 11:19:17
- * Copyright (c)  2022 Develop- Mx. All rights reserved.
- */
-package com.mh.basickotlin.angel.calculator.presenter
+package com.mh.basickotlin.angel.viewmodel
 
-import com.mh.basickotlin.angel.calculator.model.Numbers
-import com.mh.basickotlin.angel.calculator.model.Operators
-import com.mh.basickotlin.angel.presenter.AngelCalcContract
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import com.mh.basickotlin.angel.calculator.presenter.Operadores
+import com.mh.basickotlin.angel.model.Numbers
+import com.mh.basickotlin.angel.model.Operators
 
-class AngelCalculatorPresenter(
-    private val callBackView: AngelCalcContract.View
-) : AngelCalcContract.presenter {
+class AngelCalculatorVM : ViewModel() {
+    private val _textOperation = MutableLiveData<String>()
+    private val _textResult = MutableLiveData<String>()
+
+    val textOperation: LiveData<String> get() = _textOperation
+    val textResult: LiveData<String> get() = _textResult
 
     private var quanty1 = ""
     private var quanty2 = ""
     private var operator = ""
     private var autoResult = false
-    lateinit var Operadores: Operadores
+    private var Operadores = Operadores()
 
-    private fun setOperation() {
-        callBackView.putOperation("$quanty1 $operator $quanty2")
+    fun setOperation() {
+        _textOperation.postValue("$quanty1 $operator $quanty2")
         if (autoResult) {
             result()
         }
     }
 
-    override fun checkDigit(digit: Numbers) {
+    fun checkDigit(digit: Numbers) {
         if (operator.isEmpty()) {
             if ((quanty1.isEmpty() && digit.valor != "0") || (quanty1.isNotEmpty() && quanty1.length < 3)) {
                 quanty1 += digit.valor
@@ -40,7 +40,7 @@ class AngelCalculatorPresenter(
         setOperation()
     }
 
-    override fun checkOperator(value: Operators) {
+    fun checkOperator(value: Operators) {
         if (quanty1.isNotEmpty()) {
             operator = value.operator
             setOperation()
@@ -48,15 +48,15 @@ class AngelCalculatorPresenter(
         }
     }
 
-    override fun clear() {
+    fun clear() {
         quanty1 = ""
         quanty2 = ""
         operator = ""
         setOperation()
-        callBackView.putResult("")
+        _textResult.postValue("")
     }
 
-    override fun deletelast() {
+    fun deletelast() {
         if (quanty2.isNotEmpty()) {
             quanty2 = quanty2.dropLast(1)
         } else if (quanty2.isEmpty() && operator.isNotEmpty()) {
@@ -67,21 +67,21 @@ class AngelCalculatorPresenter(
         putOperation()
     }
 
-    private fun putOperation() {
-        callBackView.putOperation("$quanty1 $operator $quanty2")
+    fun putOperation() {
+        _textOperation.postValue("$quanty1 $operator $quanty2")
         if (autoResult) {
             result()
         }
     }
 
-    override fun autoResult(autoResult: Boolean) {
+    fun autoResult(autoResult: Boolean) {
         this.autoResult = autoResult
         result()
     }
 
-    override fun result() {
+    fun result() {
         if (quanty2.isEmpty()) {
-            callBackView.putResult("")
+            _textResult.postValue("")
         } else {
             val a = quanty1.toInt()
             val b = quanty2.toInt()
@@ -106,7 +106,7 @@ class AngelCalculatorPresenter(
                     "--Error--"
                 }
             }
-            callBackView.putResult("$result")
+            _textResult.postValue(result.toString())
         }
     }
 }

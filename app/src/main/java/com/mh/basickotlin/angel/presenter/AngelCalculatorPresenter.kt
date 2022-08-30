@@ -4,11 +4,12 @@
  * Created by Angel Morales on 31/08/2022, 11:19:17
  * Copyright (c)  2022 Develop- Mx. All rights reserved.
  */
-package com.mh.basickotlin.angel.calculator.presenter
+
+package com.mh.basickotlin.angel.presenter
 
 import com.mh.basickotlin.angel.calculator.model.Numbers
 import com.mh.basickotlin.angel.calculator.model.Operators
-import com.mh.basickotlin.angel.presenter.AngelCalcContract
+import com.mh.basickotlin.angel.calculator.presenter.Operadores
 
 class AngelCalculatorPresenter(
     private val callBackView: AngelCalcContract.View
@@ -18,7 +19,7 @@ class AngelCalculatorPresenter(
     private var quanty2 = ""
     private var operator = ""
     private var autoResult = false
-    lateinit var Operadores: Operadores
+    private var Operadores = Operadores()
 
     private fun setOperation() {
         callBackView.putOperation("$quanty1 $operator $quanty2")
