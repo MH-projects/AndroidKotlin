@@ -4,6 +4,7 @@
     <!-- MH's strings-->
     <string name="mh_presentation">Presentation</string>
     <string name="mh_calculator">Calculator</string>
+    <string name="mh_recycler_card_view">Recycler&amp;Card View</string>
 
     <!-- MH's strings-->
     <string name="pa_calculator">Calculator</string>

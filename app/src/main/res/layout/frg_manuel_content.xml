@@ -24,4 +24,13 @@
         android:background="@drawable/bg_mh_button"
         android:text="@string/mh_calculator" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRecyclerCardView"
+        style="@style/Theme_BackgroundButtonContentManuel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_mh_button"
+        android:text="@string/mh_recycler_card_view" />
+
 </LinearLayout>
