@@ -123,19 +123,6 @@
         android:name="com.mh.basickotlin.josue.view.fragment.FrgJosueCalculator"
         android:label="frg_josue_calculator"
         tools:layout="@layout/frg_josue_calculator" />
-    <fragment
-        android:id="@+id/frgJuanContent"
-        android:name="com.mh.basickotlin.ui.juan.activity.fragment.FrgJuanContent"
-        android:label="frg_juan_content"
-        tools:layout="@layout/frg_juan_content">
-        <action
-            android:id="@+id/toFrgJuanCalculator"
-            app:destination="@id/frgJuanCalculator" />
-    </fragment>
-    <fragment
-        android:id="@+id/frgJuanCalculator"
-        android:name="com.mh.basickotlin.ui.juan.activity.fragment.FrgJuanCalculator"
-        android:label="FrgJuanCalculator" />
 
     <fragment
 
@@ -184,5 +171,11 @@
         android:name="com.mh.basickotlin.juan.view.fragment.FrgJuanInformation"
         android:label="frg_juan_information"
         tools:layout="@layout/frg_juan_information" />
+
+    <fragment
+        android:id="@+id/frgJuanRecyclerView2"
+        android:name="com.mh.basickotlin.juan.recyclerView.FrgJuanRecyclerView"
+        android:label="frg_juan_recycler_view"
+        tools:layout="@layout/frg_juan_recycler_view" />
 
 </navigation>

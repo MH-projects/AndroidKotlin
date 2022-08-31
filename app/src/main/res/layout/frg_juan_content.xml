@@ -10,15 +10,21 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
         <Button
+            android:id="@+id/btnInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Information" />
+        <Button
             android:id="@+id/btnCalculator"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Calculadora" />
         <Button
-            android:id="@+id/btnInformation"
+            android:id="@+id/btnRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Information" />
+            android:text="Recycler View" />
+
     </LinearLayout>
 
 </FrameLayout>
