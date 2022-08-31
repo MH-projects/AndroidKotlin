@@ -65,6 +65,7 @@ class FrgJuanCalculator : Fragment() {
                 cant1 = ""
                 binding.edInput.setText(" ")
             }
+
             var auxv1 = if (cant1.isEmpty()) 0 else cant1.toInt()
             var auxv2 = if (cant2.isEmpty()) 0 else cant2.toInt()
             when (operation) {
