@@ -53,15 +53,18 @@
 
         <fragment
             android:id="@+id/frgAngelMain"
-            android:name="com.mh.basickotlin.ui.angel.frgAngelMain"
+            android:name="com.mh.basickotlin.angel.frgAngelMain"
             android:label="frg_angel_main"
             tools:layout="@layout/frg_angel_main">
             <action
-                android:id="@+id/action_frgAngelMain_to_frgAngelCalculator"
+                android:id="@+id/toFrgAngelCalculator"
                 app:destination="@id/frgAngelCalculator" />
             <action
-                android:id="@+id/action_frgAngelMain_to_frgAngelInformation"
+                android:id="@+id/toFrgAngelInformation"
                 app:destination="@id/frgAngelInformation" />
+            <action
+                android:id="@+id/toFrgAngelRecycleView"
+                app:destination="@id/frgAngelRecycleView" />
         </fragment>
 
         <fragment
@@ -153,7 +156,7 @@
 
         <fragment
             android:id="@+id/frgAngelCalculator"
-            android:name="com.mh.basickotlin.ui.angel.view.FrgAngelCalculator"
+            android:name="com.mh.basickotlin.angel.calculator.view.FrgAngelCalculator"
             android:label="FrgAngelCalculator" />
 
     <!-- endregion -->
@@ -173,7 +176,7 @@
 
         <fragment
             android:id="@+id/frgAngelInformation"
-            android:name="com.mh.basickotlin.ui.angel.frgAngelInformation"
+            android:name="com.mh.basickotlin.angel.info.frgAngelInformation"
             android:label="frg_angel_information"
             tools:layout="@layout/frg_angel_information" />
 
@@ -197,6 +200,11 @@
         android:name="com.mh.basickotlin.manuel.recycler.FrgManuelRecyclerView"
         android:label="frg_manuel_recycler_view"
         tools:layout="@layout/frg_manuel_recycler_view" />
+    <fragment
+        android:id="@+id/frgAngelRecycleView"
+        android:name="com.mh.basickotlin.angel.recycleview.view.frgAngelRecycleView"
+        android:label="frg_angel_recycle_view"
+        tools:layout="@layout/frg_angel_recycle_view" />
 
     <!-- endregion -->
 
