@@ -53,8 +53,8 @@
 
         <fragment
             android:id="@+id/frgAngelMain"
-            android:name="com.mh.basickotlin.angel.frgAngelMain"
             android:label="frg_angel_main"
+            android:name="com.mh.basickotlin.angel.frgAngelMain"
             tools:layout="@layout/frg_angel_main">
             <action
                 android:id="@+id/toFrgAngelCalculator"
@@ -66,6 +66,7 @@
                 android:id="@+id/toFrgAngelRecycleView"
                 app:destination="@id/frgAngelRecycleView" />
         </fragment>
+
 
         <fragment
             android:id="@+id/frgPabloContent"
@@ -149,17 +150,15 @@
             android:name="com.mh.basickotlin.ui.juan.activity.fragment.FrgJuanCalculator"
             android:label="FrgJuanCalculator" />
 
-        <fragment
-            android:id="@+id/frgJuanCalculatorMVP"
-            android:name="com.mh.basickotlin.juan.view.fragment.FrgJuanCalculatorMVP"
-            android:label="FrgJuanCalculatorMVP" />
+    <fragment
+        android:id="@+id/frgJuanCalculatorMVP"
+        android:name="com.mh.basickotlin.juan.view.fragment.FrgJuanCalculatorMVP"
+        android:label="FrgJuanCalculatorMVP" />
+    <fragment
+        android:id="@+id/frgAngelCalculator"
+        android:name="com.mh.basickotlin.angel.calculator.view.FrgAngelCalculator"
+        android:label="FrgAngelCalculator" />
 
-        <fragment
-            android:id="@+id/frgAngelCalculator"
-            android:name="com.mh.basickotlin.angel.calculator.view.FrgAngelCalculator"
-            android:label="FrgAngelCalculator" />
-
-    <!-- endregion -->
 
     <!-- region: Presentation-->
 
@@ -176,7 +175,6 @@
 
         <fragment
             android:id="@+id/frgAngelInformation"
-            android:name="com.mh.basickotlin.angel.info.frgAngelInformation"
             android:label="frg_angel_information"
             tools:layout="@layout/frg_angel_information" />
 

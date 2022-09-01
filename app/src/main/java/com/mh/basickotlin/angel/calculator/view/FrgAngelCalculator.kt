@@ -15,8 +15,8 @@ import androidx.fragment.app.Fragment
 import com.mh.basickotlin.databinding.FrgAngelCalculatorBinding
 import com.mh.basickotlin.angel.calculator.model.Numbers
 import com.mh.basickotlin.angel.calculator.model.Operators
-import com.mh.basickotlin.angel.calculator.presenter.AngelCalcContract
-import com.mh.basickotlin.angel.calculator.presenter.AngelCalculatorPresenter
+import com.mh.basickotlin.angel.presenter.AngelCalcContract
+import com.mh.basickotlin.angel.presenter.AngelCalculatorPresenter
 
 class FrgAngelCalculator : Fragment(), AngelCalcContract.View {
     private lateinit var binding: FrgAngelCalculatorBinding
