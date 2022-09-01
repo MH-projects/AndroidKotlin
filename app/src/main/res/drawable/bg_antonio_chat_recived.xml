@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ bg_antonio_chat_recived.xml
+  ~ Android Kotlin App
+  ~ Created by Antonio Barrientos Rios on 01/09/2022, 10:09:48
+  ~ Copyright (c) 2022 Develop-MX. All rights reserved.
+  -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topRightRadius="20sp"
+        android:bottomRightRadius="20sp"/>
+    <solid android:color="#56C65A" />
+</shape>

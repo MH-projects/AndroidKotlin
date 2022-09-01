@@ -73,18 +73,29 @@
         <item name="android:layout_margin">4dp</item>
     </style>
 
+    <style name="Theme_BackgroundantonioChatSent">
+        <item name="android:background">@drawable/bg_antonio_chat_sent</item>
+    </style>
+
+    <style name="Theme_BackgroundantonioChatRecived">
+        <item name="android:background">@drawable/bg_antonio_chat_recived</item>
+    </style>
+
     <style name="Theme_BorderMsgLeftJuan">
         <item name="android:background">@drawable/tv_border_left_msg_juan</item>
         <item name="android:textSize">30sp</item>
     </style>
+
     <style name="Theme_BorderMsgRightJuan">
         <item name="android:background">@drawable/tv_border_right_msg_juan</item>
         <item name="android:textSize">30sp</item>
     </style>
+
     <style name="Theme_BorderImgJuan">
         <item name="android:background">@drawable/img_jg_msg</item>
         <item name="android:textSize">30sp</item>
     </style>
+
     <style name="Theme_BorderDocJuan">
         <item name="android:background">@drawable/img_doc_jg_msg</item>
         <item name="android:textSize">30sp</item>
@@ -98,6 +109,7 @@
     <style name="Theme_BackgrounRecvJosue">
         <item name="android:background">@drawable/bg_josue_recmsg</item>
         <item name="android:textColor">@color/white</item>
+    </style>
 
     <style name="Theme_BackgroundPabloMessageSent">
         <item name="android:background">@drawable/bg_pa_sent_message</item>
