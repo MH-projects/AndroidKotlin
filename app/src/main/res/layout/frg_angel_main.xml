@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.angel.frgAngelMain"
+    tools:context=".angel.frgAngelMain"
     android:orientation="vertical"
     android:layout_margin="10sp">
     <TextView
@@ -25,6 +25,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Calculadora"/>
+    <Button
+        android:layout_marginTop="15sp"
+        android:id="@+id/btnAngelRecycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recycle view"/>
 
 
 </LinearLayout>
