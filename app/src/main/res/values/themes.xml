@@ -65,4 +65,11 @@
         <item name="android:layout_margin">4dp</item>
     </style>
 
+    <style name="Theme_BackgroundantonioChatSent">
+        <item name="android:background">@drawable/bg_antonio_chat_sent</item>
+    </style>
+
+    <style name="Theme_BackgroundantonioChatRecived">
+        <item name="android:background">@drawable/bg_antonio_chat_recived</item>
+    </style>
 </resources>

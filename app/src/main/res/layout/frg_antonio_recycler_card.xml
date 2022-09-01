@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ frg_antonio_recycler_card.xml
+  ~ Android Kotlin App
+  ~ Created by Antonio Barrientos Rios on 31/08/2022, 11:32:22
+  ~ Copyright (c) 2022 Develop-MX. All rights reserved.
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".antonio.view.view.fragment.FrgAntonioRecyclerCard">
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/recyclerChat"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       tools:listitem="@layout/item_antonio_chat_received"
+       />
+</FrameLayout>
