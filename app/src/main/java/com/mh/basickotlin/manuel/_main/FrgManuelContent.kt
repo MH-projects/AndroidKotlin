@@ -1,4 +1,11 @@
-package com.mh.basickotlin.manuel.view.fragment
+/*
+ * FrgManuelContent.kt
+ * Android Kotlin App
+ * Created by Manuel Hidalgo on 01/09/2022, 10:16:56
+ * Copyright (c) 2022 Develop-MX. All rights reserved.
+ */
+
+package com.mh.basickotlin.manuel._main
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -27,6 +34,10 @@ class FrgManuelContent : Fragment() {
 
         binding.btnCalcultator.setOnClickListener {
             findNavController().navigate(R.id.toFrgManuelCalculator)
+        }
+
+        binding.btnRecyclerCardView.setOnClickListener {
+            findNavController().navigate(R.id.toFrgManuelRecyclerView)
         }
     }
 }

@@ -1,4 +1,4 @@
-package com.mh.basickotlin.manuel.model
+package com.mh.basickotlin.manuel.calculator.model
 
 enum class Operator(val operator: String) {
     ADD("+"),
