@@ -81,6 +81,9 @@
         <action
             android:id="@+id/toFrgPabloData"
             app:destination="@id/frgPabloData" />
+        <action
+            android:id="@+id/toFrgPabloRecyclerView"
+            app:destination="@id/frgPabloRecyclerView" />
     </fragment>
 
     <fragment
@@ -215,6 +218,12 @@
         android:name="com.mh.basickotlin.angel.recycleview.view.frgAngelRecycleView"
         android:label="frg_angel_recycle_view"
         tools:layout="@layout/frg_angel_recycle_view" />
+
+    <fragment
+        android:id="@+id/frgPabloRecyclerView"
+        android:name="com.mh.basickotlin.pablo.recycler.view.FrgPabloRecyclerView"
+        android:label="frg_pablo_recycler_view"
+        tools:layout="@layout/frg_pablo_recycler_view" />
     <!-- endregion -->
 
 </navigation>
