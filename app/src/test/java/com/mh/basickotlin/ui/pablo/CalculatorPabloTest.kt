@@ -5,7 +5,7 @@ import org.junit.Before
 import org.junit.Test
 
 class CalculatorPabloTest {
-
+/*
     private lateinit var calculator: CalculatorPablo
 
     @Before
@@ -53,5 +53,5 @@ class CalculatorPabloTest {
     fun `divide by 0 test`() {
         val result = calculator.div(10, 0)
         assertEquals("Prueba de resta  exitosa", -1, result)
-    }
+    }*/
 }

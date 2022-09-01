@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ frg_angel_recycle_view.xml
+  ~ Android Kotlin App
+  ~ Created by Angel Morales on 31/08/2022, 11:21:23
+  ~ Copyright (c)  2022 Develop- Mx. All rights reserved.
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".angel.recycleview.view.frgAngelRecycleView"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvChat"
+        android:layout_width="match_parent"
+        android:layout_height="770dp"
+        android:background="@drawable/img_chat_angel_background" />
+
+</FrameLayout>

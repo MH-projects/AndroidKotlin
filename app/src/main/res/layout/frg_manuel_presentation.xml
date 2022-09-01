@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ frg_manuel_presentation.xml
+  ~ Android Kotlin App
+  ~ Created by Manuel Hidalgo on 01/09/2022, 10:16:56
+  ~ Copyright (c) 2022 Develop-MX. All rights reserved.
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manuel.presentation.FrgManuelPresentation">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment" />
+
+</FrameLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ item_josue_voice_send.xml
+  ~ Android Kotlin App
+  ~ Created by Josue Isaias on 31/08/2022, 15:54:29
+  ~ Copyright (c) 2022 Develop-MX. All rights reserved.
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gideline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="8dp"
+        android:layout_gravity="end"
+        style="@style/Theme_BackgrounSentJosue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gideline"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="5dp"
+            android:src="@drawable/ic_jc_play"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/png_jc_wave"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:src="@drawable/png_jc_wave"
+            android:layout_marginHorizontal="5dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTimeSent"
+            android:layout_marginHorizontal="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            tools:text="mm/ssss"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/png_jc_wave"
+            android:textSize="18sp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
