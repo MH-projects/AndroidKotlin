@@ -65,4 +65,14 @@
         <item name="android:layout_margin">4dp</item>
     </style>
 
+    <style name="Theme_BackgrounSentJosue">
+        <item name="android:background">@drawable/bg_josue_sentmsg</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Theme_BackgrounRecvJosue">
+        <item name="android:background">@drawable/bg_josue_recmsg</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
 </resources>

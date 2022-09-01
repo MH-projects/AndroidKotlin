@@ -99,8 +99,11 @@
                 android:id="@+id/tofrgJosueCalculator"
                 app:destination="@id/frgJosueCalculator" />
             <action
-                android:id="@+id/action_frgJosueContent_to_frgJosueWelcome"
+                android:id="@+id/tofrgJosueContent_to_frgJosueWelcome"
                 app:destination="@id/frgJosueWelcome" />
+            <action
+                android:id="@+id/tofrgJosueContent_to_frgJosueRecycler"
+                app:destination="@id/frgJosueRecycler" />
         </fragment>
 
         <fragment
@@ -197,6 +200,11 @@
         android:name="com.mh.basickotlin.manuel.recycler.FrgManuelRecyclerView"
         android:label="frg_manuel_recycler_view"
         tools:layout="@layout/frg_manuel_recycler_view" />
+    <fragment
+        android:id="@+id/frgJosueRecycler"
+        android:name="com.mh.basickotlin.josue.recyclerjc.view.FrgJosueRecycler"
+        android:label="frg_josue_recycler"
+        tools:layout="@layout/frg_josue_recycler" />
 
     <!-- endregion -->
 
