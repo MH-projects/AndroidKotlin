@@ -40,9 +40,11 @@
         <item name="android:textColor">@color/black</item>
         <item name="android:textSize">30sp</item>
     </style>
+
     <style name="BackgroundMessageSent">
         <item name="android:background">@drawable/bg_sent_message</item>
     </style>
+
     <style name="BackgroundMessageReceived">
         <item name="android:background">@drawable/bg_received_message</item>
     </style>
@@ -69,6 +71,14 @@
     <style name="Theme_BackgroundButtonPablo">
         <item name="android:background">@drawable/bg_mh_button</item>
         <item name="android:layout_margin">4dp</item>
+    </style>
+
+    <style name="Theme_BackgroundPabloMessageSent">
+        <item name="android:background">@drawable/bg_pa_sent_message</item>
+    </style>
+
+    <style name="Theme_BackgroundPabloMessageReceived">
+        <item name="android:background">@drawable/bg_pa_received_message</item>
     </style>
 
 </resources>

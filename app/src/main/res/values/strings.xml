@@ -9,6 +9,7 @@
     <!-- MH's strings-->
     <string name="pa_calculator">Calculator</string>
     <string name="pa_data">Data</string>
+    <string name="pa_recycler_view">Recycler and Card view</string>
     <string name="name">Name:</string>
     <!-- Number -->
     <string name="uno">1</string>
