@@ -7,15 +7,15 @@
 
         <variable
             name="vm"
-            type="com.mh.basickotlin.manuel.viewmodel.ManuelCalculatorViewModel" />
+            type="com.mh.basickotlin.manuel.calculator.viewmodel.ManuelCalculatorViewModel" />
 
         <variable
             name="digit"
-            type="com.mh.basickotlin.manuel.model.Digit" />
+            type="com.mh.basickotlin.manuel.calculator.model.Digit" />
 
         <variable
             name="operator"
-            type="com.mh.basickotlin.manuel.model.Operator" />
+            type="com.mh.basickotlin.manuel.calculator.model.Operator" />
 
         <variable
             name="auto_result"
@@ -27,8 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/mh_primary"
-        android:padding="14dp"
-        tools:context="com.mh.basickotlin.manuel.view.activity.ActManuelCalculator">
+        android:padding="14dp">
 
         <TextView
             android:id="@+id/tvOperation"

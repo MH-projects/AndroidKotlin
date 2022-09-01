@@ -37,4 +37,19 @@
         app:layout_constraintTop_toBottomOf="@id/btnFrgJosueWelcome"
         tools:layout_editor_absoluteX="16dp" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnFrgJosueRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:background="@color/purple_700"
+        android:drawableLeft="@android:drawable/ic_dialog_dialer"
+        android:padding="20sp"
+        android:layout_marginTop="16dp"
+        android:text="@string/jc_thirdproyect"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/btnFrgJosueCalculator"
+        tools:layout_editor_absoluteX="16dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

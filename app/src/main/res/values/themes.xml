@@ -41,6 +41,14 @@
         <item name="android:textSize">30sp</item>
     </style>
 
+    <style name="BackgroundMessageSent">
+        <item name="android:background">@drawable/bg_am_chat_sent_message</item>
+    </style>
+
+    <style name="BackgroundMessageReceived">
+        <item name="android:background">@drawable/bg_am_chat_received_message</item>
+    </style>
+
     <style name="Theme_BackgroundButtonManuel">
         <item name="android:background">@drawable/bg_mh_button</item>
         <item name="android:textColor">@color/mh_primary</item>
@@ -71,5 +79,38 @@
 
     <style name="Theme_BackgroundantonioChatRecived">
         <item name="android:background">@drawable/bg_antonio_chat_recived</item>
+
+    <style name="Theme_BorderMsgLeftJuan">
+        <item name="android:background">@drawable/tv_border_left_msg_juan</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+    <style name="Theme_BorderMsgRightJuan">
+        <item name="android:background">@drawable/tv_border_right_msg_juan</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+    <style name="Theme_BorderImgJuan">
+        <item name="android:background">@drawable/img_jg_msg</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+    <style name="Theme_BorderDocJuan">
+        <item name="android:background">@drawable/img_doc_jg_msg</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="Theme_BackgrounSentJosue">
+        <item name="android:background">@drawable/bg_josue_sentmsg</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Theme_BackgrounRecvJosue">
+        <item name="android:background">@drawable/bg_josue_recmsg</item>
+        <item name="android:textColor">@color/white</item>
+
+    <style name="Theme_BackgroundPabloMessageSent">
+        <item name="android:background">@drawable/bg_pa_sent_message</item>
+    </style>
+
+    <style name="Theme_BackgroundPabloMessageReceived">
+        <item name="android:background">@drawable/bg_pa_received_message</item>-
     </style>
 </resources>

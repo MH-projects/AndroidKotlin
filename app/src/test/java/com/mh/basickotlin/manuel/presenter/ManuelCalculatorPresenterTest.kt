@@ -1,7 +1,7 @@
 package com.mh.basickotlin.manuel.presenter
 
-import com.mh.basickotlin.manuel.presenter.contract.ManuelCalculatorContract
-import com.mh.basickotlin.manuel.view.fragment.FrgManuelCalculator
+import com.mh.basickotlin.manuel.calculator.presenter.ManuelCalculatorPresenter
+import com.mh.basickotlin.manuel.calculator.presenter.contract.ManuelCalculatorContract
 import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
@@ -13,7 +13,7 @@ class ManuelCalculatorPresenterTest {
 
     @Before
     fun setup() {
-        viewMock = FrgManuelCalculator()
+        // viewMock = FrgManuelCalculator()
         presenter = ManuelCalculatorPresenter(viewMock)
     }
 

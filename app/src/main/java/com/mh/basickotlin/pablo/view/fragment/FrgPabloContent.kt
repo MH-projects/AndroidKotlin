@@ -25,6 +25,8 @@ class FrgPabloContent : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.btPabloCalculator.setOnClickListener(R.id.toFrgPabloCalculator)
         binding.btPabloData.setOnClickListener(R.id.toFrgPabloData)
+        binding.btPabloRecyclerView.setOnClickListener(R.id.toFrgPabloRecyclerView)
+
     }
 
     private fun Button.setOnClickListener(fragment: Int) {

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/frgDevs"
-        android:name="com.mh.basickotlin.manuel.view.fragment.FrgDevs"
+        android:name="com.mh.basickotlin.manuel._main.FrgDevs"
         android:label="FrgDevs"
         tools:layout="@layout/frg_devs">
 
@@ -38,174 +38,219 @@
     </fragment>
 
     <!-- region: Content-->
-        <fragment
-            android:id="@+id/frgManuelContent"
-            android:name="com.mh.basickotlin.manuel.view.fragment.FrgManuelContent"
-            android:label="frg_manuel_content"
-            tools:layout="@layout/frg_manuel_content">
-            <action
-                android:id="@+id/toFrgManuelCalculator"
-                app:destination="@id/frgManuelCalculator" />
-            <action
-                android:id="@+id/toFrgManuelRecyclerView"
-                app:destination="@id/frgManuelRecyclerView" />
-        </fragment>
+    <fragment
+        android:id="@+id/frgManuelContent"
+        android:name="com.mh.basickotlin.manuel._main.FrgManuelContent"
+        android:label="frg_manuel_content"
+        tools:layout="@layout/frg_manuel_content">
+        <action
+            android:id="@+id/toFrgManuelCalculator"
+            app:destination="@id/frgManuelCalculator" />
+        <action
+            android:id="@+id/toFrgManuelRecyclerView"
+            app:destination="@id/frgManuelRecyclerView" />
+        <action
+            android:id="@+id/toFrgManuelPresentation"
+            app:destination="@id/frgManuelPresentation" />
+    </fragment>
 
-        <fragment
-            android:id="@+id/frgAngelMain"
-            android:name="com.mh.basickotlin.ui.angel.frgAngelMain"
-            android:label="frg_angel_main"
-            tools:layout="@layout/frg_angel_main">
-            <action
-                android:id="@+id/action_frgAngelMain_to_frgAngelCalculator"
-                app:destination="@id/frgAngelCalculator" />
-            <action
-                android:id="@+id/action_frgAngelMain_to_frgAngelInformation"
-                app:destination="@id/frgAngelInformation" />
-        </fragment>
+    <fragment
+        android:id="@+id/frgAngelMain"
+        android:name="com.mh.basickotlin.angel.frgAngelMain"
+        android:label="frg_angel_main"
+        tools:layout="@layout/frg_angel_main">
+        <action
+            android:id="@+id/toFrgAngelCalculator"
+            app:destination="@id/frgAngelCalculator" />
+        <action
+            android:id="@+id/toFrgAngelInformation"
+            app:destination="@id/frgAngelInformation" />
+        <action
+            android:id="@+id/toFrgAngelRecycleView"
+            app:destination="@id/frgAngelRecycleView" />
+    </fragment>
 
-        <fragment
-            android:id="@+id/frgPabloContent"
-            android:name="com.mh.basickotlin.pablo.view.fragment.FrgPabloContent"
-            android:label="frg_pablo_content"
-            tools:layout="@layout/frg_pablo_content">
-            <action
-                android:id="@+id/toFrgPabloCalculator"
-                app:destination="@id/frgPabloCalculator" />
-            <action
-                android:id="@+id/toFrgPabloData"
-                app:destination="@id/frgPabloData" />
-        </fragment>
+    <fragment
+        android:id="@+id/frgPabloContent"
+        android:name="com.mh.basickotlin.pablo.view.fragment.FrgPabloContent"
+        android:label="frg_pablo_content"
+        tools:layout="@layout/frg_pablo_content">
+        <action
+            android:id="@+id/toFrgPabloCalculator"
+            app:destination="@id/frgPabloCalculator" />
+        <action
+            android:id="@+id/toFrgPabloData"
+            app:destination="@id/frgPabloData" />
+        <action
+            android:id="@+id/toFrgPabloRecyclerView"
+            app:destination="@id/frgPabloRecyclerView" />
+    </fragment>
 
-        <fragment
-            android:id="@+id/frgAntonioContent"
-            android:name="com.mh.basickotlin.antonio.view.view.fragment.FrgAntonioContent"
-            android:label="frg_antonio_content"
-            tools:layout="@layout/frg_antonio_content">
-            <action
-                android:id="@+id/toFrgAntonioCalculadora"
-                app:destination="@id/frgAntonioCalculator" />
-            <action
-                android:id="@+id/toFrgAntonioPresenter"
-                app:destination="@id/frgAntonioPresenter" />
-            <action
-                android:id="@+id/toFrgAntonioRecyclerCard"
-                app:destination="@id/frgAntonioRecyclerCard" />
-        </fragment>
+    <fragment
+        android:id="@+id/frgAntonioContent"
+        android:name="com.mh.basickotlin.antonio.view.view.fragment.FrgAntonioContent"
+        android:label="frg_antonio_content"
+        tools:layout="@layout/frg_antonio_content">
+        <action
+            android:id="@+id/toFrgAntonioCalculadora"
+            app:destination="@id/frgAntonioCalculator" />
+        <action
+            android:id="@+id/toFrgAntonioPresenter"
+            app:destination="@id/frgAntonioPresenter" />
+        <action
+             android:id="@+id/toFrgAntonioRecyclerCard"
+             app:destination="@id/frgAntonioRecyclerCard" />
+    </fragment>
 
-        <fragment
-            android:id="@+id/frgJosueContent"
-            android:name="com.mh.basickotlin.josue.view.fragment.FrgJosueContent"
-            android:label="frg_josue_content"
-            tools:layout="@layout/frg_josue_content">
-            <action
-                android:id="@+id/tofrgJosueCalculator"
-                app:destination="@id/frgJosueCalculator" />
-            <action
-                android:id="@+id/action_frgJosueContent_to_frgJosueWelcome"
-                app:destination="@id/frgJosueWelcome" />
-        </fragment>
+    <fragment
+        android:id="@+id/frgJosueContent"
+        android:name="com.mh.basickotlin.josue.view.fragment.FrgJosueContent"
+        android:label="frg_josue_content"
+        tools:layout="@layout/frg_josue_content">
+        <action
+            android:id="@+id/tofrgJosueCalculator"
+            app:destination="@id/frgJosueCalculator" />
+        <action
+            android:id="@+id/action_frgJosueContent_to_frgJosueWelcome"
+            app:destination="@id/frgJosueWelcome" />
+        <action
+            android:id="@+id/tofrgJosueContent_to_frgJosueRecycler"
+            app:destination="@id/frgJosueRecycler" />
+    </fragment>
 
-        <fragment
-            android:id="@+id/FrgJuanContent"
-            android:name="com.mh.basickotlin.juan.view.fragment.FrgJuanContent"
-            android:label="FrgJuanContent">
-            <action
-                android:id="@+id/tofrgJuanCalculatorMVP"
-                app:destination="@id/frgJuanCalculatorMVP" />
-            <action
-                android:id="@+id/toFrgJuanInformation"
-                app:destination="@id/frgJuanInformation" />
-        </fragment>
+    <fragment
+        android:id="@+id/FrgJuanContent"
+        android:name="com.mh.basickotlin.juan.view.fragment.FrgJuanContent"
+        android:label="FrgJuanContent">
+        <action
+            android:id="@+id/tofrgJuanCalculatorMVP"
+            app:destination="@id/frgJuanCalculatorMVP" />
+        <action
+            android:id="@+id/toFrgJuanInformation"
+            app:destination="@id/frgJuanInformation" />
+        <action
+            android:id="@+id/toFrgJuanRecyclerView"
+            app:destination="@id/frgJuanRecyclerView" />
+    </fragment>
+    
     <!-- endregion -->
 
     <!-- region: Calculators-->
 
-        <fragment
-            android:id="@+id/frgManuelCalculator"
-            android:name="com.mh.basickotlin.manuel.view.fragment.FrgManuelCalculator"
-            android:label="FrgManuelCalculator"
-            tools:layout="@layout/frg_manuel_calculator" />
+    <fragment
+        android:id="@+id/frgManuelCalculator"
+        android:name="com.mh.basickotlin.manuel.calculator.view.FrgManuelCalculator"
+        android:label="FrgManuelCalculator"
+        tools:layout="@layout/frg_manuel_calculator" />
 
-        <fragment
-            android:id="@+id/frgPabloCalculator"
-            android:name="com.mh.basickotlin.pablo.view.fragment.FrgPabloCalculator"
-            android:label="FrgPabloCalculator" />
+    <fragment
+        android:id="@+id/frgAngelCalculator"
+        android:name="com.mh.basickotlin.angel.calculator.view.FrgAngelCalculator"
+        android:label="FrgAngelCalculator" />
 
-        <fragment
-            android:id="@+id/frgAntonioCalculator"
-            android:name="com.mh.basickotlin.antonio.view.view.fragment.FrgAntonioCalculator"
-            android:label="frg_antonio_calculator"
-            tools:layout="@layout/frg_antonio_calculator" />
+    <fragment
+        android:id="@+id/frgPabloCalculator"
+        android:name="com.mh.basickotlin.pablo.view.fragment.FrgPabloCalculator"
+        android:label="FrgPabloCalculator" />
 
-        <fragment
-            android:id="@+id/frgJosueCalculator"
-            android:name="com.mh.basickotlin.josue.view.fragment.FrgJosueCalculator"
-            android:label="frg_josue_calculator"
-            tools:layout="@layout/frg_josue_calculator" />
+    <fragment
+        android:id="@+id/frgAntonioCalculator"
+        android:name="com.mh.basickotlin.antonio.view.view.fragment.FrgAntonioCalculator"
+        android:label="frg_antonio_calculator"
+        tools:layout="@layout/frg_antonio_calculator" />
 
-        <fragment
-            android:id="@+id/frgJuanCalculator"
-            android:name="com.mh.basickotlin.ui.juan.activity.fragment.FrgJuanCalculator"
-            android:label="FrgJuanCalculator" />
+    <fragment
+        android:id="@+id/frgJosueCalculator"
+        android:name="com.mh.basickotlin.josue.view.fragment.FrgJosueCalculator"
+        android:label="frg_josue_calculator"
+        tools:layout="@layout/frg_josue_calculator" />
 
-        <fragment
-            android:id="@+id/frgJuanCalculatorMVP"
-            android:name="com.mh.basickotlin.juan.view.fragment.FrgJuanCalculatorMVP"
-            android:label="FrgJuanCalculatorMVP" />
+    <fragment
+        android:id="@+id/frgJuanCalculator"
+        android:name="com.mh.basickotlin.ui.juan.activity.fragment.FrgJuanCalculator"
+        android:label="FrgJuanCalculator" />
 
-        <fragment
-            android:id="@+id/frgAngelCalculator"
-            android:name="com.mh.basickotlin.ui.angel.view.FrgAngelCalculator"
-            android:label="FrgAngelCalculator" />
+    <fragment
+        android:id="@+id/frgJuanCalculatorMVP"
+        android:name="com.mh.basickotlin.juan.view.fragment.FrgJuanCalculatorMVP"
+        android:label="FrgJuanCalculatorMVP" />
 
-    <!-- endregion -->
+    <!-- endregion-->
 
     <!-- region: Presentation-->
 
-        <fragment
-            android:id="@+id/frgAntonioPresenter"
-            android:name="com.mh.basickotlin.antonio.view.view.fragment.FrgAntonioPresenter"
-            android:label="FrgAntonioPresenter" />
+    <fragment
+        android:id="@+id/frgAntonioPresenter"
+        android:name="com.mh.basickotlin.antonio.view.view.fragment.FrgAntonioPresenter"
+        android:label="FrgAntonioPresenter" />
 
-        <fragment
-            android:id="@+id/frgPabloData"
-            android:name="com.mh.basickotlin.pablo.view.fragment.FrgPabloData"
-            android:label="frg_pablo_data"
-            tools:layout="@layout/frg_pablo_data" />
+    <fragment
+        android:id="@+id/frgPabloData"
+        android:name="com.mh.basickotlin.pablo.view.fragment.FrgPabloData"
+        android:label="frg_pablo_data"
+        tools:layout="@layout/frg_pablo_data" />
 
-        <fragment
-            android:id="@+id/frgAngelInformation"
-            android:name="com.mh.basickotlin.ui.angel.frgAngelInformation"
-            android:label="frg_angel_information"
-            tools:layout="@layout/frg_angel_information" />
+    <fragment
+        android:id="@+id/frgAngelInformation"
+        android:label="frg_angel_information"
+        android:name="com.mh.basickotlin.angel.info.FrgAngelInformation"
+        tools:layout="@layout/frg_angel_information" />
 
-        <fragment
-            android:id="@+id/frgJosueWelcome"
-            android:name="com.mh.basickotlin.josue.view.fragment.FrgJosueWelcome"
-            android:label="frg_josue_welcome"
-            tools:layout="@layout/frg_josue_welcome" />
+    <fragment
+        android:id="@+id/frgJosueWelcome"
+        android:name="com.mh.basickotlin.josue.view.fragment.FrgJosueWelcome"
+        android:label="frg_josue_welcome"
+        tools:layout="@layout/frg_josue_welcome" />
 
-        <fragment
-            android:id="@+id/frgJuanInformation"
-            android:name="com.mh.basickotlin.juan.view.fragment.FrgJuanInformation"
-            android:label="frg_juan_information"
-            tools:layout="@layout/frg_juan_information" />
+    <fragment
+        android:id="@+id/frgJuanInformation"
+        android:name="com.mh.basickotlin.juan.view.fragment.FrgJuanInformation"
+        android:label="frg_juan_information"
+        tools:layout="@layout/frg_juan_information" />
+
+    <fragment
+        android:id="@+id/frgManuelPresentation"
+        android:name="com.mh.basickotlin.manuel.presentation.FrgManuelPresentation"
+        android:label="frg_manuel_presentation"
+        tools:layout="@layout/frg_manuel_presentation" />
 
     <!-- endregion -->
 
     <!-- region: RecyclerView-->
     <fragment
         android:id="@+id/frgManuelRecyclerView"
-        android:name="com.mh.basickotlin.manuel.recycler.FrgManuelRecyclerView"
+        android:name="com.mh.basickotlin.manuel.recycler.presentation.view.FrgManuelRecyclerView"
         android:label="frg_manuel_recycler_view"
         tools:layout="@layout/frg_manuel_recycler_view" />
+
     <fragment
         android:id="@+id/frgAntonioRecyclerCard"
         android:name="com.mh.basickotlin.antonio.view.view.fragment.FrgAntonioRecyclerCard"
         android:label="frg_antonio_recycler_card"
         tools:layout="@layout/frg_antonio_recycler_card" />
+        
+    <fragment
+        android:id="@+id/frgJosueRecycler"
+        android:name="com.mh.basickotlin.josue.recyclerjc.view.FrgJosueRecycler"
+        android:label="frg_josue_recycler"
+        tools:layout="@layout/frg_josue_recycler" />
 
+    <fragment
+        android:id="@+id/frgAngelRecycleView"
+        android:name="com.mh.basickotlin.angel.recycleview.view.frgAngelRecycleView"
+        android:label="frg_angel_recycle_view"
+        tools:layout="@layout/frg_angel_recycle_view" />
+
+    <fragment
+        android:id="@+id/frgPabloRecyclerView"
+        android:name="com.mh.basickotlin.pablo.recycler.view.FrgPabloRecyclerView"
+        android:label="frg_pablo_recycler_view"
+        tools:layout="@layout/frg_pablo_recycler_view" />
+
+    <fragment
+        android:id="@+id/frgJuanRecyclerView"
+        android:name="com.mh.basickotlin.juan.recyclerView.FrgJuanRecyclerView"
+        android:label="frg_juan_recycler_view"
+        tools:layout="@layout/frg_juan_recycler_view" />
     <!-- endregion -->
-
 </navigation>

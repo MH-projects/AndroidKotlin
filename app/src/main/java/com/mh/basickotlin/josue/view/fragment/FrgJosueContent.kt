@@ -17,6 +17,7 @@ class FrgJosueContent : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+
         return inflater.inflate(R.layout.frg_josue_content, container, false)
     }
 
@@ -27,6 +28,9 @@ class FrgJosueContent : Fragment() {
         }
         view.findViewById<Button>(R.id.btnFrgJosueWelcome).setOnClickListener {
             findNavController().navigate(R.id.frgJosueWelcome)
+        }
+        view.findViewById<Button>(R.id.btnFrgJosueRecycler).setOnClickListener {
+            findNavController().navigate(R.id.frgJosueRecycler)
         }
     }
 }
