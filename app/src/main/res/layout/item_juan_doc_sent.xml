@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ item_juan_doc_sent.xml
+  ~ Android Kotlin Juan
+  ~ Created by Juan Pablo on 31/08/2022, 17:01:20
+  ~ Copyright (c) 2022 Develop-MX. All rights reserved
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3"
+        />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_gravity="end"
+        style="@style/Theme_BorderDocJuan"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:id="@+id/imgReceived"
+                android:layout_width="150dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/ic_file"
+                />
+
+            <TextView
+                android:id="@+id/docTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="csdfvidfov"
+                android:paddingLeft="10dp"
+                android:textSize="24dp"
+                />
+            <TextView
+                android:id="@+id/docInfo"
+                android:paddingLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text=" 21 MB PDF"
+                android:textSize="18dp"
+                />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

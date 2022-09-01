@@ -28,5 +28,8 @@ class FrgJuanContent : Fragment() {
         binding.btnInformation.setOnClickListener {
             findNavController().navigate(R.id.toFrgJuanInformation)
         }
+        binding.btnRecyclerView.setOnClickListener {
+            findNavController().navigate(R.id.toFrgJuanRecyclerView)
+        }
     }
 }
