@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ bg_josue_recmsg.xml
+  ~ Android Kotlin App
+  ~ Created by Josue Isaias on 01/09/2022, 09:34:04
+  ~ Copyright (c) 2022 Develop-MX. All rights reserved.
+  -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#009688"/>
+    <stroke android:width="2dp" android:color="#FFFFFF" />
+    <corners
+        android:topRightRadius="50dp"
+        android:bottomRightRadius="50dp"/>
+    <padding android:left="0dp" android:top="0dp" android:right="0dp" android:bottom="0dp" />
+</shape>
