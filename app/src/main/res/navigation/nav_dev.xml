@@ -97,6 +97,9 @@
         <action
             android:id="@+id/toFrgAntonioPresenter"
             app:destination="@id/frgAntonioPresenter" />
+        <action
+             android:id="@+id/toFrgAntonioRecyclerCard"
+             app:destination="@id/frgAntonioRecyclerCard" />
     </fragment>
 
     <fragment
@@ -129,7 +132,7 @@
             android:id="@+id/toFrgJuanRecyclerView"
             app:destination="@id/frgJuanRecyclerView" />
     </fragment>
-
+    
     <!-- endregion -->
 
     <!-- region: Calculators-->
@@ -219,6 +222,12 @@
         android:name="com.mh.basickotlin.manuel.recycler.presentation.view.FrgManuelRecyclerView"
         android:label="frg_manuel_recycler_view"
         tools:layout="@layout/frg_manuel_recycler_view" />
+
+    <fragment
+        android:id="@+id/frgAntonioRecyclerCard"
+        android:name="com.mh.basickotlin.antonio.view.view.fragment.FrgAntonioRecyclerCard"
+        android:label="frg_antonio_recycler_card"
+        tools:layout="@layout/frg_antonio_recycler_card" />
         
     <fragment
         android:id="@+id/frgJosueRecycler"

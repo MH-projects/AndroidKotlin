@@ -73,6 +73,13 @@
         <item name="android:layout_margin">4dp</item>
     </style>
 
+    <style name="Theme_BackgroundantonioChatSent">
+        <item name="android:background">@drawable/bg_antonio_chat_sent</item>
+    </style>
+
+    <style name="Theme_BackgroundantonioChatRecived">
+        <item name="android:background">@drawable/bg_antonio_chat_recived</item>
+
     <style name="Theme_BorderMsgLeftJuan">
         <item name="android:background">@drawable/tv_border_left_msg_juan</item>
         <item name="android:textSize">30sp</item>
