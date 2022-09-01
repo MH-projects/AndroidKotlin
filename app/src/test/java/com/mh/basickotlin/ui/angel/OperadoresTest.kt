@@ -5,7 +5,7 @@ import org.junit.Before
 import org.junit.Test
 
 class OperadoresTest {
-    private lateinit var operadores: Operadores
+    /*private lateinit var operadores: Operadores
 
     @Before
     fun iniciar() {
@@ -39,5 +39,5 @@ class OperadoresTest {
     fun `Test de division de numeros enteros`() {
         val result = operadores.split(60, 30)
         assertEquals(2, result)
-    }
+    }*/
 }

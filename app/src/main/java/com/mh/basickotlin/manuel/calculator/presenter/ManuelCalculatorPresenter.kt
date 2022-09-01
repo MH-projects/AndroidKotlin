@@ -1,8 +1,15 @@
-package com.mh.basickotlin.manuel.presenter
+/*
+ * ManuelCalculatorPresenter.kt
+ * Android Kotlin App
+ * Created by Manuel Hidalgo on 01/09/2022, 10:16:57
+ * Copyright (c) 2022 Develop-MX. All rights reserved.
+ */
 
-import com.mh.basickotlin.manuel.model.Digit
-import com.mh.basickotlin.manuel.model.Operator
-import com.mh.basickotlin.manuel.presenter.contract.ManuelCalculatorContract
+package com.mh.basickotlin.manuel.calculator.presenter
+
+import com.mh.basickotlin.manuel.calculator.model.Digit
+import com.mh.basickotlin.manuel.calculator.model.Operator
+import com.mh.basickotlin.manuel.calculator.presenter.contract.ManuelCalculatorContract
 
 class ManuelCalculatorPresenter(
     private val callBackView: ManuelCalculatorContract.View

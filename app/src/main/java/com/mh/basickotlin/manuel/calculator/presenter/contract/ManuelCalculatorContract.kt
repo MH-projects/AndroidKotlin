@@ -1,7 +1,7 @@
-package com.mh.basickotlin.manuel.presenter.contract
+package com.mh.basickotlin.manuel.calculator.presenter.contract
 
-import com.mh.basickotlin.manuel.model.Digit
-import com.mh.basickotlin.manuel.model.Operator
+import com.mh.basickotlin.manuel.calculator.model.Digit
+import com.mh.basickotlin.manuel.calculator.model.Operator
 
 interface ManuelCalculatorContract {
 

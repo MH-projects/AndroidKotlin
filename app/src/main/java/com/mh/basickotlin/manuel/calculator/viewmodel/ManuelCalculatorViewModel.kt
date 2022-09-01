@@ -1,10 +1,10 @@
-package com.mh.basickotlin.manuel.viewmodel
+package com.mh.basickotlin.manuel.calculator.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.mh.basickotlin.manuel.model.Digit
-import com.mh.basickotlin.manuel.model.Operator
-import com.mh.basickotlin.manuel.presenter.contract.ManuelCalculatorContract
+import com.mh.basickotlin.manuel.calculator.model.Digit
+import com.mh.basickotlin.manuel.calculator.model.Operator
+import com.mh.basickotlin.manuel.calculator.presenter.contract.ManuelCalculatorContract
 
 class ManuelCalculatorViewModel : ViewModel(), ManuelCalculatorContract.Presenter {
 

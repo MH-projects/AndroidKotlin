@@ -1,4 +1,11 @@
-package com.mh.basickotlin.manuel.view.fragment
+/*
+ * FrgDevs.kt
+ * Android Kotlin App
+ * Created by Manuel Hidalgo on 01/09/2022, 10:16:56
+ * Copyright (c) 2022 Develop-MX. All rights reserved.
+ */
+
+package com.mh.basickotlin.manuel._main
 
 import android.os.Bundle
 import android.view.LayoutInflater

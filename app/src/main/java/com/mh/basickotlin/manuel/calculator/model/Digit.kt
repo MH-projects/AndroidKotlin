@@ -1,4 +1,4 @@
-package com.mh.basickotlin.manuel.model
+package com.mh.basickotlin.manuel.calculator.model
 
 enum class Digit(val value: String) {
     ZERO("0"),
