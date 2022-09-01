@@ -13,12 +13,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BasicKotlin"
         tools:targetApi="31">
+
+        <!-- region: Manuel -->
         <activity
-            android:name="com.mh.basickotlin.manuel.view.activity.ActManuelContent"
-            android:exported="false" />
-        <activity
-            android:name="com.mh.basickotlin.manuel.view.activity.ActManuelCalculator"
-            android:exported="false" />
+            android:name="com.mh.basickotlin.manuel._main.ActManuelMain"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- endregion-->
+
         <activity
             android:name="com.mh.basickotlin.antonio.view.view.activy.ActAntonioMain"
             android:exported="true" />
@@ -37,15 +44,7 @@
         <activity
             android:name=".ui.angel.frgAngelnformation"
             android:exported="false" />
-        <activity
-            android:name="com.mh.basickotlin.manuel.view.activity.ActManuelMain"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>

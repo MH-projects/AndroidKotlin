@@ -6,7 +6,6 @@
  */
 
 package com.mh.basickotlin.angel.info
-
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -16,7 +15,7 @@ import androidx.fragment.app.Fragment
 import com.mh.basickotlin.R
 import com.mh.basickotlin.databinding.FrgAngelInformationBinding
 
-class frgAngelInformation : Fragment() {
+class FrgAngelInformation : Fragment() {
 
     private lateinit var binding: FrgAngelInformationBinding
 

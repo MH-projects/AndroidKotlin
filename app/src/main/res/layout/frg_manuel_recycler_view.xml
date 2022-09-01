@@ -1,14 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ frg_manuel_recycler_view.xml
+  ~ Android Kotlin App
+  ~ Created by Manuel Hidalgo on 31/08/2022, 11:32:21
+  ~ Copyright (c) 2022 Develop-MX. All rights reserved.
+  -->
+
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".manuel.recycler.FrgManuelRecyclerView">
+    android:background="@android:color/white"
+    tools:context=".manuel.recycler.presentation.view.FrgManuelRecyclerView">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvChat"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_mh_sent_message" />
 
 </FrameLayout>
