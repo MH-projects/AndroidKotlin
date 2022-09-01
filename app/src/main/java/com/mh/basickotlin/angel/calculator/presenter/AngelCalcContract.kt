@@ -1,7 +1,14 @@
-package com.mh.basickotlin.ui.angel.presenter
+/*
+ * AngelCalcContract.kt
+ * Android Kotlin App
+ * Created by Angel Morales on 31/08/2022, 11:19:17
+ * Copyright (c)  2022 Develop- Mx. All rights reserved.
+ */
 
-import com.mh.basickotlin.ui.angel.model.Numbers
-import com.mh.basickotlin.ui.angel.model.Operators
+package com.mh.basickotlin.angel.calculator.presenter
+
+import com.mh.basickotlin.angel.calculator.model.Numbers
+import com.mh.basickotlin.angel.calculator.model.Operators
 
 interface AngelCalcContract {
     interface View {

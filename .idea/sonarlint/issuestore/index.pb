@@ -1,0 +1,9 @@
+
+t
+Dapp/src/main/java/com/mh/basickotlin/angel/recycleview/model/Chat.kt,c\2\c2726806952f78e02f71915b5c8f911b03dd45b3
+j
+:app/src/main/java/com/mh/basickotlin/angel/frgAngelMain.kt,9\2\92a11b01f16df35bd6a71faa5a68dcd4067c2e4d
+‚
+Rapp/src/main/java/com/mh/basickotlin/angel/recycleview/adapter/AdapterAngelChat.kt,1\4\146b668b542bc220eeba76ae2a4b100812415b66
+‚
+Rapp/src/main/java/com/mh/basickotlin/angel/recycleview/view/FrgAngelRecycleView.kt,3\a\3a4722fce4595a681cd13bea798925c79f0e18ac

@@ -40,6 +40,12 @@
         <item name="android:textColor">@color/black</item>
         <item name="android:textSize">30sp</item>
     </style>
+    <style name="BackgroundMessageSent">
+        <item name="android:background">@drawable/bg_sent_message</item>
+    </style>
+    <style name="BackgroundMessageReceived">
+        <item name="android:background">@drawable/bg_received_message</item>
+    </style>
 
     <style name="Theme_BackgroundButtonManuel">
         <item name="android:background">@drawable/bg_mh_button</item>

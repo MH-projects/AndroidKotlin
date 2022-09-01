@@ -1,4 +1,11 @@
-package com.mh.basickotlin.ui.angel
+/*
+ * frgAngelMain.kt
+ * Android Kotlin App
+ * Created by Angel Morales on 31/08/2022, 11:23:22
+ * Copyright (c)  2022 Develop- Mx. All rights reserved.
+ */
+
+package com.mh.basickotlin.angel
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -27,6 +34,9 @@ class frgAngelMain : Fragment() {
         }
         view.findViewById<Button>(R.id.btnAngelInformation).setOnClickListener {
             findNavController().navigate(R.id.frgAngelInformation)
+        }
+        view.findViewById<Button>(R.id.btnAngelRecycle).setOnClickListener {
+            findNavController().navigate(R.id.frgAngelRecycleView)
         }
     }
 }

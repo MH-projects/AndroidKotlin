@@ -1,4 +1,11 @@
-package com.mh.basickotlin.ui.angel
+/*
+ * FrgAngelInformation.kt
+ * Android Kotlin App
+ * Created by Angel Morales on 31/08/2022, 11:19:51
+ * Copyright (c)  2022 Develop- Mx. All rights reserved.
+ */
+
+package com.mh.basickotlin.angel.info
 
 import android.os.Bundle
 import android.view.LayoutInflater

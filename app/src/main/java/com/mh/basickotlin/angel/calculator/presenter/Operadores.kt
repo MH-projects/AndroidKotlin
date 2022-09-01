@@ -1,4 +1,11 @@
-package com.mh.basickotlin.ui.angel.presenter
+/*
+ * Operadores.kt
+ * Android Kotlin App
+ * Created by Angel Morales on 31/08/2022, 11:19:17
+ * Copyright (c)  2022 Develop- Mx. All rights reserved.
+ */
+
+package com.mh.basickotlin.angel.calculator.presenter
 
 class Operadores {
 
