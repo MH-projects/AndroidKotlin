@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ frg_juan_recycler_view.xml
+  ~ Android Kotlin Juan
+  ~ Created by Juan Pablo on 31/08/2022, 11:32:39
+  ~ Copyright (c) 2022 Develop-MX. All rights reserved
+  -->
+
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#BCE8ED"
     tools:context=".juan.recyclerView.FrgJuanRecyclerView">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvChat"
+
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content" />
+
 
 </FrameLayout>

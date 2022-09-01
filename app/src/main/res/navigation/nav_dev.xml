@@ -113,6 +113,9 @@
             <action
                 android:id="@+id/toFrgJuanInformation"
                 app:destination="@id/frgJuanInformation" />
+            <action
+                android:id="@+id/toFrgJuanRecyclerView"
+                app:destination="@id/frgJuanRecyclerView" />
         </fragment>
     <!-- endregion -->
 
@@ -201,7 +204,7 @@
     <!-- endregion -->
 
     <fragment
-        android:id="@+id/frgJuanRecyclerView2"
+        android:id="@+id/frgJuanRecyclerView"
         android:name="com.mh.basickotlin.juan.recyclerView.FrgJuanRecyclerView"
         android:label="frg_juan_recycler_view"
         tools:layout="@layout/frg_juan_recycler_view" />
