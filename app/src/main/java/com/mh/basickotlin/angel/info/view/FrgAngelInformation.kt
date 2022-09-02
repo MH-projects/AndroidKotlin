@@ -18,6 +18,7 @@ import com.mh.basickotlin.R
 import com.mh.basickotlin.angel.info.model.AngelFormModel
 import com.mh.basickotlin.angel.info.presenter.AngelFormContract
 import com.mh.basickotlin.angel.info.presenter.AngelFormPresenter
+import com.mh.basickotlin.angel.info.presenter.DatePickerAlert
 import com.mh.basickotlin.databinding.FrgAngelInformationBinding
 
 class FrgAngelInformation : Fragment(), AngelFormContract.View {
@@ -79,6 +80,7 @@ class FrgAngelInformation : Fragment(), AngelFormContract.View {
             )
         }
         binding.etAngelBirthday.setOnClickListener() {
+            DatePickerAlert(requireContext()).show()
         }
         binding.etAngelPlace.setAdapter(
             ArrayAdapter(
