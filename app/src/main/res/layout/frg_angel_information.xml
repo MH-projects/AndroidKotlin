@@ -1,20 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:background="@drawable/bg_am_backgroundgradient"
+    android:padding="10dp">
 
-    <TextView
-        android:id="@+id/tvAngelInfo"
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnAngelSave"
+        android:layout_alignParentTop="true"  >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Name -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputAngelName"
+                style="@style/Them_AngelInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:hint="@string/an_hint_name"
+                app:startIconDrawable="@drawable/ic_am_user">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAngelName"
+                    style="@style/Them_AngelTextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:maxLength="40"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Surname-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputAngelSurname"
+                style="@style/Them_AngelInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputAngelName"
+                android:layout_marginTop="15sp"
+                android:hint="@string/an_hint_surname"
+                app:counterMaxLength="40"
+                app:startIconDrawable="@drawable/ic_am_user">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAngelSurname"
+                    style="@style/Them_AngelTextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Birthday -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputAngelBirhtday"
+                style="@style/Them_AngelInputLayout"
+                android:layout_width="250sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputAngelSurname"
+                android:layout_marginTop="15sp"
+                android:hint="@string/an_hint_birthday"
+                app:startIconDrawable="@drawable/ic_am_birthday">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAngelBirthday"
+                    style="@style/Them_AngelTextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:inputType="none"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Age -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginHorizontal="5sp"
+                android:id="@+id/inputAngelAge"
+                style="@style/Them_AngelInputLayout"
+                android:layout_width="230sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputAngelSurname"
+                android:layout_marginTop="15sp"
+                android:layout_toEndOf="@id/inputAngelBirhtday"
+                android:hint="@string/an_hint_age"
+                app:startIconDrawable="@drawable/ic_am_birthday">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAngelAge"
+                    style="@style/Them_AngelTextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Number -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputAngelNumber"
+                style="@style/Them_AngelInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputAngelBirhtday"
+                android:layout_marginTop="15sp"
+                android:hint="@string/an__hint_number"
+                app:startIconDrawable="@drawable/ic_am_phone">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAngelNumber"
+                    style="@style/Them_AngelTextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:maxLength="10"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- State -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputAngelPlace"
+                style="@style/Them_AngelOptionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputAngelNumber"
+                android:layout_marginTop="15sp"
+                android:hint="@string/an_hint_state"
+                app:startIconDrawable="@drawable/ic_am_place">
+                <AutoCompleteTextView
+                    android:id="@+id/etAngelPlace"
+                    style="@style/Them_AngelTextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Gender -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputAngelGender"
+                style="@style/Them_AngelOptionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputAngelPlace"
+                android:layout_marginTop="15sp"
+                android:hint="@string/an_hint_sexo"
+                app:startIconDrawable="@drawable/ic_am_gender">
+                <AutoCompleteTextView
+                    android:id="@+id/etAngelGender"
+                    style="@style/Them_AngelTextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAngelSave"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Name: Angel Morales" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_alignParentBottom="true"
+        android:text="@string/an_save" />
+</RelativeLayout>

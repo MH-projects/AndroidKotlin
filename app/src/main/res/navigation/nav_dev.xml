@@ -193,7 +193,7 @@
     <fragment
         android:id="@+id/frgAngelInformation"
         android:label="frg_angel_information"
-        android:name="com.mh.basickotlin.angel.info.FrgAngelInformation"
+        android:name="com.mh.basickotlin.angel.info.view.FrgAngelInformation"
         tools:layout="@layout/frg_angel_information" />
 
     <fragment

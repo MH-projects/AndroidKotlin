@@ -128,4 +128,20 @@
     <string name="frgPabloCalculatorNumber">No se pueden ingresar mas de 3 numeros</string>
 
 
+
+    <!--AngelStrings -->
+    <string name="an_hint_name">Name</string>
+    <string name="an_hint_surname">Surname</string>
+    <string name="an_hint_age">Age</string>
+    <string name="an__hint_number">Number</string>
+    <string name="an_hint_state">State</string>
+    <string name="an_hint_birthday">Birthday</string>
+    <string name="an_hint_sexo">Sexo</string>
+
+    <string name="an_save">Save</string>
+
+
+
+
+
 </resources>

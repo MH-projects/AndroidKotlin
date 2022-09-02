@@ -130,6 +130,7 @@
         <item name="android:background">@drawable/bg_pa_received_message</item>-
     </style>
 
+
     <style name="Theme_InputTextMH" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <item name="android:textColorHint">@android:color/darker_gray</item>
         <item name="boxBackgroundMode">outline</item>
@@ -190,6 +191,37 @@
     <style name="Theme_EditTextPA">
         <item name="android:textSize">15sp</item>
         <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <!-- Angel Styles-->
+    <style name="Them_AngelInputLayout" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxCornerRadiusBottomEnd">20sp</item>
+        <item name="boxCornerRadiusTopStart">20sp</item>
+        <item name="boxBackgroundMode">outline</item>
+        <item name="android:textSize">15sp</item>
+        <item name="boxStrokeColor">@color/bg_am_input_box</item>
+        <item name="hintTextColor">#FFEB3B</item>
+        <item name="strokeWidth">20sp</item>
+        <item name="android:textColorHint">#FFFFFF</item>
+        <item name="startIconTint">#FFFFFF</item>
+    </style>
+
+    <style name="Them_AngelOptionText" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxCornerRadiusBottomEnd">20sp</item>
+        <item name="boxCornerRadiusTopStart">20sp</item>
+        <item name="boxBackgroundMode">outline</item>
+        <item name="android:textSize">15sp</item>
+        <item name="boxStrokeColor">@color/bg_am_input_box</item>
+        <item name="hintTextColor">#FFEB3B</item>
+        <item name="strokeWidth">20sp</item>
+        <item name="android:textColorHint">#FFFFFF</item>
+        <item name="startIconTint">#FFFFFF</item>
+    </style>
+
+    <style name="Them_AngelTextInputEditText">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">15sp</item>
     </style>
 
 </resources>

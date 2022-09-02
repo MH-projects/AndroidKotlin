@@ -16,4 +16,12 @@
         <item>Yucatan</item>
     </string-array>
 
+    <string-array name="am_estates">
+        <item>CMDX</item>
+        <item>Nuevo Leon</item>
+        <item>Veracruz</item>
+        <item>Chiapas</item>
+        <item>Hidalgo</item>
+    </string-array>
+
 </resources>
