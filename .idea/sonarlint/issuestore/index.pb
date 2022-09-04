@@ -1,7 +1,25 @@
 
-
-Oapp/src/main/java/com/mh/basickotlin/juan/view/fragment/FrgJuanCalculatorMVP.kt,d\8\d8afbf1090b82f93ae8c4ce8adeb3f1416777f1a
+@
+app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 y
 Iapp/src/main/java/com/mh/basickotlin/juan/view/fragment/FrgJuanContent.kt,e\9\e9f186787a10df6a030624c2e0f5c95ffdeb20b9
+~
+Napp/src/main/java/com/mh/basickotlin/juan/presenter/JuanCalculatorPresenter.kt,0\3\035c0a43a6b752a03f75432e3599e0726780c4a2
+h
+8app/src/main/java/com/mh/basickotlin/juan/model/Digit.kt,8\0\80901be5e906cea997b0ca7344c397e491c41dd2
+†
+Vapp/src/main/java/com/mh/basickotlin/juan/presenter/contract/JuanCalculatorContract.kt,5\b\5b8114ff7099bfd00c3cf50733e88d351d54d242
+
+Oapp/src/main/java/com/mh/basickotlin/juan/view/fragment/FrgJuanCalculatorMVP.kt,d\8\d8afbf1090b82f93ae8c4ce8adeb3f1416777f1a
 {
 Kapp/src/main/java/com/mh/basickotlin/juan/recyclerView/presentation/Chat.kt,7\f\7facc481612615132799b0771231a809904d21b1
+x
+Happ/src/main/java/com/mh/basickotlin/manuel/calculator/model/Operator.kt,f\b\fb53c47a54c5e2ead9ec9161ca83072946a282e7
+}
+Mapp/src/main/java/com/mh/basickotlin/juan/recyclerView/FrgJuanRecyclerView.kt,a\7\a7100b2cd25b010c98995567a5bcadb1514f34d3
+„
+Tapp/src/main/java/com/mh/basickotlin/juan/shPreferences/presenter/DatePickerAlert.kt,b\a\ba2fb9788a5f806588a14a2ecbb89dc8dbb93797
+–
+fapp/src/main/java/com/mh/basickotlin/juan/shPreferences/presenter/contract/JuanShPreferenceContract.kt,b\7\b7275f2d2933f996b30e98183a0877979a73c6f6
+{
+Kapp/src/main/java/com/mh/basickotlin/juan/shPreferences/model/Formulario.kt,9\5\95b7a40ad698493516e9eef29d4d0445f08bfd6a

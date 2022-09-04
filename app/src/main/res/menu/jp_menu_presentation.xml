@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/actionDelete"
+        android:icon="@drawable/ic_delete_jp"
+        android:title="@string/jp_hint_delete"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/actionEdit"
+        android:icon="@drawable/ic_edit_jp"
+        android:title="@string/jp_hint_edit"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/actionShare"
+        android:icon="@drawable/ic_share_jp"
+        android:title="@string/jp_hint_share"
+        app:showAsAction="collapseActionView"
+        />
+</menu>

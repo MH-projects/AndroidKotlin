@@ -118,4 +118,27 @@
     <style name="Theme_BackgroundPabloMessageReceived">
         <item name="android:background">@drawable/bg_pa_received_message</item>-
     </style>
+
+    <style name="Theme_InputTextJP" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundMode">outline</item>
+
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxStrokeColor">@color/white</item>
+        <item name="boxStrokeWidth">4dp</item>
+    </style>
+    <style name="Theme_OptionTextJP" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxStrokeColor">@color/white</item>
+        <item name="boxStrokeWidth">4dp</item>
+    </style>
+    <style name="Theme_EditTextJP">
+        <item name="android:textSize">20dp</item>
+    </style>
 </resources>
