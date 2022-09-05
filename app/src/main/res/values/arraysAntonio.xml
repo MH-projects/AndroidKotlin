@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ab_states">
+        <item>CDMX</item>
+        <item>NUEVO LEON</item>
+        <item>GUERRERO</item>
+        <item>VERACRUZ</item>
+    </string-array>
+</resources>

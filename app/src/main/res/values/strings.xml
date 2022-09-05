@@ -95,6 +95,12 @@
 
     <!--AB's Strigns-->
     <string name="FrgCalculator">Calculadora</string>
+    <string name="ab_hint_name">*Nombre(s)</string>
+    <string name="ab_hint_age">*Edad</string>
+    <string name="ab_hint_state">Estado</string>
+    <string name="ab_hint_surname">Apellidos(s)</string>
+    <string name="ab_hint_work">*Trabajo</string>
+    <string name="ab_hint_school">*Escuela</string>
 
     <!--JOSUE´s STRINGS-->
     <string name="jc_firstproyect">Proyecto Inicial</string>

@@ -1,12 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    style="@style/Theme_Backgroundfrg"
-    android:background="@color/orange">
+    android:background="@drawable/bg_ab_presentatio"
+    android:padding="10dp"
+    style="@style/Theme_Backgroundfrg">
+<ScrollView
+    android:id="@+id/ScAntonio"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/imputAntoName"
+        android:layout_width="match_parent"
+        app:placeholderText="@string/ab_hint_name"
+        style="@style/Theme_inputlayaoutText"
+         android:layout_height="wrap_content"
+        android:hint="@string/ab_hint_name"
+        app:startIconTint="#9C27B0"
+        app:startIconDrawable="@drawable/ic_ab_user">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etAntonioName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:textSize="12sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/imputAntoSurName"
+            android:layout_width="match_parent"
+            app:placeholderText="@string/ab_hint_surname"
+            style="@style/Theme_inputlayaoutText"
+            android:layout_height="wrap_content"
+            android:hint="@string/ab_hint_surname"
+            app:startIconTint="#9C27B0"
+            android:layout_below="@+id/imputAntoName"
+            app:startIconDrawable="@drawable/ic_ab_user">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAntoniorSurName"
+                android:inputType="textCapWords"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/imputAntoAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:placeholderText="@string/ab_hint_age"
+            style="@style/Theme_inputlayaoutText"
+            android:hint="@string/ab_hint_age"
+            app:startIconTint="#9C27B0"
+            android:layout_below="@+id/imputAntoSurName"
+            app:startIconDrawable="@drawable/ic_ab_user">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAntoniorAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:text="dd/mm/yyyy"
+                android:textSize="12sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/imputAntoAgeYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:placeholderText="@string/ab_hint_age"
+            style="@style/Theme_inputlayaoutText"
+            android:paddingStart="50dp"
+            android:hint="@string/ab_hint_age"
+            android:layout_toEndOf="@+id/imputAntoAge"
+            android:layout_below="@+id/imputAntoSurName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAntoniorAgeYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:text="@string/ab_hint_age"
+                android:textSize="12sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/imputAntoState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:placeholderText="@string/ab_hint_state"
+            style="@style/Theme_inputlayaoutText"
+            android:hint="@string/ab_hint_state"
+            app:startIconTint="#FFFFFF"
+            app:startIconDrawable="@drawable/ic_ab_location"
+            android:layout_below="@+id/imputAntoAge">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAntoniorState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:text="@string/ab_hint_state"
+                android:textSize="12sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/imputAntoSex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:placeholderText="@string/ab_hint_state"
+            style="@style/Theme_inputlayaoutText"
+            android:hint="@string/ab_hint_state"
+            app:startIconTint="#673AB7"
+            app:startIconDrawable="@drawable/ic_ab_transgender"
+            android:layout_below="@+id/imputAntoState">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAntoniorSex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:text="@string/ab_hint_state"
+                android:textSize="12sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/imputAntoNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:placeholderText="Telefono"
+            style="@style/Theme_inputlayaoutText"
+            android:hint="Telefono"
+            app:startIconTint="#673AB7"
+            app:startIconDrawable="@drawable/ic_ab_phone"
+            android:layout_below="@+id/imputAntoSex">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAntoniorNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="Telefono"
+                android:textSize="12sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAntonioSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ScAntonio"
+        android:layout_marginTop="8dp"
+        android:text="Guardar" />
 
     <TextView
         android:id="@+id/tvPresenterAntonio"
@@ -14,9 +177,10 @@
         android:layout_height="wrap_content"
         android:layout_margin="15sp"
         android:textSize="15sp"
+        android:visibility="gone"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

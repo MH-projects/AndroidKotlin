@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ bg_ab_input_box.xml
+  ~ Android Kotlin App
+  ~ Created by Antonio Barrientos Rios on 01/09/2022, 12:22:43
+  ~ Copyright (c) 2022 Develop-MX. All rights reserved.
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/white"/>
+    <item android:state_enabled="true" android:color="@color/white"/>
+    <item android:state_hovered="true" android:color="#03A9F4"/>
+    <item android:state_focused="true" android:color="#FF5722"/>
+</selector>
