@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ menu_recycler.xml
+  ~ Android Kotlin Juan
+  ~ Created by Juan Pablo on 05/09/2022, 15:16:02
+  ~ Copyright (c) 2022 Develop-MX. All rights reserved
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/actionSe"
+        android:title="@string/jp_hint_delete"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        >
+
+    </item>
+</menu>
