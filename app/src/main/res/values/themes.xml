@@ -73,6 +73,16 @@
         <item name="android:layout_margin">4dp</item>
     </style>
 
+    <style name="Theme_BackgroundButtonPresentationPablo">
+        <item name="android:background">@drawable/bg_pa_button</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
+    <style name="Theme_BackgroundButtonPresentation">
+        <item name="android:background">@drawable/bg_mh_button</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
     <style name="Theme_BackgroundantonioChatSent">
         <item name="android:background">@drawable/bg_antonio_chat_sent</item>
     </style>
@@ -113,6 +123,7 @@
 
     <style name="Theme_BackgroundPabloMessageSent">
         <item name="android:background">@drawable/bg_pa_sent_message</item>
+
     </style>
 
     <style name="Theme_BackgroundPabloMessageReceived">
@@ -146,6 +157,39 @@
     <style name="Theme_EditTextMH">
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Theme_InputTextPA" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxCornerRadiusBottomEnd">10dp</item>
+        <item name="boxCornerRadiusBottomStart">10dp</item>
+        <item name="boxCornerRadiusTopStart">10dp</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxStrokeWidth">5dp</item>
+        <item name="hintTextColor">@color/bg_pa_input_box</item>
+        <item name="boxStrokeColor">@color/design_default_color_secondary</item>
+        <item name="startIconTint">@color/black</item>
+        <item name="android:paddingBottom">20dp</item>
+    </style>
+
+    <style name="Theme_OptionTextPa" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxCornerRadiusBottomEnd">10dp</item>
+        <item name="boxCornerRadiusBottomStart">10dp</item>
+        <item name="boxCornerRadiusTopStart">10dp</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxStrokeWidth">5dp</item>
+        <item name="hintTextColor">@color/bg_pa_input_box</item>
+        <item name="boxStrokeColor">@color/design_default_color_secondary</item>
+        <item name="startIconTint">@color/black</item>
+        <item name="android:paddingBottom">20dp</item>
+    </style>
+
+    <style name="Theme_EditTextPA">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 
 </resources>

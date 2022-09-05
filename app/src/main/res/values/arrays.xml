@@ -7,4 +7,13 @@
         <item>Veracruz</item>
         <item>Yucatán</item>
     </string-array>
+
+    <string-array name="pa_states">
+        <item>CDMX</item>
+        <item>Estado de Mexico</item>
+        <item>Tabasco</item>
+        <item>Veracruz</item>
+        <item>Yucatan</item>
+    </string-array>
+
 </resources>
