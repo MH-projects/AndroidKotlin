@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/actionDelate"
+        android:icon="@drawable/ic_pa_delete"
+        android:iconTint="@color/white"
+        android:title="Delate"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/actionEdit"
+        android:icon="@drawable/ic_pa_edit"
+        android:iconTint="@color/white"
+        android:title="Edit"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/actionShare"
+        android:icon="@drawable/ic_pa_share"
+        android:iconTint="@color/white"
+        android:title="Shared"
+        app:showAsAction="collapseActionView"/>
+</menu>

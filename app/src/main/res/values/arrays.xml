@@ -8,4 +8,29 @@
         <item>Monterrey</item>
         <item>Veracruz</item>
     </string-array>
+
+<resources>
+    <string-array name="mh_states">
+        <item>CDMX</item>
+        <item>Estado de México</item>
+        <item>Tabasco</item>
+        <item>Veracruz</item>
+        <item>Yucatán</item>
+    </string-array>
+
+    <string-array name="pa_states">
+        <item>CDMX</item>
+        <item>Estado de Mexico</item>
+        <item>Tabasco</item>
+        <item>Veracruz</item>
+        <item>Yucatan</item>
+    </string-array>
+
+    <string-array name="am_estates">
+        <item>CMDX</item>
+        <item>Nuevo Leon</item>
+        <item>Veracruz</item>
+        <item>Chiapas</item>
+        <item>Hidalgo</item>
+    </string-array>
 </resources>

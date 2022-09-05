@@ -186,14 +186,14 @@
 
     <fragment
         android:id="@+id/frgPabloData"
-        android:name="com.mh.basickotlin.pablo.view.fragment.FrgPabloData"
+        android:name="com.mh.basickotlin.pablo.presentation.view.FrgPabloData"
         android:label="frg_pablo_data"
         tools:layout="@layout/frg_pablo_data" />
 
     <fragment
         android:id="@+id/frgAngelInformation"
         android:label="frg_angel_information"
-        android:name="com.mh.basickotlin.angel.info.FrgAngelInformation"
+        android:name="com.mh.basickotlin.angel.info.view.FrgAngelInformation"
         tools:layout="@layout/frg_angel_information" />
 
     <fragment
@@ -210,7 +210,7 @@
 
     <fragment
         android:id="@+id/frgManuelPresentation"
-        android:name="com.mh.basickotlin.manuel.presentation.FrgManuelPresentation"
+        android:name="com.mh.basickotlin.manuel.presentation.view.FrgManuelPresentation"
         android:label="frg_manuel_presentation"
         tools:layout="@layout/frg_manuel_presentation" />
 

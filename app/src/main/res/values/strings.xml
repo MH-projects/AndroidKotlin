@@ -5,12 +5,34 @@
     <string name="mh_presentation">Presentation</string>
     <string name="mh_calculator">Calculator</string>
     <string name="mh_recycler_card_view">Recycler&amp;Card View</string>
+    <string name="mh_hint_name">*Nombre(s)</string>
+    <string name="mh_hint_surname">Apellidos</string>
+    <string name="mh_hint_birthday">*Fecha Nacimiento</string>
+    <string name="mh_hint_age">Edad</string>
+    <string name="mh_hint_phone">*Número</string>
+    <string name="mh_hint_state">Estado de Nacimiento</string>
+    <string name="mh_hint_gender">Sexo</string>
+    <string name="mh_save">Guardar</string>
 
-    <!-- MH's strings-->
+    <string name="mh_menu_delete">Delete</string>
+    <string name="mh_menu_edit">Editar</string>
+    <string name="mh_menu_share">Compartir</string>
+    <string name="mh_menu_search">Buscar</string>
+
+    <!-- PA's strings-->
     <string name="pa_calculator">Calculator</string>
     <string name="pa_data">Data</string>
     <string name="pa_recycler_view">Recycler and Card view</string>
     <string name="name">Name:</string>
+    <string name="pa_hint_name">Nombre(s)*:</string>
+    <string name="pa_hint_surname">Apellidos</string>
+    <string name="pa_hint_age">Edad</string>
+    <string name="pa_hint_birthday">Fecha de nacimiento</string>
+    <string name="pa_hint_phone">Numero</string>
+    <string name="pa_hint_state">Estado</string>
+    <string name="pa_hint_sex">Sexo</string>
+
+
     <!-- Number -->
     <string name="uno">1</string>
     <string name="dos">2</string>
@@ -112,6 +134,22 @@
 
     <!-- messages frgPabloCalculator-->
     <string name="frgPabloCalculatorNumber">No se pueden ingresar mas de 3 numeros</string>
+
+
+
+    <!--AngelStrings -->
+    <string name="an_hint_name">Name</string>
+    <string name="an_hint_surname">Surname</string>
+    <string name="an_hint_age">Age</string>
+    <string name="an__hint_number">Number</string>
+    <string name="an_hint_state">State</string>
+    <string name="an_hint_birthday">Birthday</string>
+    <string name="an_hint_sexo">Sexo</string>
+
+    <string name="an_save">Save</string>
+
+
+
 
 
 </resources>
