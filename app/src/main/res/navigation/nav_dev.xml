@@ -210,7 +210,7 @@
 
     <fragment
         android:id="@+id/frgManuelPresentation"
-        android:name="com.mh.basickotlin.manuel.presentation.FrgManuelPresentation"
+        android:name="com.mh.basickotlin.manuel.presentation.view.FrgManuelPresentation"
         android:label="frg_manuel_presentation"
         tools:layout="@layout/frg_manuel_presentation" />
 
