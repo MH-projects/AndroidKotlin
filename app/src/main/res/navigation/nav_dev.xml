@@ -186,7 +186,7 @@
 
     <fragment
         android:id="@+id/frgPabloData"
-        android:name="com.mh.basickotlin.pablo.view.fragment.FrgPabloData"
+        android:name="com.mh.basickotlin.pablo.presentation.view.FrgPabloData"
         android:label="frg_pablo_data"
         tools:layout="@layout/frg_pablo_data" />
 

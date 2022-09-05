@@ -19,11 +19,20 @@
     <string name="mh_menu_share">Compartir</string>
     <string name="mh_menu_search">Buscar</string>
 
-    <!-- MH's strings-->
+    <!-- PA's strings-->
     <string name="pa_calculator">Calculator</string>
     <string name="pa_data">Data</string>
     <string name="pa_recycler_view">Recycler and Card view</string>
     <string name="name">Name:</string>
+    <string name="pa_hint_name">Nombre(s)*:</string>
+    <string name="pa_hint_surname">Apellidos</string>
+    <string name="pa_hint_age">Edad</string>
+    <string name="pa_hint_birthday">Fecha de nacimiento</string>
+    <string name="pa_hint_phone">Numero</string>
+    <string name="pa_hint_state">Estado</string>
+    <string name="pa_hint_sex">Sexo</string>
+
+
     <!-- Number -->
     <string name="uno">1</string>
     <string name="dos">2</string>
