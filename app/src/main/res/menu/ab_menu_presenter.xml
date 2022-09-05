@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/actionDelete"
+    android:icon="@drawable/ic_ab_delete"
+    android:iconTint="@color/black"
+    android:title="Delete"
+    app:showAsAction="collapseActionView"
+    />
+    <item
+        android:id="@+id/actionEdit"
+        android:icon="@drawable/ic_ab_edit"
+        android:iconTint="@color/black"
+        android:title="Edit"
+        app:showAsAction="collapseActionView"
+        />
+    <item
+        android:id="@+id/actionCompartir"
+        android:icon="@drawable/ic_ab_share_24"
+        android:iconTint="@color/black"
+        android:title="Compartir"
+        app:showAsAction="ifRoom"
+        />
+</menu>

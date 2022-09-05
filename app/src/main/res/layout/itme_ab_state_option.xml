@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ item_antonio_chat_sent.xml
+  ~ Android Kotlin App
+  ~ Created by Antonio Barrientos Rios on 31/08/2022, 11:35:00
+  ~ Copyright (c) 2022 Develop-MX. All rights reserved.
+  -->
+<TextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:padding="10sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMessageSent"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />

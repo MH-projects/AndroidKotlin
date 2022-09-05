@@ -10,12 +10,16 @@ package com.mh.basickotlin.antonio.recyclerview
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Filter
+import android.widget.Filterable
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.mh.basickotlin.R
 
-class AdapterChat (private val chat:List<Chat>): RecyclerView.Adapter<AdapterChat.ViewHolder>() {
+class AdapterChat (private val chat:List<Chat>): RecyclerView.Adapter<AdapterChat.ViewHolder>(),Filterable{
+
+    private var chatfiltrable:List<Chat> = chat
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         /*val view = LayoutInflater.from(parent.context)
@@ -39,14 +43,14 @@ class AdapterChat (private val chat:List<Chat>): RecyclerView.Adapter<AdapterCha
         /*val msjChat = chat[position]
         holder.tvmensaje.text= msjChat.mensaje
         holder.tvdate.text=msjChat.date*/
-        holder.bind(chat[position])
+        holder.bind(chatfiltrable[position])
     }
 
     override fun getItemCount(): Int {
-        return chat.size
+        return chatfiltrable.size
     }
 
-    override fun getItemViewType(position: Int)= chat[position].type.value
+    override fun getItemViewType(position: Int)= chatfiltrable[position].type.value
 
     //si se elimina - se eliminara la clase
     inner class ViewHolder(itemView:View): RecyclerView.ViewHolder(itemView){
@@ -95,5 +99,35 @@ class AdapterChat (private val chat:List<Chat>): RecyclerView.Adapter<AdapterCha
 
 
 
+    }
+
+   override fun getFilter():Filter{
+        return object :Filter(){
+            override fun performFiltering(p0: CharSequence?): FilterResults {
+                    val inputText=p0.toString()
+                chatfiltrable= if (inputText.isEmpty()){
+                    chat
+                }else{
+                    var chatFiltereableTemp:MutableList<Chat> = ArrayList()
+                    chatFiltereableTemp.clear()
+
+                    chatfiltrable.forEach {
+                        if (it.mensaje.contains(inputText)){
+                            chatFiltereableTemp.add(it)
+                        }
+                    }
+                    chatFiltereableTemp
+                }
+                val filterResult=FilterResults()
+                filterResult.values=chatfiltrable
+                return filterResult
+            }
+
+            override fun publishResults(p0: CharSequence?, p1: FilterResults?) {
+                chatfiltrable=p1?.values as List<Chat>
+                notifyDataSetChanged()
+            }
+
+        }
     }
 }

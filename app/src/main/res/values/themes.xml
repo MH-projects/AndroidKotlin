@@ -130,6 +130,24 @@
         <item name="android:background">@drawable/bg_pa_received_message</item>-
     </style>
 
+    <style name="Theme_inputlayaoutText" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">#9C27B0</item>
+        <item name="boxCornerRadiusTopStart">20dp</item>
+        <item name="boxCornerRadiusTopEnd">20dp</item>
+        <item name="boxCornerRadiusBottomStart">20dp</item>
+        <item name="boxCornerRadiusBottomEnd">20dp</item>
+        <item name="boxBackgroundMode">outline</item>
+    </style>
+
+    <style name="Theme_optionText" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxStrokeColor">#9C27B0</item>
+        <item name="boxCornerRadiusTopStart">20dp</item>
+        <item name="boxCornerRadiusTopEnd">20dp</item>
+        <item name="boxCornerRadiusBottomStart">20dp</item>
+        <item name="boxCornerRadiusBottomEnd">20dp</item>
+        <item name="boxBackgroundMode">outline</item>
+    </style>
+
     <style name="Theme_inputTextJc" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <item name="boxBackgroundColor">#061EA3</item>
         <item name="boxStrokeColor">@color/bg_jc_input_box</item>

@@ -28,7 +28,7 @@ class FrgAntonioContent : Fragment() {
             findNavController().navigate(R.id.toFrgAntonioCalculadora)
         }
         view.findViewById<Button>(R.id.btnFrgAntonioPresenter).setOnClickListener {
-            findNavController().navigate(R.id.toFrgAntonioPresenter)
+            findNavController().navigate(R.id.toFrgAntonioPresentation)
         }
         view.findViewById<Button>(R.id.btnFrgAntonioRecyclerCard).setOnClickListener {
             findNavController().navigate(R.id.toFrgAntonioRecyclerCard)
