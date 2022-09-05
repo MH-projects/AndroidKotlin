@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/actionDelete"
+        android:icon="@drawable/ic_mh_delete"
+        android:iconTint="@android:color/white"
+        android:title="@string/mh_menu_delete"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/actionEdit"
+        android:icon="@drawable/ic_mh_edit"
+        android:iconTint="@android:color/white"
+        android:title="@string/mh_menu_edit"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/actionShare"
+        android:icon="@drawable/ic_mh_edit"
+        android:iconTint="@android:color/white"
+        android:title="@string/mh_menu_share"
+        app:showAsAction="collapseActionView" />
+</menu>

@@ -2,6 +2,119 @@ package com.mh.basickotlin.manuel
 
 import android.widget.Button
 
+interface Animal { // QUE pero no el COMO
+    fun comer()
+}
+
+class Perro : Animal {
+
+    val alimentador = PresenterAnimal(this)
+
+    init {
+        alimentador.getComida("creoquetas")
+    }
+
+    override fun comer() {
+        println("Comer croquetas")
+    }
+}
+
+class Tiburon : Animal {
+
+    val alimentador = PresenterAnimal(this)
+
+    init {
+        alimentador.getComida("peces")
+    }
+
+    override fun comer() {
+        println("Comer peces")
+    }
+}
+
+interface IPresenterAnimal {
+    fun getComida(comida: String)
+}
+
+class PresenterAnimal(val interfaceCallback: Animal) : IPresenterAnimal {
+
+    override fun getComida(comida: String) {
+        if (comida == "croquetas") {
+            // Ve a la tienda y compra croqu
+        } else {
+            // Ve al mar a pezcar
+        }
+
+        interfaceCallback.comer()
+    }
+}
+
+interface IView {
+    fun showMessage()
+    fun showError()
+    fun showAlert()
+}
+
+interface IActivity {
+    fun showDate()
+}
+
+interface IPresenter {
+    fun suma()
+    fun getApi()
+    fun getData()
+}
+
+class Presenter(val callback: IView? = null, val callbackActivity: IActivity? = null) : IPresenter {
+
+    override fun suma() {
+        callback?.showAlert()
+    }
+
+    override fun getApi() {
+        callback?.showError()
+    }
+
+    override fun getData() {
+        callbackActivity?.showDate()
+    }
+}
+
+class ActivityClass : IActivity {
+
+    var presenter: IPresenter = Presenter(null, this)
+
+    init {
+        presenter.getData()
+    }
+
+    override fun showDate() {
+        TODO("Not yet implemented")
+    }
+}
+
+class View : IView {
+
+    var presenter: IPresenter = Presenter(this, null)
+
+    init {
+        presenter.suma()
+        presenter.getApi()
+    }
+
+    override fun showMessage() {
+        TODO("Not yet implemented")
+    }
+
+    override fun showError() {
+        TODO("Not yet implemented")
+    }
+
+    override fun showAlert() {
+        TODO("Not yet implemented")
+    }
+}
+
 fun main() {
     val a = 3
     val b = 5
