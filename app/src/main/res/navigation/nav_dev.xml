@@ -198,7 +198,7 @@
 
     <fragment
         android:id="@+id/frgJosueWelcome"
-        android:name="com.mh.basickotlin.josue.view.fragment.FrgJosueWelcome"
+        android:name="com.mh.basickotlin.josue.welcomejc.view.FrgJosueWelcome"
         android:label="frg_josue_welcome"
         tools:layout="@layout/frg_josue_welcome" />
 

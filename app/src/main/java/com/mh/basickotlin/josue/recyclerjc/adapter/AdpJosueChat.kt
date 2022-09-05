@@ -10,12 +10,16 @@ package com.mh.basickotlin.josue.recyclerjc.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Filter
+import android.widget.Filterable
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.mh.basickotlin.R
 import com.mh.basickotlin.josue.recyclerjc.model.ChatModel
 
-class AdpJosueChat(private val chats: List<ChatModel>) : RecyclerView.Adapter<AdpJosueChat.ViewHolder>() {
+class AdpJosueChat(private val chats: List<ChatModel>) : RecyclerView.Adapter<AdpJosueChat.ViewHolder>(), Filterable{
+
+    private var chatFilterable: List<ChatModel> = chats
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(chat: ChatModel) {
@@ -61,14 +65,45 @@ class AdpJosueChat(private val chats: List<ChatModel>) : RecyclerView.Adapter<Ad
         // holder.tvMessage.text = chat.message
         // holder.tvDate.text = chat.data
 
-        holder.bind(chats[position])
+        holder.bind(chatFilterable[position])
 
         //
     }
 
-    override fun getItemCount() = chats.size
+    override fun getItemCount() = chatFilterable.size
 
     override fun getItemViewType(position: Int): Int {
-        return chats[position].type.value
+        return chatFilterable[position].type.value
+    }
+
+    override fun getFilter(): Filter {
+        return object : Filter(){
+            override fun performFiltering(query: CharSequence?): FilterResults {
+                val inputText = query.toString()
+
+                chatFilterable = if (inputText.isEmpty()){
+                    chats
+                }else {
+                    var chatFilterableTemp:MutableList<ChatModel> = ArrayList()
+                    chatFilterableTemp.clear()
+
+                    chatFilterable.forEach {
+                        if (it.message.contains(inputText)){
+                            chatFilterableTemp.add(it)
+                        }
+                    }
+                    chatFilterableTemp
+                }
+                val filterResult = FilterResults()
+                filterResult.values = chatFilterable
+                return filterResult
+            }
+
+            override fun publishResults(query: CharSequence?, results: FilterResults?) {
+                chatFilterable = results?.values as List<ChatModel>
+                notifyDataSetChanged()
+            }
+
+        }
     }
 }

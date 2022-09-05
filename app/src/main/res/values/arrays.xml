@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="jc_states">
+        <item>CDMX</item>
+        <item>Edo Mex</item>
+        <item>Durango</item>
+        <item>Monterrey</item>
+        <item>Veracruz</item>
+    </string-array>
+</resources>
