@@ -22,6 +22,6 @@
     <color name="pg_secondary">#FFFFFF</color>
 
     <color name="jc_primary">#3C3E3C</color>
-
+    <color name="jc_bg_icons">#EDB201</color>
 
 </resources>

@@ -1,41 +1,199 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="14dp"
-    tools:context=".josue.view.fragment.FrgJosueWelcome">
+    android:background="@color/jc_primary"
+    tools:context=".josue.welcomejc.view.FrgJosueWelcome">
 
-    <TextView
-        android:id="@+id/tvName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:text="@string/jc_name"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+    <ScrollView
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/btnView"
+        android:id="@+id/scrView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/tvNameValue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toEndOf="@+id/tvName"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Josue Cazares" />
+        <RelativeLayout
+            android:id="@+id/rlView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/tvFullName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="54dp"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvNameValue"
-        tools:text="Name: Josue Cazares" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputName"
+                style="@style/Theme_inputTextJc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:hint="@string/jc_name_welcome"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:startIconDrawable="@drawable/ic_jc_name_et"
+                app:startIconTint="@color/jc_bg_icons">
 
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etName"
+                    style="@style/Theme_editTextJc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputSurName"
+                style="@style/Theme_inputTextJc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputName"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="15dp"
+                android:hint="@string/jc_surname"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:startIconDrawable="@drawable/ic_jc_name_et"
+                app:startIconTint="@color/jc_bg_icons">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etSurName"
+                    style="@style/Theme_editTextJc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputFecNac"
+                style="@style/Theme_inputTextJc"
+                android:layout_width="220sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputSurName"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:startIconDrawable="@drawable/ic_jc_age_et"
+                app:startIconTint="@color/jc_bg_icons">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etFecNac"
+                    style="@style/Theme_editTextJc"
+                    android:layout_width="220sp"
+                    android:focusable="false"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/jc_fecnac"
+                    android:inputType="textCapWords" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputAge"
+                style="@style/Theme_inputTextJc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputSurName"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="8dp"
+                android:layout_toEndOf="@+id/inputFecNac"
+                app:startIconDrawable="@drawable/ic_jc_name_et"
+                app:startIconTint="@color/jc_bg_icons">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAge"
+                    style="@style/Theme_editTextJc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/jc_age"
+                    android:inputType="textCapWords" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputNum"
+                style="@style/Theme_inputTextJc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputFecNac"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="15dp"
+                android:hint="@string/jc_num"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:startIconDrawable="@android:drawable/stat_sys_phone_call"
+                app:startIconTint="@color/jc_bg_icons">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNum"
+                    style="@style/Theme_editTextJc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputState"
+                style="@style/Theme_OptionTextJc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputNum"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="15dp"
+                android:hint="@string/jc_state"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:startIconDrawable="@android:drawable/ic_dialog_map"
+                app:startIconTint="@color/jc_bg_icons">
+
+                <AutoCompleteTextView
+                    android:id="@+id/etState"
+                    style="@style/Theme_editTextJc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputGender"
+                style="@style/Theme_OptionTextJc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputState"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="15dp"
+                android:hint="@string/jc_gender"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:startIconDrawable="@drawable/ic_jc_name_et"
+                app:startIconTint="@color/jc_bg_icons">
+
+                <AutoCompleteTextView
+                    android:id="@+id/etGender"
+                    style="@style/Theme_editTextJc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="8dp"
+        android:text="@string/jc_save" />
+
+</RelativeLayout>

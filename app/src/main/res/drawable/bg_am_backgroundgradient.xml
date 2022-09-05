@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ bg_am_backgroundgradient.xml
+  ~ Android Kotlin App
+  ~ Created by Angel Morales on 01/09/2022, 12:52:31
+  ~ Copyright (c)  2022 Develop- Mx. All rights reserved.
+  -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="135"
+        android:startColor="#6A6969"
+        android:endColor="@color/black"/>
+</shape>

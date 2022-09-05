@@ -95,11 +95,11 @@
             android:id="@+id/toFrgAntonioCalculadora"
             app:destination="@id/frgAntonioCalculator" />
         <action
-            android:id="@+id/toFrgAntonioPresenter"
-            app:destination="@id/frgAntonioPresenter" />
-        <action
              android:id="@+id/toFrgAntonioRecyclerCard"
              app:destination="@id/frgAntonioRecyclerCard" />
+        <action
+            android:id="@+id/toFrgAntonioPresentation"
+            app:destination="@id/frgAntonioPresentation" />
     </fragment>
 
     <fragment
@@ -180,25 +180,20 @@
     <!-- region: Presentation-->
 
     <fragment
-        android:id="@+id/frgAntonioPresenter"
-        android:name="com.mh.basickotlin.antonio.view.view.fragment.FrgAntonioPresenter"
-        android:label="FrgAntonioPresenter" />
-
-    <fragment
         android:id="@+id/frgPabloData"
-        android:name="com.mh.basickotlin.pablo.view.fragment.FrgPabloData"
+        android:name="com.mh.basickotlin.pablo.presentation.view.FrgPabloData"
         android:label="frg_pablo_data"
         tools:layout="@layout/frg_pablo_data" />
 
     <fragment
         android:id="@+id/frgAngelInformation"
         android:label="frg_angel_information"
-        android:name="com.mh.basickotlin.angel.info.FrgAngelInformation"
+        android:name="com.mh.basickotlin.angel.info.view.FrgAngelInformation"
         tools:layout="@layout/frg_angel_information" />
 
     <fragment
         android:id="@+id/frgJosueWelcome"
-        android:name="com.mh.basickotlin.josue.view.fragment.FrgJosueWelcome"
+        android:name="com.mh.basickotlin.josue.welcomejc.view.FrgJosueWelcome"
         android:label="frg_josue_welcome"
         tools:layout="@layout/frg_josue_welcome" />
 
@@ -210,9 +205,15 @@
 
     <fragment
         android:id="@+id/frgManuelPresentation"
-        android:name="com.mh.basickotlin.manuel.presentation.FrgManuelPresentation"
+        android:name="com.mh.basickotlin.manuel.presentation.view.FrgManuelPresentation"
         android:label="frg_manuel_presentation"
         tools:layout="@layout/frg_manuel_presentation" />
+
+    <fragment
+        android:id="@+id/frgAntonioPresentation"
+        android:name="com.mh.basickotlin.antonio.presentation.view.FrgAntonioPresentation"
+        android:label="frg_antonio_presentation"
+        tools:layout="@layout/frg_antonio_presentation" />
 
     <!-- endregion -->
 
@@ -252,5 +253,6 @@
         android:name="com.mh.basickotlin.juan.recyclerView.FrgJuanRecyclerView"
         android:label="frg_juan_recycler_view"
         tools:layout="@layout/frg_juan_recycler_view" />
+
     <!-- endregion -->
 </navigation>
