@@ -130,6 +130,30 @@
         <item name="android:background">@drawable/bg_pa_received_message</item>-
     </style>
 
+    <style name="Theme_inputTextJc" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">#061EA3</item>
+        <item name="boxStrokeColor">@color/bg_jc_input_box</item>
+        <item name="boxCornerRadiusBottomStart">20dp</item>
+        <item name="boxCornerRadiusBottomEnd">20dp</item>
+        <item name="boxCornerRadiusTopStart">20dp</item>
+        <item name="boxCornerRadiusTopEnd">20dp</item>
+        <item name="hintTextColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+    <style name="Theme_OptionTextJc" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxBackgroundColor">#061EA3</item>
+        <item name="boxStrokeColor">@color/bg_jc_input_box</item>
+        <item name="boxCornerRadiusBottomStart">20dp</item>
+        <item name="boxCornerRadiusBottomEnd">20dp</item>
+        <item name="boxCornerRadiusTopStart">20dp</item>
+        <item name="boxCornerRadiusTopEnd">20dp</item>
+        <item name="hintTextColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+    <style name="Theme_editTextJc">
+        <item name="android:textColor">@color/white</item>
+    </style>
 
     <style name="Theme_InputTextMH" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <item name="android:textColorHint">@android:color/darker_gray</item>
@@ -223,5 +247,4 @@
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:textSize">15sp</item>
     </style>
-
 </resources>

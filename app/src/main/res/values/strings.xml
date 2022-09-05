@@ -122,7 +122,15 @@
     <string name="jc_firstproyect">Proyecto Inicial</string>
     <string name="jc_secondproyect">Calculadora</string>
     <string name="jc_thirdproyect">RecyclerView</string>
-    <string name="jc_name">Name:</string>
+    <string name="jc_name">Name</string>
+    <string name="jc_name_welcome">Nombre</string>
+    <string name="jc_surname">Apellido</string>
+    <string name="jc_age">Edad</string>
+    <string name="jc_fecnac">Fecha Nacimiento</string>
+    <string name="jc_num">Numero</string>
+    <string name="jc_state">Estado</string>
+    <string name="jc_gender">Genero</string>
+    <string name="jc_save">Guardar</string>
 
     <!-- messages frgPabloCalculator-->
     <string name="frgPabloCalculatorNumber">No se pueden ingresar mas de 3 numeros</string>
