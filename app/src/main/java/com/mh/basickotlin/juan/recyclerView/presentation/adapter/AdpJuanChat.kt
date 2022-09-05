@@ -10,6 +10,8 @@ package com.mh.basickotlin.juan.recyclerView.presentation.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Filter
+import android.widget.Filterable
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.mh.basickotlin.R
@@ -17,8 +19,9 @@ import com.mh.basickotlin.databinding.ActAntonioMainBinding.bind
 import com.mh.basickotlin.juan.recyclerView.presentation.Chat
 import java.lang.Exception
 
-class AdpJuanChat(private val chats: List<Chat>) : RecyclerView.Adapter<AdpJuanChat.ViewHolder>() {
+class AdpJuanChat(private val chats: List<Chat>) : RecyclerView.Adapter<AdpJuanChat.ViewHolder>(), Filterable {
 
+    private var chatFilterable: List<Chat> = chats
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         /*
         cuando es una sola vista que queremos inflar
@@ -40,7 +43,7 @@ class AdpJuanChat(private val chats: List<Chat>) : RecyclerView.Adapter<AdpJuanC
     }
 
     override fun getItemViewType(position: Int): Int {
-        return chats[position].type.value
+        return chatFilterable[position].type.value
     }
 
     // acceder a la vista que se inflo poder
@@ -48,7 +51,7 @@ class AdpJuanChat(private val chats: List<Chat>) : RecyclerView.Adapter<AdpJuanC
         /*val chat = chats[position]
         holder.tvMensage.text = chat.message
         holder.tvDate.text = chat.date*/
-        holder.bind(chats[position])
+        holder.bind(chatFilterable[position])
     }
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(chat: Chat) {
@@ -81,5 +84,32 @@ class AdpJuanChat(private val chats: List<Chat>) : RecyclerView.Adapter<AdpJuanC
         }
     }
 
-    override fun getItemCount() = chats.size
+    override fun getItemCount() = chatFilterable.size
+    override fun getFilter(): Filter {
+        return object : Filter() {
+            override fun performFiltering(query: CharSequence?): FilterResults {
+                val inputText = query.toString()
+                chatFilterable = if (inputText.isEmpty()) {
+                    chats
+                } else {
+                    var chatFilterableTemp: MutableList<Chat> = ArrayList()
+                    chatFilterableTemp.clear()
+
+                    chatFilterable.forEach {
+                        if (it.message.contains(inputText)) {
+                            chatFilterableTemp.add(it)
+                        }
+                    }
+                    chatFilterableTemp
+                }
+                val filterResult = FilterResults()
+                filterResult.values = chatFilterable
+                return filterResult
+            }
+            override fun publishResults(query: CharSequence?, results: FilterResults?) {
+                chatFilterable = results?.values as List<Chat>
+                notifyDataSetChanged()
+            }
+        }
+    }
 }

@@ -140,7 +140,20 @@
 
     <!-- messages frgPabloCalculator-->
     <string name="frgPabloCalculatorNumber">No se pueden ingresar mas de 3 numeros</string>
+    <!-- Juan strings -->
+    <string name="jp_hint_name">Nombre</string>
+    <string name="jp_hint_surname">Apellido</string>
+    <string name="jp_hint_age">Edad</string>
+    <string name="jp_hint_date">Fecha Nacimiento</string>
+    <string name="jp_hint_sex">Genero</string>
+    <string name="jp_hint_school">Escuela</string>
+    <string name="jp_hint_Number">Numero</string>
+    <string name="jp_hint_work">Trabajo</string>
+    <string name="jp_hint_state">Ciudad</string>
 
+    <string name="jp_hint_delete">Delete</string>
+    <string name="jp_hint_share">Share</string>
+    <string name="jp_hint_edit">Edit</string>
 
 
     <!--AngelStrings -->

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:background="@drawable/bg_jp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".juan.shPreferences.view.FrgJuanInformation">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageLogin"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="95dp"
+                android:background="@drawable/login">
+
+            </androidx.appcompat.widget.AppCompatImageView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputName"
+                style="@style/Theme_InputTextJP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:hint="@string/jp_hint_name"
+                app:errorTextColor="@color/teal_200"
+                android:layout_below="@+id/imageLogin"
+                app:startIconDrawable="@drawable/ic_user_juan"
+                android:layout_marginTop="30dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etName"
+                    style="@style/Theme_EditTextJP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:maxLength="30"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputSurname"
+                style="@style/Theme_InputTextJP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputName"
+                android:layout_marginTop="30dp"
+                android:hint="@string/jp_hint_surname"
+                app:startIconDrawable="@drawable/ic_lock_juan"                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etSurname"
+                    style="@style/Theme_EditTextJP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:maxLength="30"
+                  />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ic_arrow_delete_background"
+        android:text="Login"></androidx.appcompat.widget.AppCompatButton>
+</RelativeLayout>

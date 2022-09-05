@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
+    <string-array name="jp_states">
+        <item>CDMX</item>
+        <item>OAXACA</item>
+        <item>PUEBLA</item>
+        <item>VERACRUZ</item>
+        <item>TABASCO</item>
+        <item>GUERRERO</item>
+    </string-array>
+
     <string-array name="jc_states">
         <item>CDMX</item>
         <item>Edo Mex</item>
@@ -9,7 +18,6 @@
         <item>Veracruz</item>
     </string-array>
 
-<resources>
     <string-array name="mh_states">
         <item>CDMX</item>
         <item>Estado de México</item>
@@ -33,4 +41,5 @@
         <item>Chiapas</item>
         <item>Hidalgo</item>
     </string-array>
+
 </resources>

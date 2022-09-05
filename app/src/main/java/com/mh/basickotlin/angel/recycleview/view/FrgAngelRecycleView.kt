@@ -70,7 +70,7 @@ class frgAngelRecycleView : Fragment() {
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
         inflater.inflate(R.menu.ab_menu_recycler, menu)
-        val search = menu.findItem(R.id.actionAmSearch)
+        val search = menu.findItem(R.id.ActionSearch)
         val searchView = search.actionView as SearchView
         searchView.queryHint = "Buscar..."
 

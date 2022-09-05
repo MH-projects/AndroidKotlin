@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ item_jp_option.xml
+  ~ Android Kotlin Juan
+  ~ Created by Juan Pablo on 01/09/2022, 16:43:39
+  ~ Copyright (c) 2022 Develop-MX. All rights reserved
+  -->
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="vdzffgb"
+    >
+
+</TextView>

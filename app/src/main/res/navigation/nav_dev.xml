@@ -199,7 +199,7 @@
 
     <fragment
         android:id="@+id/frgJuanInformation"
-        android:name="com.mh.basickotlin.juan.view.fragment.FrgJuanInformation"
+        android:name="com.mh.basickotlin.juan.shPreferences.view.FrgJuanInformation"
         android:label="frg_juan_information"
         tools:layout="@layout/frg_juan_information" />
 

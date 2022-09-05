@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:background="@drawable/bg_jp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".juan.shPreferences.view.FrgJuanInformation">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvwelcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="39dp"
+                android:layout_marginTop="20dp"
+                tools:text="Bienvenido"
+                >
+            </androidx.appcompat.widget.AppCompatTextView>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="39dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/tvwelcome"
+                tools:text="Juan"
+                >
+            </androidx.appcompat.widget.AppCompatTextView>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:text="Guardar">
+            </androidx.appcompat.widget.AppCompatButton>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn2"
+                android:layout_toEndOf="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:text="Guardar">
+            </androidx.appcompat.widget.AppCompatButton>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn3"
+                android:layout_toEndOf="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:text="Guardar">
+            </androidx.appcompat.widget.AppCompatButton>
+        </RelativeLayout>
+
+</RelativeLayout>
