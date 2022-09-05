@@ -32,6 +32,10 @@ class FrgManuelContent : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.btnPresentation.setOnClickListener {
+            findNavController().navigate(R.id.toFrgManuelPresentation)
+        }
+
         binding.btnCalcultator.setOnClickListener {
             findNavController().navigate(R.id.toFrgManuelCalculator)
         }

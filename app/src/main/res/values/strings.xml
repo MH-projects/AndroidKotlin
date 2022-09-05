@@ -5,6 +5,19 @@
     <string name="mh_presentation">Presentation</string>
     <string name="mh_calculator">Calculator</string>
     <string name="mh_recycler_card_view">Recycler&amp;Card View</string>
+    <string name="mh_hint_name">*Nombre(s)</string>
+    <string name="mh_hint_surname">Apellidos</string>
+    <string name="mh_hint_birthday">*Fecha Nacimiento</string>
+    <string name="mh_hint_age">Edad</string>
+    <string name="mh_hint_phone">*Número</string>
+    <string name="mh_hint_state">Estado de Nacimiento</string>
+    <string name="mh_hint_gender">Sexo</string>
+    <string name="mh_save">Guardar</string>
+
+    <string name="mh_menu_delete">Delete</string>
+    <string name="mh_menu_edit">Editar</string>
+    <string name="mh_menu_share">Compartir</string>
+    <string name="mh_menu_search">Buscar</string>
 
     <!-- MH's strings-->
     <string name="pa_calculator">Calculator</string>

@@ -1,21 +1,182 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ frg_manuel_presentation.xml
   ~ Android Kotlin App
   ~ Created by Manuel Hidalgo on 01/09/2022, 10:16:56
   ~ Copyright (c) 2022 Develop-MX. All rights reserved.
   -->
-
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".manuel.presentation.FrgManuelPresentation">
+    android:background="@drawable/bg_mh_presentation"
+    android:padding="12dp">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSave"
+        android:layout_alignParentTop="true">
 
-</FrameLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".manuel.presentation.view.FrgManuelPresentation">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputName"
+                style="@style/Theme_InputTextMH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mh_hint_name"
+                app:errorEnabled="true"
+                app:startIconDrawable="@drawable/ic_mh_user"
+                app:startIconTint="@android:color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etName"
+                    style="@style/Theme_EditTextMH"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:maxLength="40" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputSurname"
+                style="@style/Theme_InputTextMH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputName"
+                android:layout_marginTop="14dp"
+                android:hint="@string/mh_hint_surname"
+                app:startIconDrawable="@drawable/ic_mh_user">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etSurname"
+                    style="@style/Theme_EditTextMH"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:maxLength="20" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/llAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputSurname"
+                android:layout_marginTop="8dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputDateNac"
+                    style="@style/Theme_InputTextMH"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:layout_weight="2"
+                    android:hint="@string/mh_hint_birthday"
+                    app:errorEnabled="true"
+                    app:startIconDrawable="@drawable/ic_mh_birthday">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etDateNac"
+                        style="@style/Theme_EditTextMH"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:inputType="textCapWords"
+                        android:text="dd/mm/yyyy"
+                        android:textColor="@android:color/darker_gray" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputAge"
+                    style="@style/Theme_InputTextMH"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_weight="1"
+                    android:hint="@string/mh_hint_age">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etAge"
+                        style="@style/Theme_EditTextMH"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:inputType="textCapWords" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputNumber"
+                style="@style/Theme_InputTextMH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llAge"
+                android:layout_marginTop="14dp"
+                android:hint="@string/mh_hint_phone"
+                app:errorEnabled="true"
+                app:startIconDrawable="@drawable/ic_mh_phone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNumber"
+                    style="@style/Theme_EditTextMH"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="10" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputState"
+                style="@style/Theme_OptionTextMH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputNumber"
+                android:layout_marginTop="14dp"
+                android:hint="@string/mh_hint_state"
+                app:startIconDrawable="@drawable/ic_mh_place">
+
+                <AutoCompleteTextView
+                    android:id="@+id/etState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputGender"
+                style="@style/Theme_OptionTextMH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputState"
+                android:layout_marginTop="14dp"
+                android:hint="@string/mh_hint_gender"
+                app:startIconDrawable="@drawable/ic_mh_gender">
+
+                <AutoCompleteTextView
+                    android:id="@+id/etGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"
+        android:text="@string/mh_save"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>
